@@ -1,5 +1,7 @@
 # NeuroNav-Agent 中文说明
 
+[在线项目总览](https://jacob-zjy.github.io/neuro-nav-agent/) · [公开代码仓库](https://github.com/Jacob-Zjy/neuro-nav-agent)
+
 NeuroNav-Agent 是一个面向认知健康临床试验的循证患者导航研究原型。它不
 进行诊断，也不替代医生或试验协调员；它负责从公开注册信息中寻找候选试验、
 检查有限的结构化条件、解释排序依据、衡量排序稳定性，并审核输出是否有来源。

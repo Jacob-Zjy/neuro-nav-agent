@@ -2,7 +2,7 @@
 
 **Evidence-grounded, uncertainty-aware navigation for cognitive-health clinical trials**
 
-[中文说明](README_zh.md) · [Project guide](docs/index.html) · [Data provenance](data/README.md)
+[中文说明](README_zh.md) · [Live project guide](https://jacob-zjy.github.io/neuro-nav-agent/) · [Offline HTML](docs/index.html) · [Data provenance](data/README.md)
 
 NeuroNav-Agent is a reproducible research prototype that helps a user find and
 compare potentially relevant cognitive-health trials without pretending to
