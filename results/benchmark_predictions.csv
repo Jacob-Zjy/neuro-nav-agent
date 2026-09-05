@@ -1,0 +1,1432 @@
+method,case_id,trial_nct_id,perturbation,expected_match,predicted_match,correct
+Keyword retrieval,P000,NCT00051324,none,True,True,True
+Keyword retrieval,C000,NCT00051324,condition_mismatch,False,False,True
+Keyword retrieval,L000,NCT00051324,no_registered_local_site,False,True,False
+Keyword retrieval,A000,NCT00051324,age_below_minimum,False,True,False
+Keyword retrieval,P001,NCT00064870,none,True,True,True
+Keyword retrieval,C001,NCT00064870,condition_mismatch,False,False,True
+Keyword retrieval,L001,NCT00064870,no_registered_local_site,False,True,False
+Keyword retrieval,A001,NCT00064870,age_below_minimum,False,True,False
+Keyword retrieval,P002,NCT00317616,none,True,True,True
+Keyword retrieval,C002,NCT00317616,condition_mismatch,False,False,True
+Keyword retrieval,L002,NCT00317616,no_registered_local_site,False,True,False
+Keyword retrieval,A002,NCT00317616,age_below_minimum,False,True,False
+Keyword retrieval,P003,NCT00392795,none,True,True,True
+Keyword retrieval,C003,NCT00392795,condition_mismatch,False,False,True
+Keyword retrieval,L003,NCT00392795,no_registered_local_site,False,True,False
+Keyword retrieval,A003,NCT00392795,age_below_minimum,False,True,False
+Keyword retrieval,P004,NCT00537004,none,True,True,True
+Keyword retrieval,C004,NCT00537004,condition_mismatch,False,False,True
+Keyword retrieval,L004,NCT00537004,no_registered_local_site,False,True,False
+Keyword retrieval,P005,NCT00585572,none,True,True,True
+Keyword retrieval,C005,NCT00585572,condition_mismatch,False,False,True
+Keyword retrieval,L005,NCT00585572,no_registered_local_site,False,True,False
+Keyword retrieval,A005,NCT00585572,age_below_minimum,False,True,False
+Keyword retrieval,P006,NCT00869817,none,True,True,True
+Keyword retrieval,C006,NCT00869817,condition_mismatch,False,False,True
+Keyword retrieval,L006,NCT00869817,no_registered_local_site,False,True,False
+Keyword retrieval,A006,NCT00869817,age_below_minimum,False,True,False
+Keyword retrieval,P007,NCT00874783,none,True,True,True
+Keyword retrieval,C007,NCT00874783,condition_mismatch,False,False,True
+Keyword retrieval,L007,NCT00874783,no_registered_local_site,False,True,False
+Keyword retrieval,A007,NCT00874783,age_below_minimum,False,True,False
+Keyword retrieval,P008,NCT00950430,none,True,True,True
+Keyword retrieval,C008,NCT00950430,condition_mismatch,False,False,True
+Keyword retrieval,L008,NCT00950430,no_registered_local_site,False,True,False
+Keyword retrieval,A008,NCT00950430,age_below_minimum,False,True,False
+Keyword retrieval,P009,NCT01052350,none,True,True,True
+Keyword retrieval,C009,NCT01052350,condition_mismatch,False,False,True
+Keyword retrieval,L009,NCT01052350,no_registered_local_site,False,True,False
+Keyword retrieval,A009,NCT01052350,age_below_minimum,False,True,False
+Keyword retrieval,P010,NCT01334749,none,True,True,True
+Keyword retrieval,C010,NCT01334749,condition_mismatch,False,False,True
+Keyword retrieval,L010,NCT01334749,no_registered_local_site,False,True,False
+Keyword retrieval,A010,NCT01334749,age_below_minimum,False,True,False
+Keyword retrieval,P011,NCT01353430,none,True,True,True
+Keyword retrieval,C011,NCT01353430,condition_mismatch,False,False,True
+Keyword retrieval,L011,NCT01353430,no_registered_local_site,False,True,False
+Keyword retrieval,A011,NCT01353430,age_below_minimum,False,True,False
+Keyword retrieval,P012,NCT01453127,none,True,True,True
+Keyword retrieval,C012,NCT01453127,condition_mismatch,False,False,True
+Keyword retrieval,L012,NCT01453127,no_registered_local_site,False,True,False
+Keyword retrieval,A012,NCT01453127,age_below_minimum,False,True,False
+Keyword retrieval,P013,NCT01555411,none,True,True,True
+Keyword retrieval,C013,NCT01555411,condition_mismatch,False,False,True
+Keyword retrieval,L013,NCT01555411,no_registered_local_site,False,True,False
+Keyword retrieval,A013,NCT01555411,age_below_minimum,False,True,False
+Keyword retrieval,P014,NCT01574053,none,True,True,True
+Keyword retrieval,C014,NCT01574053,condition_mismatch,False,False,True
+Keyword retrieval,L014,NCT01574053,no_registered_local_site,False,True,False
+Keyword retrieval,A014,NCT01574053,age_below_minimum,False,True,False
+Keyword retrieval,P015,NCT01606488,none,True,True,True
+Keyword retrieval,C015,NCT01606488,condition_mismatch,False,False,True
+Keyword retrieval,L015,NCT01606488,no_registered_local_site,False,True,False
+Keyword retrieval,A015,NCT01606488,age_below_minimum,False,True,False
+Keyword retrieval,P016,NCT01760005,none,True,True,True
+Keyword retrieval,C016,NCT01760005,condition_mismatch,False,False,True
+Keyword retrieval,L016,NCT01760005,no_registered_local_site,False,True,False
+Keyword retrieval,A016,NCT01760005,age_below_minimum,False,True,False
+Keyword retrieval,P017,NCT01793168,none,True,True,True
+Keyword retrieval,C017,NCT01793168,condition_mismatch,False,True,False
+Keyword retrieval,L017,NCT01793168,no_registered_local_site,False,True,False
+Keyword retrieval,P018,NCT01799915,none,True,True,True
+Keyword retrieval,C018,NCT01799915,condition_mismatch,False,False,True
+Keyword retrieval,L018,NCT01799915,no_registered_local_site,False,True,False
+Keyword retrieval,A018,NCT01799915,age_below_minimum,False,True,False
+Keyword retrieval,P019,NCT01800214,none,True,True,True
+Keyword retrieval,C019,NCT01800214,condition_mismatch,False,False,True
+Keyword retrieval,L019,NCT01800214,no_registered_local_site,False,True,False
+Keyword retrieval,A019,NCT01800214,age_below_minimum,False,True,False
+Keyword retrieval,P020,NCT01818661,none,True,True,True
+Keyword retrieval,C020,NCT01818661,condition_mismatch,False,False,True
+Keyword retrieval,L020,NCT01818661,no_registered_local_site,False,True,False
+Keyword retrieval,A020,NCT01818661,age_below_minimum,False,True,False
+Keyword retrieval,P021,NCT02014246,none,True,True,True
+Keyword retrieval,C021,NCT02014246,condition_mismatch,False,False,True
+Keyword retrieval,L021,NCT02014246,no_registered_local_site,False,True,False
+Keyword retrieval,A021,NCT02014246,age_below_minimum,False,True,False
+Keyword retrieval,P022,NCT02022943,none,True,True,True
+Keyword retrieval,C022,NCT02022943,condition_mismatch,False,False,True
+Keyword retrieval,L022,NCT02022943,no_registered_local_site,False,True,False
+Keyword retrieval,A022,NCT02022943,age_below_minimum,False,True,False
+Keyword retrieval,P023,NCT02099123,none,True,True,True
+Keyword retrieval,C023,NCT02099123,condition_mismatch,False,False,True
+Keyword retrieval,L023,NCT02099123,no_registered_local_site,False,True,False
+Keyword retrieval,A023,NCT02099123,age_below_minimum,False,True,False
+Keyword retrieval,P024,NCT02105844,none,True,True,True
+Keyword retrieval,C024,NCT02105844,condition_mismatch,False,False,True
+Keyword retrieval,L024,NCT02105844,no_registered_local_site,False,True,False
+Keyword retrieval,A024,NCT02105844,age_below_minimum,False,True,False
+Keyword retrieval,P025,NCT02194816,none,True,True,True
+Keyword retrieval,C025,NCT02194816,condition_mismatch,False,False,True
+Keyword retrieval,L025,NCT02194816,no_registered_local_site,False,True,False
+Keyword retrieval,A025,NCT02194816,age_below_minimum,False,True,False
+Keyword retrieval,P026,NCT02252380,none,True,True,True
+Keyword retrieval,C026,NCT02252380,condition_mismatch,False,False,True
+Keyword retrieval,L026,NCT02252380,no_registered_local_site,False,True,False
+Keyword retrieval,A026,NCT02252380,age_below_minimum,False,True,False
+Keyword retrieval,P027,NCT02302482,none,True,True,True
+Keyword retrieval,C027,NCT02302482,condition_mismatch,False,False,True
+Keyword retrieval,L027,NCT02302482,no_registered_local_site,False,True,False
+Keyword retrieval,A027,NCT02302482,age_below_minimum,False,True,False
+Keyword retrieval,P028,NCT02327845,none,True,True,True
+Keyword retrieval,C028,NCT02327845,condition_mismatch,False,False,True
+Keyword retrieval,L028,NCT02327845,no_registered_local_site,False,True,False
+Keyword retrieval,P029,NCT02386670,none,True,True,True
+Keyword retrieval,C029,NCT02386670,condition_mismatch,False,False,True
+Keyword retrieval,L029,NCT02386670,no_registered_local_site,False,True,False
+Keyword retrieval,A029,NCT02386670,age_below_minimum,False,True,False
+Keyword retrieval,P030,NCT02402426,none,True,True,True
+Keyword retrieval,C030,NCT02402426,condition_mismatch,False,False,True
+Keyword retrieval,L030,NCT02402426,no_registered_local_site,False,True,False
+Keyword retrieval,A030,NCT02402426,age_below_minimum,False,True,False
+Keyword retrieval,P031,NCT02414178,none,True,True,True
+Keyword retrieval,C031,NCT02414178,condition_mismatch,False,False,True
+Keyword retrieval,L031,NCT02414178,no_registered_local_site,False,True,False
+Keyword retrieval,A031,NCT02414178,age_below_minimum,False,True,False
+Keyword retrieval,P032,NCT02414347,none,True,True,True
+Keyword retrieval,C032,NCT02414347,condition_mismatch,False,False,True
+Keyword retrieval,L032,NCT02414347,no_registered_local_site,False,True,False
+Keyword retrieval,A032,NCT02414347,age_below_minimum,False,True,False
+Keyword retrieval,P033,NCT02420470,none,True,True,True
+Keyword retrieval,C033,NCT02420470,condition_mismatch,False,False,True
+Keyword retrieval,L033,NCT02420470,no_registered_local_site,False,True,False
+Keyword retrieval,A033,NCT02420470,age_below_minimum,False,True,False
+Keyword retrieval,P034,NCT02434393,none,True,True,True
+Keyword retrieval,C034,NCT02434393,condition_mismatch,False,False,True
+Keyword retrieval,L034,NCT02434393,no_registered_local_site,False,True,False
+Keyword retrieval,A034,NCT02434393,age_below_minimum,False,True,False
+Keyword retrieval,P035,NCT02463708,none,True,True,True
+Keyword retrieval,C035,NCT02463708,condition_mismatch,False,False,True
+Keyword retrieval,L035,NCT02463708,no_registered_local_site,False,True,False
+Keyword retrieval,A035,NCT02463708,age_below_minimum,False,True,False
+Keyword retrieval,P036,NCT02485730,none,True,True,True
+Keyword retrieval,C036,NCT02485730,condition_mismatch,False,False,True
+Keyword retrieval,L036,NCT02485730,no_registered_local_site,False,True,False
+Keyword retrieval,A036,NCT02485730,age_below_minimum,False,True,False
+Keyword retrieval,P037,NCT02564692,none,True,True,True
+Keyword retrieval,C037,NCT02564692,condition_mismatch,False,False,True
+Keyword retrieval,L037,NCT02564692,no_registered_local_site,False,True,False
+Keyword retrieval,A037,NCT02564692,age_below_minimum,False,True,False
+Keyword retrieval,P038,NCT02633111,none,True,True,True
+Keyword retrieval,C038,NCT02633111,condition_mismatch,False,False,True
+Keyword retrieval,L038,NCT02633111,no_registered_local_site,False,True,False
+Keyword retrieval,A038,NCT02633111,age_below_minimum,False,True,False
+Keyword retrieval,P039,NCT02649985,none,True,True,True
+Keyword retrieval,C039,NCT02649985,condition_mismatch,False,False,True
+Keyword retrieval,L039,NCT02649985,no_registered_local_site,False,True,False
+Keyword retrieval,A039,NCT02649985,age_below_minimum,False,True,False
+Keyword retrieval,P040,NCT02670161,none,True,True,True
+Keyword retrieval,C040,NCT02670161,condition_mismatch,False,False,True
+Keyword retrieval,L040,NCT02670161,no_registered_local_site,False,True,False
+Keyword retrieval,A040,NCT02670161,age_below_minimum,False,True,False
+Keyword retrieval,P041,NCT02685969,none,True,True,True
+Keyword retrieval,C041,NCT02685969,condition_mismatch,False,False,True
+Keyword retrieval,L041,NCT02685969,no_registered_local_site,False,True,False
+Keyword retrieval,A041,NCT02685969,age_below_minimum,False,True,False
+Keyword retrieval,P042,NCT02740634,none,True,True,True
+Keyword retrieval,C042,NCT02740634,condition_mismatch,False,False,True
+Keyword retrieval,L042,NCT02740634,no_registered_local_site,False,True,False
+Keyword retrieval,A042,NCT02740634,age_below_minimum,False,True,False
+Keyword retrieval,P043,NCT02763683,none,True,True,True
+Keyword retrieval,C043,NCT02763683,condition_mismatch,False,False,True
+Keyword retrieval,L043,NCT02763683,no_registered_local_site,False,True,False
+Keyword retrieval,A043,NCT02763683,age_below_minimum,False,True,False
+Keyword retrieval,P044,NCT02795052,none,True,True,True
+Keyword retrieval,C044,NCT02795052,condition_mismatch,False,False,True
+Keyword retrieval,L044,NCT02795052,no_registered_local_site,False,True,False
+Keyword retrieval,A044,NCT02795052,age_below_minimum,False,True,False
+Keyword retrieval,P045,NCT02800395,none,True,True,True
+Keyword retrieval,C045,NCT02800395,condition_mismatch,False,False,True
+Keyword retrieval,L045,NCT02800395,no_registered_local_site,False,True,False
+Keyword retrieval,A045,NCT02800395,age_below_minimum,False,True,False
+Keyword retrieval,P046,NCT02811653,none,True,True,True
+Keyword retrieval,C046,NCT02811653,condition_mismatch,False,False,True
+Keyword retrieval,L046,NCT02811653,no_registered_local_site,False,True,False
+Keyword retrieval,A046,NCT02811653,age_below_minimum,False,True,False
+Keyword retrieval,P047,NCT02855476,none,True,True,True
+Keyword retrieval,C047,NCT02855476,condition_mismatch,False,False,True
+Keyword retrieval,L047,NCT02855476,no_registered_local_site,False,True,False
+Keyword retrieval,A047,NCT02855476,age_below_minimum,False,True,False
+Keyword retrieval,P048,NCT02914951,none,True,True,True
+Keyword retrieval,C048,NCT02914951,condition_mismatch,False,False,True
+Keyword retrieval,L048,NCT02914951,no_registered_local_site,False,True,False
+Keyword retrieval,A048,NCT02914951,age_below_minimum,False,True,False
+Keyword retrieval,P049,NCT02939612,none,True,True,True
+Keyword retrieval,C049,NCT02939612,condition_mismatch,False,False,True
+Keyword retrieval,L049,NCT02939612,no_registered_local_site,False,True,False
+Keyword retrieval,A049,NCT02939612,age_below_minimum,False,True,False
+Keyword retrieval,P050,NCT02945774,none,True,True,True
+Keyword retrieval,C050,NCT02945774,condition_mismatch,False,False,True
+Keyword retrieval,L050,NCT02945774,no_registered_local_site,False,True,False
+Keyword retrieval,A050,NCT02945774,age_below_minimum,False,True,False
+Keyword retrieval,P051,NCT02951598,none,True,True,True
+Keyword retrieval,C051,NCT02951598,condition_mismatch,False,False,True
+Keyword retrieval,L051,NCT02951598,no_registered_local_site,False,True,False
+Keyword retrieval,A051,NCT02951598,age_below_minimum,False,True,False
+Keyword retrieval,P052,NCT02958670,none,True,True,True
+Keyword retrieval,C052,NCT02958670,condition_mismatch,False,False,True
+Keyword retrieval,L052,NCT02958670,no_registered_local_site,False,True,False
+Keyword retrieval,A052,NCT02958670,age_below_minimum,False,True,False
+Keyword retrieval,P053,NCT02959502,none,True,True,True
+Keyword retrieval,C053,NCT02959502,condition_mismatch,False,False,True
+Keyword retrieval,L053,NCT02959502,no_registered_local_site,False,True,False
+Keyword retrieval,A053,NCT02959502,age_below_minimum,False,True,False
+Keyword retrieval,P054,NCT02964637,none,True,True,True
+Keyword retrieval,C054,NCT02964637,condition_mismatch,False,False,True
+Keyword retrieval,L054,NCT02964637,no_registered_local_site,False,True,False
+Keyword retrieval,A054,NCT02964637,age_below_minimum,False,True,False
+Keyword retrieval,P055,NCT02967406,none,True,True,True
+Keyword retrieval,C055,NCT02967406,condition_mismatch,False,True,False
+Keyword retrieval,L055,NCT02967406,no_registered_local_site,False,True,False
+Keyword retrieval,A055,NCT02967406,age_below_minimum,False,True,False
+Keyword retrieval,P056,NCT02994719,none,True,True,True
+Keyword retrieval,C056,NCT02994719,condition_mismatch,False,False,True
+Keyword retrieval,L056,NCT02994719,no_registered_local_site,False,True,False
+Keyword retrieval,A056,NCT02994719,age_below_minimum,False,True,False
+Keyword retrieval,P057,NCT03016741,none,True,True,True
+Keyword retrieval,C057,NCT03016741,condition_mismatch,False,False,True
+Keyword retrieval,L057,NCT03016741,no_registered_local_site,False,True,False
+Keyword retrieval,A057,NCT03016741,age_below_minimum,False,True,False
+Keyword retrieval,S057,NCT03016741,sex_mismatch,False,True,False
+Keyword retrieval,P058,NCT03019757,none,True,True,True
+Keyword retrieval,C058,NCT03019757,condition_mismatch,False,False,True
+Keyword retrieval,L058,NCT03019757,no_registered_local_site,False,True,False
+Keyword retrieval,A058,NCT03019757,age_below_minimum,False,True,False
+Keyword retrieval,P059,NCT03020381,none,True,True,True
+Keyword retrieval,C059,NCT03020381,condition_mismatch,False,False,True
+Keyword retrieval,L059,NCT03020381,no_registered_local_site,False,True,False
+Keyword retrieval,A059,NCT03020381,age_below_minimum,False,True,False
+Keyword retrieval,P060,NCT03025334,none,True,True,True
+Keyword retrieval,C060,NCT03025334,condition_mismatch,False,False,True
+Keyword retrieval,L060,NCT03025334,no_registered_local_site,False,True,False
+Keyword retrieval,A060,NCT03025334,age_below_minimum,False,True,False
+Keyword retrieval,P061,NCT03035851,none,True,True,True
+Keyword retrieval,C061,NCT03035851,condition_mismatch,False,False,True
+Keyword retrieval,L061,NCT03035851,no_registered_local_site,False,True,False
+Keyword retrieval,A061,NCT03035851,age_below_minimum,False,True,False
+Keyword retrieval,P062,NCT03047369,none,True,True,True
+Keyword retrieval,C062,NCT03047369,condition_mismatch,False,False,True
+Keyword retrieval,L062,NCT03047369,no_registered_local_site,False,True,False
+Keyword retrieval,P063,NCT03082755,none,True,True,True
+Keyword retrieval,C063,NCT03082755,condition_mismatch,False,False,True
+Keyword retrieval,L063,NCT03082755,no_registered_local_site,False,True,False
+Keyword retrieval,A063,NCT03082755,age_below_minimum,False,True,False
+Keyword retrieval,P064,NCT03089827,none,True,True,True
+Keyword retrieval,C064,NCT03089827,condition_mismatch,False,False,True
+Keyword retrieval,L064,NCT03089827,no_registered_local_site,False,True,False
+Keyword retrieval,A064,NCT03089827,age_below_minimum,False,True,False
+Keyword retrieval,P065,NCT03098459,none,True,True,True
+Keyword retrieval,C065,NCT03098459,condition_mismatch,False,False,True
+Keyword retrieval,L065,NCT03098459,no_registered_local_site,False,True,False
+Keyword retrieval,A065,NCT03098459,age_below_minimum,False,True,False
+Keyword retrieval,P066,NCT03108846,none,True,True,True
+Keyword retrieval,C066,NCT03108846,condition_mismatch,False,False,True
+Keyword retrieval,L066,NCT03108846,no_registered_local_site,False,True,False
+Keyword retrieval,A066,NCT03108846,age_below_minimum,False,True,False
+Keyword retrieval,P067,NCT03113461,none,True,True,True
+Keyword retrieval,C067,NCT03113461,condition_mismatch,False,False,True
+Keyword retrieval,L067,NCT03113461,no_registered_local_site,False,True,False
+Keyword retrieval,A067,NCT03113461,age_below_minimum,False,True,False
+Keyword retrieval,P068,NCT03135327,none,True,True,True
+Keyword retrieval,C068,NCT03135327,condition_mismatch,False,False,True
+Keyword retrieval,L068,NCT03135327,no_registered_local_site,False,True,False
+Keyword retrieval,A068,NCT03135327,age_below_minimum,False,True,False
+Keyword retrieval,P069,NCT03140865,none,True,True,True
+Keyword retrieval,C069,NCT03140865,condition_mismatch,False,False,True
+Keyword retrieval,L069,NCT03140865,no_registered_local_site,False,True,False
+Keyword retrieval,A069,NCT03140865,age_below_minimum,False,True,False
+Keyword retrieval,P070,NCT03147937,none,True,True,True
+Keyword retrieval,C070,NCT03147937,condition_mismatch,False,False,True
+Keyword retrieval,L070,NCT03147937,no_registered_local_site,False,True,False
+Keyword retrieval,A070,NCT03147937,age_below_minimum,False,True,False
+Keyword retrieval,P071,NCT03152630,none,True,True,True
+Keyword retrieval,C071,NCT03152630,condition_mismatch,False,False,True
+Keyword retrieval,L071,NCT03152630,no_registered_local_site,False,True,False
+Keyword retrieval,A071,NCT03152630,age_below_minimum,False,True,False
+Keyword retrieval,P072,NCT03174938,none,True,True,True
+Keyword retrieval,C072,NCT03174938,condition_mismatch,False,False,True
+Keyword retrieval,L072,NCT03174938,no_registered_local_site,False,True,False
+Keyword retrieval,A072,NCT03174938,age_below_minimum,False,True,False
+Keyword retrieval,P073,NCT03208491,none,True,True,True
+Keyword retrieval,C073,NCT03208491,condition_mismatch,False,False,True
+Keyword retrieval,L073,NCT03208491,no_registered_local_site,False,True,False
+Keyword retrieval,A073,NCT03208491,age_below_minimum,False,True,False
+Keyword retrieval,P074,NCT03217396,none,True,True,True
+Keyword retrieval,C074,NCT03217396,condition_mismatch,False,False,True
+Keyword retrieval,L074,NCT03217396,no_registered_local_site,False,True,False
+Keyword retrieval,A074,NCT03217396,age_below_minimum,False,True,False
+Keyword retrieval,P075,NCT03225144,none,True,True,True
+Keyword retrieval,C075,NCT03225144,condition_mismatch,False,False,True
+Keyword retrieval,L075,NCT03225144,no_registered_local_site,False,True,False
+Keyword retrieval,A075,NCT03225144,age_below_minimum,False,True,False
+Keyword retrieval,P076,NCT03233646,none,True,True,True
+Keyword retrieval,C076,NCT03233646,condition_mismatch,False,False,True
+Keyword retrieval,L076,NCT03233646,no_registered_local_site,False,True,False
+Keyword retrieval,A076,NCT03233646,age_below_minimum,False,True,False
+Keyword retrieval,P077,NCT03263247,none,True,True,True
+Keyword retrieval,C077,NCT03263247,condition_mismatch,False,False,True
+Keyword retrieval,L077,NCT03263247,no_registered_local_site,False,True,False
+Keyword retrieval,A077,NCT03263247,age_below_minimum,False,True,False
+Keyword retrieval,P078,NCT03278119,none,True,True,True
+Keyword retrieval,C078,NCT03278119,condition_mismatch,False,False,True
+Keyword retrieval,L078,NCT03278119,no_registered_local_site,False,True,False
+Keyword retrieval,A078,NCT03278119,age_below_minimum,False,True,False
+Keyword retrieval,P079,NCT03313011,none,True,True,True
+Keyword retrieval,C079,NCT03313011,condition_mismatch,False,False,True
+Keyword retrieval,L079,NCT03313011,no_registered_local_site,False,True,False
+Keyword retrieval,A079,NCT03313011,age_below_minimum,False,True,False
+Keyword retrieval,P080,NCT03370224,none,True,True,True
+Keyword retrieval,C080,NCT03370224,condition_mismatch,False,False,True
+Keyword retrieval,L080,NCT03370224,no_registered_local_site,False,True,False
+Keyword retrieval,A080,NCT03370224,age_below_minimum,False,True,False
+Keyword retrieval,P081,NCT03372317,none,True,True,True
+Keyword retrieval,C081,NCT03372317,condition_mismatch,False,False,True
+Keyword retrieval,L081,NCT03372317,no_registered_local_site,False,True,False
+Keyword retrieval,A081,NCT03372317,age_below_minimum,False,True,False
+Keyword retrieval,P082,NCT03382223,none,True,True,True
+Keyword retrieval,C082,NCT03382223,condition_mismatch,False,False,True
+Keyword retrieval,L082,NCT03382223,no_registered_local_site,False,True,False
+Keyword retrieval,A082,NCT03382223,age_below_minimum,False,True,False
+Keyword retrieval,P083,NCT03389100,none,True,True,True
+Keyword retrieval,C083,NCT03389100,condition_mismatch,False,False,True
+Keyword retrieval,L083,NCT03389100,no_registered_local_site,False,True,False
+Keyword retrieval,A083,NCT03389100,age_below_minimum,False,True,False
+Keyword retrieval,P084,NCT03402919,none,True,True,True
+Keyword retrieval,C084,NCT03402919,condition_mismatch,False,False,True
+Keyword retrieval,L084,NCT03402919,no_registered_local_site,False,True,False
+Keyword retrieval,A084,NCT03402919,age_below_minimum,False,True,False
+Keyword retrieval,P085,NCT03434548,none,True,True,True
+Keyword retrieval,C085,NCT03434548,condition_mismatch,False,False,True
+Keyword retrieval,L085,NCT03434548,no_registered_local_site,False,True,False
+Keyword retrieval,A085,NCT03434548,age_below_minimum,False,True,False
+Keyword retrieval,P086,NCT03454646,none,True,True,True
+Keyword retrieval,C086,NCT03454646,condition_mismatch,False,False,True
+Keyword retrieval,L086,NCT03454646,no_registered_local_site,False,True,False
+Keyword retrieval,A086,NCT03454646,age_below_minimum,False,True,False
+Keyword retrieval,P087,NCT03489278,none,True,True,True
+Keyword retrieval,C087,NCT03489278,condition_mismatch,False,False,True
+Keyword retrieval,L087,NCT03489278,no_registered_local_site,False,True,False
+Keyword retrieval,A087,NCT03489278,age_below_minimum,False,True,False
+Keyword retrieval,P088,NCT03493178,none,True,True,True
+Keyword retrieval,C088,NCT03493178,condition_mismatch,False,False,True
+Keyword retrieval,L088,NCT03493178,no_registered_local_site,False,True,False
+Keyword retrieval,A088,NCT03493178,age_below_minimum,False,True,False
+Keyword retrieval,P089,NCT03503331,none,True,True,True
+Keyword retrieval,C089,NCT03503331,condition_mismatch,False,False,True
+Keyword retrieval,L089,NCT03503331,no_registered_local_site,False,True,False
+Keyword retrieval,A089,NCT03503331,age_below_minimum,False,True,False
+Keyword retrieval,P090,NCT03507257,none,True,True,True
+Keyword retrieval,C090,NCT03507257,condition_mismatch,False,False,True
+Keyword retrieval,L090,NCT03507257,no_registered_local_site,False,True,False
+Keyword retrieval,A090,NCT03507257,age_below_minimum,False,True,False
+Keyword retrieval,P091,NCT03527719,none,True,True,True
+Keyword retrieval,C091,NCT03527719,condition_mismatch,False,False,True
+Keyword retrieval,L091,NCT03527719,no_registered_local_site,False,True,False
+Keyword retrieval,A091,NCT03527719,age_below_minimum,False,True,False
+Keyword retrieval,P092,NCT03552926,none,True,True,True
+Keyword retrieval,C092,NCT03552926,condition_mismatch,False,False,True
+Keyword retrieval,L092,NCT03552926,no_registered_local_site,False,True,False
+Keyword retrieval,A092,NCT03552926,age_below_minimum,False,True,False
+Keyword retrieval,P093,NCT03556280,none,True,True,True
+Keyword retrieval,C093,NCT03556280,condition_mismatch,False,False,True
+Keyword retrieval,L093,NCT03556280,no_registered_local_site,False,True,False
+Keyword retrieval,A093,NCT03556280,age_below_minimum,False,True,False
+Keyword retrieval,P094,NCT03560960,none,True,True,True
+Keyword retrieval,C094,NCT03560960,condition_mismatch,False,False,True
+Keyword retrieval,L094,NCT03560960,no_registered_local_site,False,True,False
+Keyword retrieval,A094,NCT03560960,age_below_minimum,False,True,False
+Keyword retrieval,P095,NCT03574207,none,True,True,True
+Keyword retrieval,C095,NCT03574207,condition_mismatch,False,False,True
+Keyword retrieval,L095,NCT03574207,no_registered_local_site,False,True,False
+Keyword retrieval,A095,NCT03574207,age_below_minimum,False,True,False
+Keyword retrieval,P096,NCT03582488,none,True,True,True
+Keyword retrieval,C096,NCT03582488,condition_mismatch,False,False,True
+Keyword retrieval,L096,NCT03582488,no_registered_local_site,False,True,False
+Keyword retrieval,A096,NCT03582488,age_below_minimum,False,True,False
+Keyword retrieval,P097,NCT03592563,none,True,True,True
+Keyword retrieval,C097,NCT03592563,condition_mismatch,False,False,True
+Keyword retrieval,L097,NCT03592563,no_registered_local_site,False,True,False
+Keyword retrieval,A097,NCT03592563,age_below_minimum,False,True,False
+Keyword retrieval,P098,NCT03614962,none,True,True,True
+Keyword retrieval,C098,NCT03614962,condition_mismatch,False,False,True
+Keyword retrieval,L098,NCT03614962,no_registered_local_site,False,True,False
+Keyword retrieval,A098,NCT03614962,age_below_minimum,False,True,False
+Keyword retrieval,P099,NCT03618186,none,True,True,True
+Keyword retrieval,C099,NCT03618186,condition_mismatch,False,False,True
+Keyword retrieval,L099,NCT03618186,no_registered_local_site,False,True,False
+Keyword retrieval,A099,NCT03618186,age_below_minimum,False,True,False
+Keyword retrieval,P100,NCT03621839,none,True,True,True
+Keyword retrieval,C100,NCT03621839,condition_mismatch,False,False,True
+Keyword retrieval,L100,NCT03621839,no_registered_local_site,False,True,False
+Keyword retrieval,P101,NCT03623672,none,True,True,True
+Keyword retrieval,C101,NCT03623672,condition_mismatch,False,False,True
+Keyword retrieval,L101,NCT03623672,no_registered_local_site,False,True,False
+Keyword retrieval,A101,NCT03623672,age_below_minimum,False,True,False
+Keyword retrieval,P102,NCT03638583,none,True,True,True
+Keyword retrieval,C102,NCT03638583,condition_mismatch,False,False,True
+Keyword retrieval,L102,NCT03638583,no_registered_local_site,False,True,False
+Keyword retrieval,A102,NCT03638583,age_below_minimum,False,True,False
+Keyword retrieval,P103,NCT03649724,none,True,True,True
+Keyword retrieval,C103,NCT03649724,condition_mismatch,False,False,True
+Keyword retrieval,L103,NCT03649724,no_registered_local_site,False,True,False
+Keyword retrieval,A103,NCT03649724,age_below_minimum,False,True,False
+Keyword retrieval,S103,NCT03649724,sex_mismatch,False,True,False
+Keyword retrieval,P104,NCT03653156,none,True,True,True
+Keyword retrieval,C104,NCT03653156,condition_mismatch,False,False,True
+Keyword retrieval,L104,NCT03653156,no_registered_local_site,False,True,False
+Keyword retrieval,A104,NCT03653156,age_below_minimum,False,True,False
+Keyword retrieval,P105,NCT03657732,none,True,True,True
+Keyword retrieval,C105,NCT03657732,condition_mismatch,False,False,True
+Keyword retrieval,L105,NCT03657732,no_registered_local_site,False,True,False
+Keyword retrieval,A105,NCT03657732,age_below_minimum,False,True,False
+Keyword retrieval,P106,NCT03657745,none,True,True,True
+Keyword retrieval,C106,NCT03657745,condition_mismatch,False,False,True
+Keyword retrieval,L106,NCT03657745,no_registered_local_site,False,True,False
+Keyword retrieval,A106,NCT03657745,age_below_minimum,False,True,False
+Keyword retrieval,P107,NCT03665831,none,True,True,True
+Keyword retrieval,C107,NCT03665831,condition_mismatch,False,False,True
+Keyword retrieval,L107,NCT03665831,no_registered_local_site,False,True,False
+Keyword retrieval,A107,NCT03665831,age_below_minimum,False,True,False
+Keyword retrieval,P108,NCT03671889,none,True,True,True
+Keyword retrieval,C108,NCT03671889,condition_mismatch,False,False,True
+Keyword retrieval,L108,NCT03671889,no_registered_local_site,False,True,False
+Keyword retrieval,A108,NCT03671889,age_below_minimum,False,True,False
+Keyword retrieval,P109,NCT03672201,none,True,True,True
+Keyword retrieval,C109,NCT03672201,condition_mismatch,False,False,True
+Keyword retrieval,L109,NCT03672201,no_registered_local_site,False,True,False
+Keyword retrieval,A109,NCT03672201,age_below_minimum,False,True,False
+Keyword retrieval,P110,NCT03687710,none,True,True,True
+Keyword retrieval,C110,NCT03687710,condition_mismatch,False,False,True
+Keyword retrieval,L110,NCT03687710,no_registered_local_site,False,True,False
+Keyword retrieval,A110,NCT03687710,age_below_minimum,False,True,False
+Keyword retrieval,P111,NCT03702907,none,True,True,True
+Keyword retrieval,C111,NCT03702907,condition_mismatch,False,False,True
+Keyword retrieval,L111,NCT03702907,no_registered_local_site,False,True,False
+Keyword retrieval,A111,NCT03702907,age_below_minimum,False,True,False
+Keyword retrieval,P112,NCT03705104,none,True,True,True
+Keyword retrieval,C112,NCT03705104,condition_mismatch,False,False,True
+Keyword retrieval,L112,NCT03705104,no_registered_local_site,False,True,False
+Keyword retrieval,A112,NCT03705104,age_below_minimum,False,True,False
+Keyword retrieval,P113,NCT03750409,none,True,True,True
+Keyword retrieval,C113,NCT03750409,condition_mismatch,False,False,True
+Keyword retrieval,L113,NCT03750409,no_registered_local_site,False,True,False
+Keyword retrieval,A113,NCT03750409,age_below_minimum,False,True,False
+Keyword retrieval,P114,NCT03754725,none,True,True,True
+Keyword retrieval,C114,NCT03754725,condition_mismatch,False,False,True
+Keyword retrieval,L114,NCT03754725,no_registered_local_site,False,True,False
+Keyword retrieval,A114,NCT03754725,age_below_minimum,False,True,False
+Keyword retrieval,P115,NCT03761381,none,True,True,True
+Keyword retrieval,C115,NCT03761381,condition_mismatch,False,False,True
+Keyword retrieval,L115,NCT03761381,no_registered_local_site,False,True,False
+Keyword retrieval,A115,NCT03761381,age_below_minimum,False,True,False
+Keyword retrieval,P116,NCT03772977,none,True,True,True
+Keyword retrieval,C116,NCT03772977,condition_mismatch,False,False,True
+Keyword retrieval,L116,NCT03772977,no_registered_local_site,False,True,False
+Keyword retrieval,A116,NCT03772977,age_below_minimum,False,True,False
+Keyword retrieval,P117,NCT03799991,none,True,True,True
+Keyword retrieval,C117,NCT03799991,condition_mismatch,False,False,True
+Keyword retrieval,L117,NCT03799991,no_registered_local_site,False,True,False
+Keyword retrieval,A117,NCT03799991,age_below_minimum,False,True,False
+Keyword retrieval,P118,NCT03804229,none,True,True,True
+Keyword retrieval,C118,NCT03804229,condition_mismatch,False,False,True
+Keyword retrieval,L118,NCT03804229,no_registered_local_site,False,True,False
+Keyword retrieval,A118,NCT03804229,age_below_minimum,False,True,False
+Keyword retrieval,P119,NCT03809351,none,True,True,True
+Keyword retrieval,C119,NCT03809351,condition_mismatch,False,False,True
+Keyword retrieval,L119,NCT03809351,no_registered_local_site,False,True,False
+Keyword retrieval,A119,NCT03809351,age_below_minimum,False,True,False
+Structured filters,P000,NCT00051324,none,True,True,True
+Structured filters,C000,NCT00051324,condition_mismatch,False,False,True
+Structured filters,L000,NCT00051324,no_registered_local_site,False,True,False
+Structured filters,A000,NCT00051324,age_below_minimum,False,False,True
+Structured filters,P001,NCT00064870,none,True,True,True
+Structured filters,C001,NCT00064870,condition_mismatch,False,False,True
+Structured filters,L001,NCT00064870,no_registered_local_site,False,True,False
+Structured filters,A001,NCT00064870,age_below_minimum,False,False,True
+Structured filters,P002,NCT00317616,none,True,True,True
+Structured filters,C002,NCT00317616,condition_mismatch,False,False,True
+Structured filters,L002,NCT00317616,no_registered_local_site,False,True,False
+Structured filters,A002,NCT00317616,age_below_minimum,False,False,True
+Structured filters,P003,NCT00392795,none,True,True,True
+Structured filters,C003,NCT00392795,condition_mismatch,False,False,True
+Structured filters,L003,NCT00392795,no_registered_local_site,False,True,False
+Structured filters,A003,NCT00392795,age_below_minimum,False,False,True
+Structured filters,P004,NCT00537004,none,True,True,True
+Structured filters,C004,NCT00537004,condition_mismatch,False,False,True
+Structured filters,L004,NCT00537004,no_registered_local_site,False,True,False
+Structured filters,P005,NCT00585572,none,True,True,True
+Structured filters,C005,NCT00585572,condition_mismatch,False,False,True
+Structured filters,L005,NCT00585572,no_registered_local_site,False,True,False
+Structured filters,A005,NCT00585572,age_below_minimum,False,False,True
+Structured filters,P006,NCT00869817,none,True,True,True
+Structured filters,C006,NCT00869817,condition_mismatch,False,False,True
+Structured filters,L006,NCT00869817,no_registered_local_site,False,True,False
+Structured filters,A006,NCT00869817,age_below_minimum,False,False,True
+Structured filters,P007,NCT00874783,none,True,True,True
+Structured filters,C007,NCT00874783,condition_mismatch,False,False,True
+Structured filters,L007,NCT00874783,no_registered_local_site,False,True,False
+Structured filters,A007,NCT00874783,age_below_minimum,False,False,True
+Structured filters,P008,NCT00950430,none,True,True,True
+Structured filters,C008,NCT00950430,condition_mismatch,False,False,True
+Structured filters,L008,NCT00950430,no_registered_local_site,False,True,False
+Structured filters,A008,NCT00950430,age_below_minimum,False,False,True
+Structured filters,P009,NCT01052350,none,True,True,True
+Structured filters,C009,NCT01052350,condition_mismatch,False,False,True
+Structured filters,L009,NCT01052350,no_registered_local_site,False,True,False
+Structured filters,A009,NCT01052350,age_below_minimum,False,False,True
+Structured filters,P010,NCT01334749,none,True,True,True
+Structured filters,C010,NCT01334749,condition_mismatch,False,False,True
+Structured filters,L010,NCT01334749,no_registered_local_site,False,True,False
+Structured filters,A010,NCT01334749,age_below_minimum,False,False,True
+Structured filters,P011,NCT01353430,none,True,True,True
+Structured filters,C011,NCT01353430,condition_mismatch,False,False,True
+Structured filters,L011,NCT01353430,no_registered_local_site,False,True,False
+Structured filters,A011,NCT01353430,age_below_minimum,False,False,True
+Structured filters,P012,NCT01453127,none,True,True,True
+Structured filters,C012,NCT01453127,condition_mismatch,False,False,True
+Structured filters,L012,NCT01453127,no_registered_local_site,False,True,False
+Structured filters,A012,NCT01453127,age_below_minimum,False,False,True
+Structured filters,P013,NCT01555411,none,True,True,True
+Structured filters,C013,NCT01555411,condition_mismatch,False,False,True
+Structured filters,L013,NCT01555411,no_registered_local_site,False,True,False
+Structured filters,A013,NCT01555411,age_below_minimum,False,False,True
+Structured filters,P014,NCT01574053,none,True,True,True
+Structured filters,C014,NCT01574053,condition_mismatch,False,False,True
+Structured filters,L014,NCT01574053,no_registered_local_site,False,True,False
+Structured filters,A014,NCT01574053,age_below_minimum,False,False,True
+Structured filters,P015,NCT01606488,none,True,True,True
+Structured filters,C015,NCT01606488,condition_mismatch,False,False,True
+Structured filters,L015,NCT01606488,no_registered_local_site,False,True,False
+Structured filters,A015,NCT01606488,age_below_minimum,False,False,True
+Structured filters,P016,NCT01760005,none,True,True,True
+Structured filters,C016,NCT01760005,condition_mismatch,False,False,True
+Structured filters,L016,NCT01760005,no_registered_local_site,False,True,False
+Structured filters,A016,NCT01760005,age_below_minimum,False,False,True
+Structured filters,P017,NCT01793168,none,True,True,True
+Structured filters,C017,NCT01793168,condition_mismatch,False,True,False
+Structured filters,L017,NCT01793168,no_registered_local_site,False,True,False
+Structured filters,P018,NCT01799915,none,True,True,True
+Structured filters,C018,NCT01799915,condition_mismatch,False,False,True
+Structured filters,L018,NCT01799915,no_registered_local_site,False,True,False
+Structured filters,A018,NCT01799915,age_below_minimum,False,False,True
+Structured filters,P019,NCT01800214,none,True,True,True
+Structured filters,C019,NCT01800214,condition_mismatch,False,False,True
+Structured filters,L019,NCT01800214,no_registered_local_site,False,True,False
+Structured filters,A019,NCT01800214,age_below_minimum,False,False,True
+Structured filters,P020,NCT01818661,none,True,True,True
+Structured filters,C020,NCT01818661,condition_mismatch,False,False,True
+Structured filters,L020,NCT01818661,no_registered_local_site,False,True,False
+Structured filters,A020,NCT01818661,age_below_minimum,False,False,True
+Structured filters,P021,NCT02014246,none,True,True,True
+Structured filters,C021,NCT02014246,condition_mismatch,False,False,True
+Structured filters,L021,NCT02014246,no_registered_local_site,False,True,False
+Structured filters,A021,NCT02014246,age_below_minimum,False,False,True
+Structured filters,P022,NCT02022943,none,True,True,True
+Structured filters,C022,NCT02022943,condition_mismatch,False,False,True
+Structured filters,L022,NCT02022943,no_registered_local_site,False,True,False
+Structured filters,A022,NCT02022943,age_below_minimum,False,False,True
+Structured filters,P023,NCT02099123,none,True,True,True
+Structured filters,C023,NCT02099123,condition_mismatch,False,False,True
+Structured filters,L023,NCT02099123,no_registered_local_site,False,True,False
+Structured filters,A023,NCT02099123,age_below_minimum,False,False,True
+Structured filters,P024,NCT02105844,none,True,True,True
+Structured filters,C024,NCT02105844,condition_mismatch,False,False,True
+Structured filters,L024,NCT02105844,no_registered_local_site,False,True,False
+Structured filters,A024,NCT02105844,age_below_minimum,False,False,True
+Structured filters,P025,NCT02194816,none,True,True,True
+Structured filters,C025,NCT02194816,condition_mismatch,False,False,True
+Structured filters,L025,NCT02194816,no_registered_local_site,False,True,False
+Structured filters,A025,NCT02194816,age_below_minimum,False,False,True
+Structured filters,P026,NCT02252380,none,True,True,True
+Structured filters,C026,NCT02252380,condition_mismatch,False,False,True
+Structured filters,L026,NCT02252380,no_registered_local_site,False,True,False
+Structured filters,A026,NCT02252380,age_below_minimum,False,False,True
+Structured filters,P027,NCT02302482,none,True,True,True
+Structured filters,C027,NCT02302482,condition_mismatch,False,False,True
+Structured filters,L027,NCT02302482,no_registered_local_site,False,True,False
+Structured filters,A027,NCT02302482,age_below_minimum,False,False,True
+Structured filters,P028,NCT02327845,none,True,True,True
+Structured filters,C028,NCT02327845,condition_mismatch,False,False,True
+Structured filters,L028,NCT02327845,no_registered_local_site,False,True,False
+Structured filters,P029,NCT02386670,none,True,True,True
+Structured filters,C029,NCT02386670,condition_mismatch,False,False,True
+Structured filters,L029,NCT02386670,no_registered_local_site,False,True,False
+Structured filters,A029,NCT02386670,age_below_minimum,False,False,True
+Structured filters,P030,NCT02402426,none,True,True,True
+Structured filters,C030,NCT02402426,condition_mismatch,False,False,True
+Structured filters,L030,NCT02402426,no_registered_local_site,False,True,False
+Structured filters,A030,NCT02402426,age_below_minimum,False,False,True
+Structured filters,P031,NCT02414178,none,True,True,True
+Structured filters,C031,NCT02414178,condition_mismatch,False,False,True
+Structured filters,L031,NCT02414178,no_registered_local_site,False,True,False
+Structured filters,A031,NCT02414178,age_below_minimum,False,False,True
+Structured filters,P032,NCT02414347,none,True,True,True
+Structured filters,C032,NCT02414347,condition_mismatch,False,False,True
+Structured filters,L032,NCT02414347,no_registered_local_site,False,True,False
+Structured filters,A032,NCT02414347,age_below_minimum,False,False,True
+Structured filters,P033,NCT02420470,none,True,True,True
+Structured filters,C033,NCT02420470,condition_mismatch,False,False,True
+Structured filters,L033,NCT02420470,no_registered_local_site,False,True,False
+Structured filters,A033,NCT02420470,age_below_minimum,False,False,True
+Structured filters,P034,NCT02434393,none,True,True,True
+Structured filters,C034,NCT02434393,condition_mismatch,False,False,True
+Structured filters,L034,NCT02434393,no_registered_local_site,False,True,False
+Structured filters,A034,NCT02434393,age_below_minimum,False,False,True
+Structured filters,P035,NCT02463708,none,True,True,True
+Structured filters,C035,NCT02463708,condition_mismatch,False,False,True
+Structured filters,L035,NCT02463708,no_registered_local_site,False,True,False
+Structured filters,A035,NCT02463708,age_below_minimum,False,False,True
+Structured filters,P036,NCT02485730,none,True,True,True
+Structured filters,C036,NCT02485730,condition_mismatch,False,False,True
+Structured filters,L036,NCT02485730,no_registered_local_site,False,True,False
+Structured filters,A036,NCT02485730,age_below_minimum,False,False,True
+Structured filters,P037,NCT02564692,none,True,True,True
+Structured filters,C037,NCT02564692,condition_mismatch,False,False,True
+Structured filters,L037,NCT02564692,no_registered_local_site,False,True,False
+Structured filters,A037,NCT02564692,age_below_minimum,False,False,True
+Structured filters,P038,NCT02633111,none,True,True,True
+Structured filters,C038,NCT02633111,condition_mismatch,False,False,True
+Structured filters,L038,NCT02633111,no_registered_local_site,False,True,False
+Structured filters,A038,NCT02633111,age_below_minimum,False,False,True
+Structured filters,P039,NCT02649985,none,True,True,True
+Structured filters,C039,NCT02649985,condition_mismatch,False,False,True
+Structured filters,L039,NCT02649985,no_registered_local_site,False,True,False
+Structured filters,A039,NCT02649985,age_below_minimum,False,False,True
+Structured filters,P040,NCT02670161,none,True,True,True
+Structured filters,C040,NCT02670161,condition_mismatch,False,False,True
+Structured filters,L040,NCT02670161,no_registered_local_site,False,True,False
+Structured filters,A040,NCT02670161,age_below_minimum,False,False,True
+Structured filters,P041,NCT02685969,none,True,True,True
+Structured filters,C041,NCT02685969,condition_mismatch,False,False,True
+Structured filters,L041,NCT02685969,no_registered_local_site,False,True,False
+Structured filters,A041,NCT02685969,age_below_minimum,False,False,True
+Structured filters,P042,NCT02740634,none,True,True,True
+Structured filters,C042,NCT02740634,condition_mismatch,False,False,True
+Structured filters,L042,NCT02740634,no_registered_local_site,False,True,False
+Structured filters,A042,NCT02740634,age_below_minimum,False,False,True
+Structured filters,P043,NCT02763683,none,True,True,True
+Structured filters,C043,NCT02763683,condition_mismatch,False,False,True
+Structured filters,L043,NCT02763683,no_registered_local_site,False,True,False
+Structured filters,A043,NCT02763683,age_below_minimum,False,False,True
+Structured filters,P044,NCT02795052,none,True,True,True
+Structured filters,C044,NCT02795052,condition_mismatch,False,False,True
+Structured filters,L044,NCT02795052,no_registered_local_site,False,True,False
+Structured filters,A044,NCT02795052,age_below_minimum,False,False,True
+Structured filters,P045,NCT02800395,none,True,True,True
+Structured filters,C045,NCT02800395,condition_mismatch,False,False,True
+Structured filters,L045,NCT02800395,no_registered_local_site,False,True,False
+Structured filters,A045,NCT02800395,age_below_minimum,False,False,True
+Structured filters,P046,NCT02811653,none,True,True,True
+Structured filters,C046,NCT02811653,condition_mismatch,False,False,True
+Structured filters,L046,NCT02811653,no_registered_local_site,False,True,False
+Structured filters,A046,NCT02811653,age_below_minimum,False,False,True
+Structured filters,P047,NCT02855476,none,True,True,True
+Structured filters,C047,NCT02855476,condition_mismatch,False,False,True
+Structured filters,L047,NCT02855476,no_registered_local_site,False,True,False
+Structured filters,A047,NCT02855476,age_below_minimum,False,False,True
+Structured filters,P048,NCT02914951,none,True,True,True
+Structured filters,C048,NCT02914951,condition_mismatch,False,False,True
+Structured filters,L048,NCT02914951,no_registered_local_site,False,True,False
+Structured filters,A048,NCT02914951,age_below_minimum,False,False,True
+Structured filters,P049,NCT02939612,none,True,True,True
+Structured filters,C049,NCT02939612,condition_mismatch,False,False,True
+Structured filters,L049,NCT02939612,no_registered_local_site,False,True,False
+Structured filters,A049,NCT02939612,age_below_minimum,False,False,True
+Structured filters,P050,NCT02945774,none,True,True,True
+Structured filters,C050,NCT02945774,condition_mismatch,False,False,True
+Structured filters,L050,NCT02945774,no_registered_local_site,False,True,False
+Structured filters,A050,NCT02945774,age_below_minimum,False,False,True
+Structured filters,P051,NCT02951598,none,True,True,True
+Structured filters,C051,NCT02951598,condition_mismatch,False,False,True
+Structured filters,L051,NCT02951598,no_registered_local_site,False,True,False
+Structured filters,A051,NCT02951598,age_below_minimum,False,False,True
+Structured filters,P052,NCT02958670,none,True,True,True
+Structured filters,C052,NCT02958670,condition_mismatch,False,False,True
+Structured filters,L052,NCT02958670,no_registered_local_site,False,True,False
+Structured filters,A052,NCT02958670,age_below_minimum,False,False,True
+Structured filters,P053,NCT02959502,none,True,True,True
+Structured filters,C053,NCT02959502,condition_mismatch,False,False,True
+Structured filters,L053,NCT02959502,no_registered_local_site,False,True,False
+Structured filters,A053,NCT02959502,age_below_minimum,False,False,True
+Structured filters,P054,NCT02964637,none,True,True,True
+Structured filters,C054,NCT02964637,condition_mismatch,False,False,True
+Structured filters,L054,NCT02964637,no_registered_local_site,False,True,False
+Structured filters,A054,NCT02964637,age_below_minimum,False,False,True
+Structured filters,P055,NCT02967406,none,True,True,True
+Structured filters,C055,NCT02967406,condition_mismatch,False,True,False
+Structured filters,L055,NCT02967406,no_registered_local_site,False,True,False
+Structured filters,A055,NCT02967406,age_below_minimum,False,False,True
+Structured filters,P056,NCT02994719,none,True,True,True
+Structured filters,C056,NCT02994719,condition_mismatch,False,False,True
+Structured filters,L056,NCT02994719,no_registered_local_site,False,True,False
+Structured filters,A056,NCT02994719,age_below_minimum,False,False,True
+Structured filters,P057,NCT03016741,none,True,True,True
+Structured filters,C057,NCT03016741,condition_mismatch,False,False,True
+Structured filters,L057,NCT03016741,no_registered_local_site,False,True,False
+Structured filters,A057,NCT03016741,age_below_minimum,False,False,True
+Structured filters,S057,NCT03016741,sex_mismatch,False,True,False
+Structured filters,P058,NCT03019757,none,True,True,True
+Structured filters,C058,NCT03019757,condition_mismatch,False,False,True
+Structured filters,L058,NCT03019757,no_registered_local_site,False,True,False
+Structured filters,A058,NCT03019757,age_below_minimum,False,False,True
+Structured filters,P059,NCT03020381,none,True,True,True
+Structured filters,C059,NCT03020381,condition_mismatch,False,False,True
+Structured filters,L059,NCT03020381,no_registered_local_site,False,True,False
+Structured filters,A059,NCT03020381,age_below_minimum,False,False,True
+Structured filters,P060,NCT03025334,none,True,True,True
+Structured filters,C060,NCT03025334,condition_mismatch,False,False,True
+Structured filters,L060,NCT03025334,no_registered_local_site,False,True,False
+Structured filters,A060,NCT03025334,age_below_minimum,False,False,True
+Structured filters,P061,NCT03035851,none,True,True,True
+Structured filters,C061,NCT03035851,condition_mismatch,False,False,True
+Structured filters,L061,NCT03035851,no_registered_local_site,False,True,False
+Structured filters,A061,NCT03035851,age_below_minimum,False,False,True
+Structured filters,P062,NCT03047369,none,True,True,True
+Structured filters,C062,NCT03047369,condition_mismatch,False,False,True
+Structured filters,L062,NCT03047369,no_registered_local_site,False,True,False
+Structured filters,P063,NCT03082755,none,True,True,True
+Structured filters,C063,NCT03082755,condition_mismatch,False,False,True
+Structured filters,L063,NCT03082755,no_registered_local_site,False,True,False
+Structured filters,A063,NCT03082755,age_below_minimum,False,False,True
+Structured filters,P064,NCT03089827,none,True,True,True
+Structured filters,C064,NCT03089827,condition_mismatch,False,False,True
+Structured filters,L064,NCT03089827,no_registered_local_site,False,True,False
+Structured filters,A064,NCT03089827,age_below_minimum,False,False,True
+Structured filters,P065,NCT03098459,none,True,True,True
+Structured filters,C065,NCT03098459,condition_mismatch,False,False,True
+Structured filters,L065,NCT03098459,no_registered_local_site,False,True,False
+Structured filters,A065,NCT03098459,age_below_minimum,False,False,True
+Structured filters,P066,NCT03108846,none,True,True,True
+Structured filters,C066,NCT03108846,condition_mismatch,False,False,True
+Structured filters,L066,NCT03108846,no_registered_local_site,False,True,False
+Structured filters,A066,NCT03108846,age_below_minimum,False,False,True
+Structured filters,P067,NCT03113461,none,True,True,True
+Structured filters,C067,NCT03113461,condition_mismatch,False,False,True
+Structured filters,L067,NCT03113461,no_registered_local_site,False,True,False
+Structured filters,A067,NCT03113461,age_below_minimum,False,False,True
+Structured filters,P068,NCT03135327,none,True,True,True
+Structured filters,C068,NCT03135327,condition_mismatch,False,False,True
+Structured filters,L068,NCT03135327,no_registered_local_site,False,True,False
+Structured filters,A068,NCT03135327,age_below_minimum,False,False,True
+Structured filters,P069,NCT03140865,none,True,True,True
+Structured filters,C069,NCT03140865,condition_mismatch,False,False,True
+Structured filters,L069,NCT03140865,no_registered_local_site,False,True,False
+Structured filters,A069,NCT03140865,age_below_minimum,False,False,True
+Structured filters,P070,NCT03147937,none,True,True,True
+Structured filters,C070,NCT03147937,condition_mismatch,False,False,True
+Structured filters,L070,NCT03147937,no_registered_local_site,False,True,False
+Structured filters,A070,NCT03147937,age_below_minimum,False,False,True
+Structured filters,P071,NCT03152630,none,True,True,True
+Structured filters,C071,NCT03152630,condition_mismatch,False,False,True
+Structured filters,L071,NCT03152630,no_registered_local_site,False,True,False
+Structured filters,A071,NCT03152630,age_below_minimum,False,False,True
+Structured filters,P072,NCT03174938,none,True,True,True
+Structured filters,C072,NCT03174938,condition_mismatch,False,False,True
+Structured filters,L072,NCT03174938,no_registered_local_site,False,True,False
+Structured filters,A072,NCT03174938,age_below_minimum,False,False,True
+Structured filters,P073,NCT03208491,none,True,True,True
+Structured filters,C073,NCT03208491,condition_mismatch,False,False,True
+Structured filters,L073,NCT03208491,no_registered_local_site,False,True,False
+Structured filters,A073,NCT03208491,age_below_minimum,False,False,True
+Structured filters,P074,NCT03217396,none,True,True,True
+Structured filters,C074,NCT03217396,condition_mismatch,False,False,True
+Structured filters,L074,NCT03217396,no_registered_local_site,False,True,False
+Structured filters,A074,NCT03217396,age_below_minimum,False,False,True
+Structured filters,P075,NCT03225144,none,True,True,True
+Structured filters,C075,NCT03225144,condition_mismatch,False,False,True
+Structured filters,L075,NCT03225144,no_registered_local_site,False,True,False
+Structured filters,A075,NCT03225144,age_below_minimum,False,False,True
+Structured filters,P076,NCT03233646,none,True,True,True
+Structured filters,C076,NCT03233646,condition_mismatch,False,False,True
+Structured filters,L076,NCT03233646,no_registered_local_site,False,True,False
+Structured filters,A076,NCT03233646,age_below_minimum,False,False,True
+Structured filters,P077,NCT03263247,none,True,True,True
+Structured filters,C077,NCT03263247,condition_mismatch,False,False,True
+Structured filters,L077,NCT03263247,no_registered_local_site,False,True,False
+Structured filters,A077,NCT03263247,age_below_minimum,False,False,True
+Structured filters,P078,NCT03278119,none,True,True,True
+Structured filters,C078,NCT03278119,condition_mismatch,False,False,True
+Structured filters,L078,NCT03278119,no_registered_local_site,False,True,False
+Structured filters,A078,NCT03278119,age_below_minimum,False,False,True
+Structured filters,P079,NCT03313011,none,True,True,True
+Structured filters,C079,NCT03313011,condition_mismatch,False,False,True
+Structured filters,L079,NCT03313011,no_registered_local_site,False,True,False
+Structured filters,A079,NCT03313011,age_below_minimum,False,False,True
+Structured filters,P080,NCT03370224,none,True,True,True
+Structured filters,C080,NCT03370224,condition_mismatch,False,False,True
+Structured filters,L080,NCT03370224,no_registered_local_site,False,True,False
+Structured filters,A080,NCT03370224,age_below_minimum,False,False,True
+Structured filters,P081,NCT03372317,none,True,True,True
+Structured filters,C081,NCT03372317,condition_mismatch,False,False,True
+Structured filters,L081,NCT03372317,no_registered_local_site,False,True,False
+Structured filters,A081,NCT03372317,age_below_minimum,False,False,True
+Structured filters,P082,NCT03382223,none,True,True,True
+Structured filters,C082,NCT03382223,condition_mismatch,False,False,True
+Structured filters,L082,NCT03382223,no_registered_local_site,False,True,False
+Structured filters,A082,NCT03382223,age_below_minimum,False,False,True
+Structured filters,P083,NCT03389100,none,True,True,True
+Structured filters,C083,NCT03389100,condition_mismatch,False,False,True
+Structured filters,L083,NCT03389100,no_registered_local_site,False,True,False
+Structured filters,A083,NCT03389100,age_below_minimum,False,False,True
+Structured filters,P084,NCT03402919,none,True,True,True
+Structured filters,C084,NCT03402919,condition_mismatch,False,False,True
+Structured filters,L084,NCT03402919,no_registered_local_site,False,True,False
+Structured filters,A084,NCT03402919,age_below_minimum,False,False,True
+Structured filters,P085,NCT03434548,none,True,True,True
+Structured filters,C085,NCT03434548,condition_mismatch,False,False,True
+Structured filters,L085,NCT03434548,no_registered_local_site,False,True,False
+Structured filters,A085,NCT03434548,age_below_minimum,False,False,True
+Structured filters,P086,NCT03454646,none,True,True,True
+Structured filters,C086,NCT03454646,condition_mismatch,False,False,True
+Structured filters,L086,NCT03454646,no_registered_local_site,False,True,False
+Structured filters,A086,NCT03454646,age_below_minimum,False,False,True
+Structured filters,P087,NCT03489278,none,True,True,True
+Structured filters,C087,NCT03489278,condition_mismatch,False,False,True
+Structured filters,L087,NCT03489278,no_registered_local_site,False,True,False
+Structured filters,A087,NCT03489278,age_below_minimum,False,False,True
+Structured filters,P088,NCT03493178,none,True,True,True
+Structured filters,C088,NCT03493178,condition_mismatch,False,False,True
+Structured filters,L088,NCT03493178,no_registered_local_site,False,True,False
+Structured filters,A088,NCT03493178,age_below_minimum,False,False,True
+Structured filters,P089,NCT03503331,none,True,True,True
+Structured filters,C089,NCT03503331,condition_mismatch,False,False,True
+Structured filters,L089,NCT03503331,no_registered_local_site,False,True,False
+Structured filters,A089,NCT03503331,age_below_minimum,False,False,True
+Structured filters,P090,NCT03507257,none,True,True,True
+Structured filters,C090,NCT03507257,condition_mismatch,False,False,True
+Structured filters,L090,NCT03507257,no_registered_local_site,False,True,False
+Structured filters,A090,NCT03507257,age_below_minimum,False,False,True
+Structured filters,P091,NCT03527719,none,True,True,True
+Structured filters,C091,NCT03527719,condition_mismatch,False,False,True
+Structured filters,L091,NCT03527719,no_registered_local_site,False,True,False
+Structured filters,A091,NCT03527719,age_below_minimum,False,False,True
+Structured filters,P092,NCT03552926,none,True,True,True
+Structured filters,C092,NCT03552926,condition_mismatch,False,False,True
+Structured filters,L092,NCT03552926,no_registered_local_site,False,True,False
+Structured filters,A092,NCT03552926,age_below_minimum,False,False,True
+Structured filters,P093,NCT03556280,none,True,True,True
+Structured filters,C093,NCT03556280,condition_mismatch,False,False,True
+Structured filters,L093,NCT03556280,no_registered_local_site,False,True,False
+Structured filters,A093,NCT03556280,age_below_minimum,False,False,True
+Structured filters,P094,NCT03560960,none,True,True,True
+Structured filters,C094,NCT03560960,condition_mismatch,False,False,True
+Structured filters,L094,NCT03560960,no_registered_local_site,False,True,False
+Structured filters,A094,NCT03560960,age_below_minimum,False,False,True
+Structured filters,P095,NCT03574207,none,True,True,True
+Structured filters,C095,NCT03574207,condition_mismatch,False,False,True
+Structured filters,L095,NCT03574207,no_registered_local_site,False,True,False
+Structured filters,A095,NCT03574207,age_below_minimum,False,False,True
+Structured filters,P096,NCT03582488,none,True,True,True
+Structured filters,C096,NCT03582488,condition_mismatch,False,False,True
+Structured filters,L096,NCT03582488,no_registered_local_site,False,True,False
+Structured filters,A096,NCT03582488,age_below_minimum,False,False,True
+Structured filters,P097,NCT03592563,none,True,True,True
+Structured filters,C097,NCT03592563,condition_mismatch,False,False,True
+Structured filters,L097,NCT03592563,no_registered_local_site,False,True,False
+Structured filters,A097,NCT03592563,age_below_minimum,False,False,True
+Structured filters,P098,NCT03614962,none,True,True,True
+Structured filters,C098,NCT03614962,condition_mismatch,False,False,True
+Structured filters,L098,NCT03614962,no_registered_local_site,False,True,False
+Structured filters,A098,NCT03614962,age_below_minimum,False,False,True
+Structured filters,P099,NCT03618186,none,True,True,True
+Structured filters,C099,NCT03618186,condition_mismatch,False,False,True
+Structured filters,L099,NCT03618186,no_registered_local_site,False,True,False
+Structured filters,A099,NCT03618186,age_below_minimum,False,False,True
+Structured filters,P100,NCT03621839,none,True,True,True
+Structured filters,C100,NCT03621839,condition_mismatch,False,False,True
+Structured filters,L100,NCT03621839,no_registered_local_site,False,True,False
+Structured filters,P101,NCT03623672,none,True,True,True
+Structured filters,C101,NCT03623672,condition_mismatch,False,False,True
+Structured filters,L101,NCT03623672,no_registered_local_site,False,True,False
+Structured filters,A101,NCT03623672,age_below_minimum,False,False,True
+Structured filters,P102,NCT03638583,none,True,True,True
+Structured filters,C102,NCT03638583,condition_mismatch,False,False,True
+Structured filters,L102,NCT03638583,no_registered_local_site,False,True,False
+Structured filters,A102,NCT03638583,age_below_minimum,False,False,True
+Structured filters,P103,NCT03649724,none,True,True,True
+Structured filters,C103,NCT03649724,condition_mismatch,False,False,True
+Structured filters,L103,NCT03649724,no_registered_local_site,False,True,False
+Structured filters,A103,NCT03649724,age_below_minimum,False,False,True
+Structured filters,S103,NCT03649724,sex_mismatch,False,True,False
+Structured filters,P104,NCT03653156,none,True,True,True
+Structured filters,C104,NCT03653156,condition_mismatch,False,False,True
+Structured filters,L104,NCT03653156,no_registered_local_site,False,True,False
+Structured filters,A104,NCT03653156,age_below_minimum,False,False,True
+Structured filters,P105,NCT03657732,none,True,True,True
+Structured filters,C105,NCT03657732,condition_mismatch,False,False,True
+Structured filters,L105,NCT03657732,no_registered_local_site,False,True,False
+Structured filters,A105,NCT03657732,age_below_minimum,False,False,True
+Structured filters,P106,NCT03657745,none,True,True,True
+Structured filters,C106,NCT03657745,condition_mismatch,False,False,True
+Structured filters,L106,NCT03657745,no_registered_local_site,False,True,False
+Structured filters,A106,NCT03657745,age_below_minimum,False,False,True
+Structured filters,P107,NCT03665831,none,True,True,True
+Structured filters,C107,NCT03665831,condition_mismatch,False,False,True
+Structured filters,L107,NCT03665831,no_registered_local_site,False,True,False
+Structured filters,A107,NCT03665831,age_below_minimum,False,False,True
+Structured filters,P108,NCT03671889,none,True,True,True
+Structured filters,C108,NCT03671889,condition_mismatch,False,False,True
+Structured filters,L108,NCT03671889,no_registered_local_site,False,True,False
+Structured filters,A108,NCT03671889,age_below_minimum,False,False,True
+Structured filters,P109,NCT03672201,none,True,True,True
+Structured filters,C109,NCT03672201,condition_mismatch,False,False,True
+Structured filters,L109,NCT03672201,no_registered_local_site,False,True,False
+Structured filters,A109,NCT03672201,age_below_minimum,False,False,True
+Structured filters,P110,NCT03687710,none,True,True,True
+Structured filters,C110,NCT03687710,condition_mismatch,False,False,True
+Structured filters,L110,NCT03687710,no_registered_local_site,False,True,False
+Structured filters,A110,NCT03687710,age_below_minimum,False,False,True
+Structured filters,P111,NCT03702907,none,True,True,True
+Structured filters,C111,NCT03702907,condition_mismatch,False,False,True
+Structured filters,L111,NCT03702907,no_registered_local_site,False,True,False
+Structured filters,A111,NCT03702907,age_below_minimum,False,False,True
+Structured filters,P112,NCT03705104,none,True,True,True
+Structured filters,C112,NCT03705104,condition_mismatch,False,False,True
+Structured filters,L112,NCT03705104,no_registered_local_site,False,True,False
+Structured filters,A112,NCT03705104,age_below_minimum,False,False,True
+Structured filters,P113,NCT03750409,none,True,True,True
+Structured filters,C113,NCT03750409,condition_mismatch,False,False,True
+Structured filters,L113,NCT03750409,no_registered_local_site,False,True,False
+Structured filters,A113,NCT03750409,age_below_minimum,False,False,True
+Structured filters,P114,NCT03754725,none,True,True,True
+Structured filters,C114,NCT03754725,condition_mismatch,False,False,True
+Structured filters,L114,NCT03754725,no_registered_local_site,False,True,False
+Structured filters,A114,NCT03754725,age_below_minimum,False,False,True
+Structured filters,P115,NCT03761381,none,True,True,True
+Structured filters,C115,NCT03761381,condition_mismatch,False,False,True
+Structured filters,L115,NCT03761381,no_registered_local_site,False,True,False
+Structured filters,A115,NCT03761381,age_below_minimum,False,False,True
+Structured filters,P116,NCT03772977,none,True,True,True
+Structured filters,C116,NCT03772977,condition_mismatch,False,False,True
+Structured filters,L116,NCT03772977,no_registered_local_site,False,True,False
+Structured filters,A116,NCT03772977,age_below_minimum,False,False,True
+Structured filters,P117,NCT03799991,none,True,True,True
+Structured filters,C117,NCT03799991,condition_mismatch,False,False,True
+Structured filters,L117,NCT03799991,no_registered_local_site,False,True,False
+Structured filters,A117,NCT03799991,age_below_minimum,False,False,True
+Structured filters,P118,NCT03804229,none,True,True,True
+Structured filters,C118,NCT03804229,condition_mismatch,False,False,True
+Structured filters,L118,NCT03804229,no_registered_local_site,False,True,False
+Structured filters,A118,NCT03804229,age_below_minimum,False,False,True
+Structured filters,P119,NCT03809351,none,True,True,True
+Structured filters,C119,NCT03809351,condition_mismatch,False,False,True
+Structured filters,L119,NCT03809351,no_registered_local_site,False,True,False
+Structured filters,A119,NCT03809351,age_below_minimum,False,False,True
+NeuroNav-Agent,P000,NCT00051324,none,True,True,True
+NeuroNav-Agent,C000,NCT00051324,condition_mismatch,False,False,True
+NeuroNav-Agent,L000,NCT00051324,no_registered_local_site,False,False,True
+NeuroNav-Agent,A000,NCT00051324,age_below_minimum,False,False,True
+NeuroNav-Agent,P001,NCT00064870,none,True,True,True
+NeuroNav-Agent,C001,NCT00064870,condition_mismatch,False,False,True
+NeuroNav-Agent,L001,NCT00064870,no_registered_local_site,False,False,True
+NeuroNav-Agent,A001,NCT00064870,age_below_minimum,False,False,True
+NeuroNav-Agent,P002,NCT00317616,none,True,True,True
+NeuroNav-Agent,C002,NCT00317616,condition_mismatch,False,False,True
+NeuroNav-Agent,L002,NCT00317616,no_registered_local_site,False,False,True
+NeuroNav-Agent,A002,NCT00317616,age_below_minimum,False,False,True
+NeuroNav-Agent,P003,NCT00392795,none,True,True,True
+NeuroNav-Agent,C003,NCT00392795,condition_mismatch,False,False,True
+NeuroNav-Agent,L003,NCT00392795,no_registered_local_site,False,False,True
+NeuroNav-Agent,A003,NCT00392795,age_below_minimum,False,False,True
+NeuroNav-Agent,P004,NCT00537004,none,True,True,True
+NeuroNav-Agent,C004,NCT00537004,condition_mismatch,False,False,True
+NeuroNav-Agent,L004,NCT00537004,no_registered_local_site,False,False,True
+NeuroNav-Agent,P005,NCT00585572,none,True,True,True
+NeuroNav-Agent,C005,NCT00585572,condition_mismatch,False,False,True
+NeuroNav-Agent,L005,NCT00585572,no_registered_local_site,False,False,True
+NeuroNav-Agent,A005,NCT00585572,age_below_minimum,False,False,True
+NeuroNav-Agent,P006,NCT00869817,none,True,True,True
+NeuroNav-Agent,C006,NCT00869817,condition_mismatch,False,False,True
+NeuroNav-Agent,L006,NCT00869817,no_registered_local_site,False,False,True
+NeuroNav-Agent,A006,NCT00869817,age_below_minimum,False,False,True
+NeuroNav-Agent,P007,NCT00874783,none,True,True,True
+NeuroNav-Agent,C007,NCT00874783,condition_mismatch,False,False,True
+NeuroNav-Agent,L007,NCT00874783,no_registered_local_site,False,False,True
+NeuroNav-Agent,A007,NCT00874783,age_below_minimum,False,False,True
+NeuroNav-Agent,P008,NCT00950430,none,True,True,True
+NeuroNav-Agent,C008,NCT00950430,condition_mismatch,False,False,True
+NeuroNav-Agent,L008,NCT00950430,no_registered_local_site,False,False,True
+NeuroNav-Agent,A008,NCT00950430,age_below_minimum,False,False,True
+NeuroNav-Agent,P009,NCT01052350,none,True,True,True
+NeuroNav-Agent,C009,NCT01052350,condition_mismatch,False,False,True
+NeuroNav-Agent,L009,NCT01052350,no_registered_local_site,False,False,True
+NeuroNav-Agent,A009,NCT01052350,age_below_minimum,False,False,True
+NeuroNav-Agent,P010,NCT01334749,none,True,True,True
+NeuroNav-Agent,C010,NCT01334749,condition_mismatch,False,False,True
+NeuroNav-Agent,L010,NCT01334749,no_registered_local_site,False,False,True
+NeuroNav-Agent,A010,NCT01334749,age_below_minimum,False,False,True
+NeuroNav-Agent,P011,NCT01353430,none,True,True,True
+NeuroNav-Agent,C011,NCT01353430,condition_mismatch,False,False,True
+NeuroNav-Agent,L011,NCT01353430,no_registered_local_site,False,False,True
+NeuroNav-Agent,A011,NCT01353430,age_below_minimum,False,False,True
+NeuroNav-Agent,P012,NCT01453127,none,True,True,True
+NeuroNav-Agent,C012,NCT01453127,condition_mismatch,False,False,True
+NeuroNav-Agent,L012,NCT01453127,no_registered_local_site,False,False,True
+NeuroNav-Agent,A012,NCT01453127,age_below_minimum,False,False,True
+NeuroNav-Agent,P013,NCT01555411,none,True,True,True
+NeuroNav-Agent,C013,NCT01555411,condition_mismatch,False,False,True
+NeuroNav-Agent,L013,NCT01555411,no_registered_local_site,False,False,True
+NeuroNav-Agent,A013,NCT01555411,age_below_minimum,False,False,True
+NeuroNav-Agent,P014,NCT01574053,none,True,True,True
+NeuroNav-Agent,C014,NCT01574053,condition_mismatch,False,False,True
+NeuroNav-Agent,L014,NCT01574053,no_registered_local_site,False,False,True
+NeuroNav-Agent,A014,NCT01574053,age_below_minimum,False,False,True
+NeuroNav-Agent,P015,NCT01606488,none,True,True,True
+NeuroNav-Agent,C015,NCT01606488,condition_mismatch,False,False,True
+NeuroNav-Agent,L015,NCT01606488,no_registered_local_site,False,False,True
+NeuroNav-Agent,A015,NCT01606488,age_below_minimum,False,False,True
+NeuroNav-Agent,P016,NCT01760005,none,True,True,True
+NeuroNav-Agent,C016,NCT01760005,condition_mismatch,False,False,True
+NeuroNav-Agent,L016,NCT01760005,no_registered_local_site,False,False,True
+NeuroNav-Agent,A016,NCT01760005,age_below_minimum,False,False,True
+NeuroNav-Agent,P017,NCT01793168,none,True,True,True
+NeuroNav-Agent,C017,NCT01793168,condition_mismatch,False,True,False
+NeuroNav-Agent,L017,NCT01793168,no_registered_local_site,False,False,True
+NeuroNav-Agent,P018,NCT01799915,none,True,True,True
+NeuroNav-Agent,C018,NCT01799915,condition_mismatch,False,False,True
+NeuroNav-Agent,L018,NCT01799915,no_registered_local_site,False,False,True
+NeuroNav-Agent,A018,NCT01799915,age_below_minimum,False,False,True
+NeuroNav-Agent,P019,NCT01800214,none,True,True,True
+NeuroNav-Agent,C019,NCT01800214,condition_mismatch,False,False,True
+NeuroNav-Agent,L019,NCT01800214,no_registered_local_site,False,False,True
+NeuroNav-Agent,A019,NCT01800214,age_below_minimum,False,False,True
+NeuroNav-Agent,P020,NCT01818661,none,True,True,True
+NeuroNav-Agent,C020,NCT01818661,condition_mismatch,False,False,True
+NeuroNav-Agent,L020,NCT01818661,no_registered_local_site,False,False,True
+NeuroNav-Agent,A020,NCT01818661,age_below_minimum,False,False,True
+NeuroNav-Agent,P021,NCT02014246,none,True,True,True
+NeuroNav-Agent,C021,NCT02014246,condition_mismatch,False,False,True
+NeuroNav-Agent,L021,NCT02014246,no_registered_local_site,False,False,True
+NeuroNav-Agent,A021,NCT02014246,age_below_minimum,False,False,True
+NeuroNav-Agent,P022,NCT02022943,none,True,True,True
+NeuroNav-Agent,C022,NCT02022943,condition_mismatch,False,False,True
+NeuroNav-Agent,L022,NCT02022943,no_registered_local_site,False,False,True
+NeuroNav-Agent,A022,NCT02022943,age_below_minimum,False,False,True
+NeuroNav-Agent,P023,NCT02099123,none,True,True,True
+NeuroNav-Agent,C023,NCT02099123,condition_mismatch,False,False,True
+NeuroNav-Agent,L023,NCT02099123,no_registered_local_site,False,False,True
+NeuroNav-Agent,A023,NCT02099123,age_below_minimum,False,False,True
+NeuroNav-Agent,P024,NCT02105844,none,True,True,True
+NeuroNav-Agent,C024,NCT02105844,condition_mismatch,False,False,True
+NeuroNav-Agent,L024,NCT02105844,no_registered_local_site,False,False,True
+NeuroNav-Agent,A024,NCT02105844,age_below_minimum,False,False,True
+NeuroNav-Agent,P025,NCT02194816,none,True,True,True
+NeuroNav-Agent,C025,NCT02194816,condition_mismatch,False,False,True
+NeuroNav-Agent,L025,NCT02194816,no_registered_local_site,False,False,True
+NeuroNav-Agent,A025,NCT02194816,age_below_minimum,False,False,True
+NeuroNav-Agent,P026,NCT02252380,none,True,True,True
+NeuroNav-Agent,C026,NCT02252380,condition_mismatch,False,False,True
+NeuroNav-Agent,L026,NCT02252380,no_registered_local_site,False,False,True
+NeuroNav-Agent,A026,NCT02252380,age_below_minimum,False,False,True
+NeuroNav-Agent,P027,NCT02302482,none,True,True,True
+NeuroNav-Agent,C027,NCT02302482,condition_mismatch,False,False,True
+NeuroNav-Agent,L027,NCT02302482,no_registered_local_site,False,False,True
+NeuroNav-Agent,A027,NCT02302482,age_below_minimum,False,False,True
+NeuroNav-Agent,P028,NCT02327845,none,True,True,True
+NeuroNav-Agent,C028,NCT02327845,condition_mismatch,False,False,True
+NeuroNav-Agent,L028,NCT02327845,no_registered_local_site,False,False,True
+NeuroNav-Agent,P029,NCT02386670,none,True,True,True
+NeuroNav-Agent,C029,NCT02386670,condition_mismatch,False,False,True
+NeuroNav-Agent,L029,NCT02386670,no_registered_local_site,False,False,True
+NeuroNav-Agent,A029,NCT02386670,age_below_minimum,False,False,True
+NeuroNav-Agent,P030,NCT02402426,none,True,True,True
+NeuroNav-Agent,C030,NCT02402426,condition_mismatch,False,False,True
+NeuroNav-Agent,L030,NCT02402426,no_registered_local_site,False,False,True
+NeuroNav-Agent,A030,NCT02402426,age_below_minimum,False,False,True
+NeuroNav-Agent,P031,NCT02414178,none,True,True,True
+NeuroNav-Agent,C031,NCT02414178,condition_mismatch,False,False,True
+NeuroNav-Agent,L031,NCT02414178,no_registered_local_site,False,False,True
+NeuroNav-Agent,A031,NCT02414178,age_below_minimum,False,False,True
+NeuroNav-Agent,P032,NCT02414347,none,True,True,True
+NeuroNav-Agent,C032,NCT02414347,condition_mismatch,False,False,True
+NeuroNav-Agent,L032,NCT02414347,no_registered_local_site,False,False,True
+NeuroNav-Agent,A032,NCT02414347,age_below_minimum,False,False,True
+NeuroNav-Agent,P033,NCT02420470,none,True,True,True
+NeuroNav-Agent,C033,NCT02420470,condition_mismatch,False,False,True
+NeuroNav-Agent,L033,NCT02420470,no_registered_local_site,False,False,True
+NeuroNav-Agent,A033,NCT02420470,age_below_minimum,False,False,True
+NeuroNav-Agent,P034,NCT02434393,none,True,True,True
+NeuroNav-Agent,C034,NCT02434393,condition_mismatch,False,False,True
+NeuroNav-Agent,L034,NCT02434393,no_registered_local_site,False,False,True
+NeuroNav-Agent,A034,NCT02434393,age_below_minimum,False,False,True
+NeuroNav-Agent,P035,NCT02463708,none,True,True,True
+NeuroNav-Agent,C035,NCT02463708,condition_mismatch,False,False,True
+NeuroNav-Agent,L035,NCT02463708,no_registered_local_site,False,False,True
+NeuroNav-Agent,A035,NCT02463708,age_below_minimum,False,False,True
+NeuroNav-Agent,P036,NCT02485730,none,True,True,True
+NeuroNav-Agent,C036,NCT02485730,condition_mismatch,False,False,True
+NeuroNav-Agent,L036,NCT02485730,no_registered_local_site,False,False,True
+NeuroNav-Agent,A036,NCT02485730,age_below_minimum,False,False,True
+NeuroNav-Agent,P037,NCT02564692,none,True,True,True
+NeuroNav-Agent,C037,NCT02564692,condition_mismatch,False,False,True
+NeuroNav-Agent,L037,NCT02564692,no_registered_local_site,False,False,True
+NeuroNav-Agent,A037,NCT02564692,age_below_minimum,False,False,True
+NeuroNav-Agent,P038,NCT02633111,none,True,True,True
+NeuroNav-Agent,C038,NCT02633111,condition_mismatch,False,False,True
+NeuroNav-Agent,L038,NCT02633111,no_registered_local_site,False,False,True
+NeuroNav-Agent,A038,NCT02633111,age_below_minimum,False,False,True
+NeuroNav-Agent,P039,NCT02649985,none,True,True,True
+NeuroNav-Agent,C039,NCT02649985,condition_mismatch,False,False,True
+NeuroNav-Agent,L039,NCT02649985,no_registered_local_site,False,False,True
+NeuroNav-Agent,A039,NCT02649985,age_below_minimum,False,False,True
+NeuroNav-Agent,P040,NCT02670161,none,True,True,True
+NeuroNav-Agent,C040,NCT02670161,condition_mismatch,False,False,True
+NeuroNav-Agent,L040,NCT02670161,no_registered_local_site,False,False,True
+NeuroNav-Agent,A040,NCT02670161,age_below_minimum,False,False,True
+NeuroNav-Agent,P041,NCT02685969,none,True,True,True
+NeuroNav-Agent,C041,NCT02685969,condition_mismatch,False,False,True
+NeuroNav-Agent,L041,NCT02685969,no_registered_local_site,False,False,True
+NeuroNav-Agent,A041,NCT02685969,age_below_minimum,False,False,True
+NeuroNav-Agent,P042,NCT02740634,none,True,True,True
+NeuroNav-Agent,C042,NCT02740634,condition_mismatch,False,False,True
+NeuroNav-Agent,L042,NCT02740634,no_registered_local_site,False,False,True
+NeuroNav-Agent,A042,NCT02740634,age_below_minimum,False,False,True
+NeuroNav-Agent,P043,NCT02763683,none,True,True,True
+NeuroNav-Agent,C043,NCT02763683,condition_mismatch,False,False,True
+NeuroNav-Agent,L043,NCT02763683,no_registered_local_site,False,False,True
+NeuroNav-Agent,A043,NCT02763683,age_below_minimum,False,False,True
+NeuroNav-Agent,P044,NCT02795052,none,True,True,True
+NeuroNav-Agent,C044,NCT02795052,condition_mismatch,False,False,True
+NeuroNav-Agent,L044,NCT02795052,no_registered_local_site,False,False,True
+NeuroNav-Agent,A044,NCT02795052,age_below_minimum,False,False,True
+NeuroNav-Agent,P045,NCT02800395,none,True,True,True
+NeuroNav-Agent,C045,NCT02800395,condition_mismatch,False,False,True
+NeuroNav-Agent,L045,NCT02800395,no_registered_local_site,False,False,True
+NeuroNav-Agent,A045,NCT02800395,age_below_minimum,False,False,True
+NeuroNav-Agent,P046,NCT02811653,none,True,True,True
+NeuroNav-Agent,C046,NCT02811653,condition_mismatch,False,False,True
+NeuroNav-Agent,L046,NCT02811653,no_registered_local_site,False,False,True
+NeuroNav-Agent,A046,NCT02811653,age_below_minimum,False,False,True
+NeuroNav-Agent,P047,NCT02855476,none,True,True,True
+NeuroNav-Agent,C047,NCT02855476,condition_mismatch,False,False,True
+NeuroNav-Agent,L047,NCT02855476,no_registered_local_site,False,False,True
+NeuroNav-Agent,A047,NCT02855476,age_below_minimum,False,False,True
+NeuroNav-Agent,P048,NCT02914951,none,True,True,True
+NeuroNav-Agent,C048,NCT02914951,condition_mismatch,False,False,True
+NeuroNav-Agent,L048,NCT02914951,no_registered_local_site,False,False,True
+NeuroNav-Agent,A048,NCT02914951,age_below_minimum,False,False,True
+NeuroNav-Agent,P049,NCT02939612,none,True,True,True
+NeuroNav-Agent,C049,NCT02939612,condition_mismatch,False,False,True
+NeuroNav-Agent,L049,NCT02939612,no_registered_local_site,False,False,True
+NeuroNav-Agent,A049,NCT02939612,age_below_minimum,False,False,True
+NeuroNav-Agent,P050,NCT02945774,none,True,True,True
+NeuroNav-Agent,C050,NCT02945774,condition_mismatch,False,False,True
+NeuroNav-Agent,L050,NCT02945774,no_registered_local_site,False,False,True
+NeuroNav-Agent,A050,NCT02945774,age_below_minimum,False,False,True
+NeuroNav-Agent,P051,NCT02951598,none,True,True,True
+NeuroNav-Agent,C051,NCT02951598,condition_mismatch,False,False,True
+NeuroNav-Agent,L051,NCT02951598,no_registered_local_site,False,False,True
+NeuroNav-Agent,A051,NCT02951598,age_below_minimum,False,False,True
+NeuroNav-Agent,P052,NCT02958670,none,True,True,True
+NeuroNav-Agent,C052,NCT02958670,condition_mismatch,False,False,True
+NeuroNav-Agent,L052,NCT02958670,no_registered_local_site,False,False,True
+NeuroNav-Agent,A052,NCT02958670,age_below_minimum,False,False,True
+NeuroNav-Agent,P053,NCT02959502,none,True,True,True
+NeuroNav-Agent,C053,NCT02959502,condition_mismatch,False,False,True
+NeuroNav-Agent,L053,NCT02959502,no_registered_local_site,False,False,True
+NeuroNav-Agent,A053,NCT02959502,age_below_minimum,False,False,True
+NeuroNav-Agent,P054,NCT02964637,none,True,True,True
+NeuroNav-Agent,C054,NCT02964637,condition_mismatch,False,False,True
+NeuroNav-Agent,L054,NCT02964637,no_registered_local_site,False,False,True
+NeuroNav-Agent,A054,NCT02964637,age_below_minimum,False,False,True
+NeuroNav-Agent,P055,NCT02967406,none,True,True,True
+NeuroNav-Agent,C055,NCT02967406,condition_mismatch,False,True,False
+NeuroNav-Agent,L055,NCT02967406,no_registered_local_site,False,False,True
+NeuroNav-Agent,A055,NCT02967406,age_below_minimum,False,False,True
+NeuroNav-Agent,P056,NCT02994719,none,True,True,True
+NeuroNav-Agent,C056,NCT02994719,condition_mismatch,False,False,True
+NeuroNav-Agent,L056,NCT02994719,no_registered_local_site,False,False,True
+NeuroNav-Agent,A056,NCT02994719,age_below_minimum,False,False,True
+NeuroNav-Agent,P057,NCT03016741,none,True,True,True
+NeuroNav-Agent,C057,NCT03016741,condition_mismatch,False,False,True
+NeuroNav-Agent,L057,NCT03016741,no_registered_local_site,False,False,True
+NeuroNav-Agent,A057,NCT03016741,age_below_minimum,False,False,True
+NeuroNav-Agent,S057,NCT03016741,sex_mismatch,False,False,True
+NeuroNav-Agent,P058,NCT03019757,none,True,True,True
+NeuroNav-Agent,C058,NCT03019757,condition_mismatch,False,False,True
+NeuroNav-Agent,L058,NCT03019757,no_registered_local_site,False,False,True
+NeuroNav-Agent,A058,NCT03019757,age_below_minimum,False,False,True
+NeuroNav-Agent,P059,NCT03020381,none,True,True,True
+NeuroNav-Agent,C059,NCT03020381,condition_mismatch,False,False,True
+NeuroNav-Agent,L059,NCT03020381,no_registered_local_site,False,False,True
+NeuroNav-Agent,A059,NCT03020381,age_below_minimum,False,False,True
+NeuroNav-Agent,P060,NCT03025334,none,True,True,True
+NeuroNav-Agent,C060,NCT03025334,condition_mismatch,False,False,True
+NeuroNav-Agent,L060,NCT03025334,no_registered_local_site,False,False,True
+NeuroNav-Agent,A060,NCT03025334,age_below_minimum,False,False,True
+NeuroNav-Agent,P061,NCT03035851,none,True,True,True
+NeuroNav-Agent,C061,NCT03035851,condition_mismatch,False,False,True
+NeuroNav-Agent,L061,NCT03035851,no_registered_local_site,False,False,True
+NeuroNav-Agent,A061,NCT03035851,age_below_minimum,False,False,True
+NeuroNav-Agent,P062,NCT03047369,none,True,True,True
+NeuroNav-Agent,C062,NCT03047369,condition_mismatch,False,False,True
+NeuroNav-Agent,L062,NCT03047369,no_registered_local_site,False,False,True
+NeuroNav-Agent,P063,NCT03082755,none,True,True,True
+NeuroNav-Agent,C063,NCT03082755,condition_mismatch,False,False,True
+NeuroNav-Agent,L063,NCT03082755,no_registered_local_site,False,False,True
+NeuroNav-Agent,A063,NCT03082755,age_below_minimum,False,False,True
+NeuroNav-Agent,P064,NCT03089827,none,True,True,True
+NeuroNav-Agent,C064,NCT03089827,condition_mismatch,False,False,True
+NeuroNav-Agent,L064,NCT03089827,no_registered_local_site,False,False,True
+NeuroNav-Agent,A064,NCT03089827,age_below_minimum,False,False,True
+NeuroNav-Agent,P065,NCT03098459,none,True,True,True
+NeuroNav-Agent,C065,NCT03098459,condition_mismatch,False,False,True
+NeuroNav-Agent,L065,NCT03098459,no_registered_local_site,False,False,True
+NeuroNav-Agent,A065,NCT03098459,age_below_minimum,False,False,True
+NeuroNav-Agent,P066,NCT03108846,none,True,True,True
+NeuroNav-Agent,C066,NCT03108846,condition_mismatch,False,False,True
+NeuroNav-Agent,L066,NCT03108846,no_registered_local_site,False,False,True
+NeuroNav-Agent,A066,NCT03108846,age_below_minimum,False,False,True
+NeuroNav-Agent,P067,NCT03113461,none,True,True,True
+NeuroNav-Agent,C067,NCT03113461,condition_mismatch,False,False,True
+NeuroNav-Agent,L067,NCT03113461,no_registered_local_site,False,False,True
+NeuroNav-Agent,A067,NCT03113461,age_below_minimum,False,False,True
+NeuroNav-Agent,P068,NCT03135327,none,True,True,True
+NeuroNav-Agent,C068,NCT03135327,condition_mismatch,False,False,True
+NeuroNav-Agent,L068,NCT03135327,no_registered_local_site,False,False,True
+NeuroNav-Agent,A068,NCT03135327,age_below_minimum,False,False,True
+NeuroNav-Agent,P069,NCT03140865,none,True,True,True
+NeuroNav-Agent,C069,NCT03140865,condition_mismatch,False,False,True
+NeuroNav-Agent,L069,NCT03140865,no_registered_local_site,False,False,True
+NeuroNav-Agent,A069,NCT03140865,age_below_minimum,False,False,True
+NeuroNav-Agent,P070,NCT03147937,none,True,True,True
+NeuroNav-Agent,C070,NCT03147937,condition_mismatch,False,False,True
+NeuroNav-Agent,L070,NCT03147937,no_registered_local_site,False,False,True
+NeuroNav-Agent,A070,NCT03147937,age_below_minimum,False,False,True
+NeuroNav-Agent,P071,NCT03152630,none,True,True,True
+NeuroNav-Agent,C071,NCT03152630,condition_mismatch,False,False,True
+NeuroNav-Agent,L071,NCT03152630,no_registered_local_site,False,False,True
+NeuroNav-Agent,A071,NCT03152630,age_below_minimum,False,False,True
+NeuroNav-Agent,P072,NCT03174938,none,True,True,True
+NeuroNav-Agent,C072,NCT03174938,condition_mismatch,False,False,True
+NeuroNav-Agent,L072,NCT03174938,no_registered_local_site,False,False,True
+NeuroNav-Agent,A072,NCT03174938,age_below_minimum,False,False,True
+NeuroNav-Agent,P073,NCT03208491,none,True,True,True
+NeuroNav-Agent,C073,NCT03208491,condition_mismatch,False,False,True
+NeuroNav-Agent,L073,NCT03208491,no_registered_local_site,False,False,True
+NeuroNav-Agent,A073,NCT03208491,age_below_minimum,False,False,True
+NeuroNav-Agent,P074,NCT03217396,none,True,True,True
+NeuroNav-Agent,C074,NCT03217396,condition_mismatch,False,False,True
+NeuroNav-Agent,L074,NCT03217396,no_registered_local_site,False,False,True
+NeuroNav-Agent,A074,NCT03217396,age_below_minimum,False,False,True
+NeuroNav-Agent,P075,NCT03225144,none,True,True,True
+NeuroNav-Agent,C075,NCT03225144,condition_mismatch,False,False,True
+NeuroNav-Agent,L075,NCT03225144,no_registered_local_site,False,False,True
+NeuroNav-Agent,A075,NCT03225144,age_below_minimum,False,False,True
+NeuroNav-Agent,P076,NCT03233646,none,True,True,True
+NeuroNav-Agent,C076,NCT03233646,condition_mismatch,False,False,True
+NeuroNav-Agent,L076,NCT03233646,no_registered_local_site,False,False,True
+NeuroNav-Agent,A076,NCT03233646,age_below_minimum,False,False,True
+NeuroNav-Agent,P077,NCT03263247,none,True,True,True
+NeuroNav-Agent,C077,NCT03263247,condition_mismatch,False,False,True
+NeuroNav-Agent,L077,NCT03263247,no_registered_local_site,False,False,True
+NeuroNav-Agent,A077,NCT03263247,age_below_minimum,False,False,True
+NeuroNav-Agent,P078,NCT03278119,none,True,True,True
+NeuroNav-Agent,C078,NCT03278119,condition_mismatch,False,False,True
+NeuroNav-Agent,L078,NCT03278119,no_registered_local_site,False,False,True
+NeuroNav-Agent,A078,NCT03278119,age_below_minimum,False,False,True
+NeuroNav-Agent,P079,NCT03313011,none,True,True,True
+NeuroNav-Agent,C079,NCT03313011,condition_mismatch,False,False,True
+NeuroNav-Agent,L079,NCT03313011,no_registered_local_site,False,False,True
+NeuroNav-Agent,A079,NCT03313011,age_below_minimum,False,False,True
+NeuroNav-Agent,P080,NCT03370224,none,True,True,True
+NeuroNav-Agent,C080,NCT03370224,condition_mismatch,False,False,True
+NeuroNav-Agent,L080,NCT03370224,no_registered_local_site,False,False,True
+NeuroNav-Agent,A080,NCT03370224,age_below_minimum,False,False,True
+NeuroNav-Agent,P081,NCT03372317,none,True,True,True
+NeuroNav-Agent,C081,NCT03372317,condition_mismatch,False,False,True
+NeuroNav-Agent,L081,NCT03372317,no_registered_local_site,False,False,True
+NeuroNav-Agent,A081,NCT03372317,age_below_minimum,False,False,True
+NeuroNav-Agent,P082,NCT03382223,none,True,True,True
+NeuroNav-Agent,C082,NCT03382223,condition_mismatch,False,False,True
+NeuroNav-Agent,L082,NCT03382223,no_registered_local_site,False,False,True
+NeuroNav-Agent,A082,NCT03382223,age_below_minimum,False,False,True
+NeuroNav-Agent,P083,NCT03389100,none,True,True,True
+NeuroNav-Agent,C083,NCT03389100,condition_mismatch,False,False,True
+NeuroNav-Agent,L083,NCT03389100,no_registered_local_site,False,False,True
+NeuroNav-Agent,A083,NCT03389100,age_below_minimum,False,False,True
+NeuroNav-Agent,P084,NCT03402919,none,True,True,True
+NeuroNav-Agent,C084,NCT03402919,condition_mismatch,False,False,True
+NeuroNav-Agent,L084,NCT03402919,no_registered_local_site,False,False,True
+NeuroNav-Agent,A084,NCT03402919,age_below_minimum,False,False,True
+NeuroNav-Agent,P085,NCT03434548,none,True,True,True
+NeuroNav-Agent,C085,NCT03434548,condition_mismatch,False,False,True
+NeuroNav-Agent,L085,NCT03434548,no_registered_local_site,False,False,True
+NeuroNav-Agent,A085,NCT03434548,age_below_minimum,False,False,True
+NeuroNav-Agent,P086,NCT03454646,none,True,True,True
+NeuroNav-Agent,C086,NCT03454646,condition_mismatch,False,False,True
+NeuroNav-Agent,L086,NCT03454646,no_registered_local_site,False,False,True
+NeuroNav-Agent,A086,NCT03454646,age_below_minimum,False,False,True
+NeuroNav-Agent,P087,NCT03489278,none,True,True,True
+NeuroNav-Agent,C087,NCT03489278,condition_mismatch,False,False,True
+NeuroNav-Agent,L087,NCT03489278,no_registered_local_site,False,False,True
+NeuroNav-Agent,A087,NCT03489278,age_below_minimum,False,False,True
+NeuroNav-Agent,P088,NCT03493178,none,True,True,True
+NeuroNav-Agent,C088,NCT03493178,condition_mismatch,False,False,True
+NeuroNav-Agent,L088,NCT03493178,no_registered_local_site,False,False,True
+NeuroNav-Agent,A088,NCT03493178,age_below_minimum,False,False,True
+NeuroNav-Agent,P089,NCT03503331,none,True,True,True
+NeuroNav-Agent,C089,NCT03503331,condition_mismatch,False,False,True
+NeuroNav-Agent,L089,NCT03503331,no_registered_local_site,False,False,True
+NeuroNav-Agent,A089,NCT03503331,age_below_minimum,False,False,True
+NeuroNav-Agent,P090,NCT03507257,none,True,True,True
+NeuroNav-Agent,C090,NCT03507257,condition_mismatch,False,False,True
+NeuroNav-Agent,L090,NCT03507257,no_registered_local_site,False,False,True
+NeuroNav-Agent,A090,NCT03507257,age_below_minimum,False,False,True
+NeuroNav-Agent,P091,NCT03527719,none,True,True,True
+NeuroNav-Agent,C091,NCT03527719,condition_mismatch,False,False,True
+NeuroNav-Agent,L091,NCT03527719,no_registered_local_site,False,False,True
+NeuroNav-Agent,A091,NCT03527719,age_below_minimum,False,False,True
+NeuroNav-Agent,P092,NCT03552926,none,True,True,True
+NeuroNav-Agent,C092,NCT03552926,condition_mismatch,False,False,True
+NeuroNav-Agent,L092,NCT03552926,no_registered_local_site,False,False,True
+NeuroNav-Agent,A092,NCT03552926,age_below_minimum,False,False,True
+NeuroNav-Agent,P093,NCT03556280,none,True,True,True
+NeuroNav-Agent,C093,NCT03556280,condition_mismatch,False,False,True
+NeuroNav-Agent,L093,NCT03556280,no_registered_local_site,False,False,True
+NeuroNav-Agent,A093,NCT03556280,age_below_minimum,False,False,True
+NeuroNav-Agent,P094,NCT03560960,none,True,True,True
+NeuroNav-Agent,C094,NCT03560960,condition_mismatch,False,False,True
+NeuroNav-Agent,L094,NCT03560960,no_registered_local_site,False,False,True
+NeuroNav-Agent,A094,NCT03560960,age_below_minimum,False,False,True
+NeuroNav-Agent,P095,NCT03574207,none,True,True,True
+NeuroNav-Agent,C095,NCT03574207,condition_mismatch,False,False,True
+NeuroNav-Agent,L095,NCT03574207,no_registered_local_site,False,False,True
+NeuroNav-Agent,A095,NCT03574207,age_below_minimum,False,False,True
+NeuroNav-Agent,P096,NCT03582488,none,True,True,True
+NeuroNav-Agent,C096,NCT03582488,condition_mismatch,False,False,True
+NeuroNav-Agent,L096,NCT03582488,no_registered_local_site,False,False,True
+NeuroNav-Agent,A096,NCT03582488,age_below_minimum,False,False,True
+NeuroNav-Agent,P097,NCT03592563,none,True,True,True
+NeuroNav-Agent,C097,NCT03592563,condition_mismatch,False,False,True
+NeuroNav-Agent,L097,NCT03592563,no_registered_local_site,False,False,True
+NeuroNav-Agent,A097,NCT03592563,age_below_minimum,False,False,True
+NeuroNav-Agent,P098,NCT03614962,none,True,True,True
+NeuroNav-Agent,C098,NCT03614962,condition_mismatch,False,False,True
+NeuroNav-Agent,L098,NCT03614962,no_registered_local_site,False,False,True
+NeuroNav-Agent,A098,NCT03614962,age_below_minimum,False,False,True
+NeuroNav-Agent,P099,NCT03618186,none,True,True,True
+NeuroNav-Agent,C099,NCT03618186,condition_mismatch,False,False,True
+NeuroNav-Agent,L099,NCT03618186,no_registered_local_site,False,False,True
+NeuroNav-Agent,A099,NCT03618186,age_below_minimum,False,False,True
+NeuroNav-Agent,P100,NCT03621839,none,True,True,True
+NeuroNav-Agent,C100,NCT03621839,condition_mismatch,False,False,True
+NeuroNav-Agent,L100,NCT03621839,no_registered_local_site,False,False,True
+NeuroNav-Agent,P101,NCT03623672,none,True,True,True
+NeuroNav-Agent,C101,NCT03623672,condition_mismatch,False,False,True
+NeuroNav-Agent,L101,NCT03623672,no_registered_local_site,False,False,True
+NeuroNav-Agent,A101,NCT03623672,age_below_minimum,False,False,True
+NeuroNav-Agent,P102,NCT03638583,none,True,True,True
+NeuroNav-Agent,C102,NCT03638583,condition_mismatch,False,False,True
+NeuroNav-Agent,L102,NCT03638583,no_registered_local_site,False,False,True
+NeuroNav-Agent,A102,NCT03638583,age_below_minimum,False,False,True
+NeuroNav-Agent,P103,NCT03649724,none,True,True,True
+NeuroNav-Agent,C103,NCT03649724,condition_mismatch,False,False,True
+NeuroNav-Agent,L103,NCT03649724,no_registered_local_site,False,False,True
+NeuroNav-Agent,A103,NCT03649724,age_below_minimum,False,False,True
+NeuroNav-Agent,S103,NCT03649724,sex_mismatch,False,False,True
+NeuroNav-Agent,P104,NCT03653156,none,True,True,True
+NeuroNav-Agent,C104,NCT03653156,condition_mismatch,False,False,True
+NeuroNav-Agent,L104,NCT03653156,no_registered_local_site,False,False,True
+NeuroNav-Agent,A104,NCT03653156,age_below_minimum,False,False,True
+NeuroNav-Agent,P105,NCT03657732,none,True,True,True
+NeuroNav-Agent,C105,NCT03657732,condition_mismatch,False,False,True
+NeuroNav-Agent,L105,NCT03657732,no_registered_local_site,False,False,True
+NeuroNav-Agent,A105,NCT03657732,age_below_minimum,False,False,True
+NeuroNav-Agent,P106,NCT03657745,none,True,True,True
+NeuroNav-Agent,C106,NCT03657745,condition_mismatch,False,False,True
+NeuroNav-Agent,L106,NCT03657745,no_registered_local_site,False,False,True
+NeuroNav-Agent,A106,NCT03657745,age_below_minimum,False,False,True
+NeuroNav-Agent,P107,NCT03665831,none,True,True,True
+NeuroNav-Agent,C107,NCT03665831,condition_mismatch,False,False,True
+NeuroNav-Agent,L107,NCT03665831,no_registered_local_site,False,False,True
+NeuroNav-Agent,A107,NCT03665831,age_below_minimum,False,False,True
+NeuroNav-Agent,P108,NCT03671889,none,True,True,True
+NeuroNav-Agent,C108,NCT03671889,condition_mismatch,False,False,True
+NeuroNav-Agent,L108,NCT03671889,no_registered_local_site,False,False,True
+NeuroNav-Agent,A108,NCT03671889,age_below_minimum,False,False,True
+NeuroNav-Agent,P109,NCT03672201,none,True,True,True
+NeuroNav-Agent,C109,NCT03672201,condition_mismatch,False,False,True
+NeuroNav-Agent,L109,NCT03672201,no_registered_local_site,False,False,True
+NeuroNav-Agent,A109,NCT03672201,age_below_minimum,False,False,True
+NeuroNav-Agent,P110,NCT03687710,none,True,True,True
+NeuroNav-Agent,C110,NCT03687710,condition_mismatch,False,False,True
+NeuroNav-Agent,L110,NCT03687710,no_registered_local_site,False,False,True
+NeuroNav-Agent,A110,NCT03687710,age_below_minimum,False,False,True
+NeuroNav-Agent,P111,NCT03702907,none,True,True,True
+NeuroNav-Agent,C111,NCT03702907,condition_mismatch,False,False,True
+NeuroNav-Agent,L111,NCT03702907,no_registered_local_site,False,False,True
+NeuroNav-Agent,A111,NCT03702907,age_below_minimum,False,False,True
+NeuroNav-Agent,P112,NCT03705104,none,True,True,True
+NeuroNav-Agent,C112,NCT03705104,condition_mismatch,False,False,True
+NeuroNav-Agent,L112,NCT03705104,no_registered_local_site,False,False,True
+NeuroNav-Agent,A112,NCT03705104,age_below_minimum,False,False,True
+NeuroNav-Agent,P113,NCT03750409,none,True,True,True
+NeuroNav-Agent,C113,NCT03750409,condition_mismatch,False,False,True
+NeuroNav-Agent,L113,NCT03750409,no_registered_local_site,False,False,True
+NeuroNav-Agent,A113,NCT03750409,age_below_minimum,False,False,True
+NeuroNav-Agent,P114,NCT03754725,none,True,True,True
+NeuroNav-Agent,C114,NCT03754725,condition_mismatch,False,False,True
+NeuroNav-Agent,L114,NCT03754725,no_registered_local_site,False,False,True
+NeuroNav-Agent,A114,NCT03754725,age_below_minimum,False,False,True
+NeuroNav-Agent,P115,NCT03761381,none,True,True,True
+NeuroNav-Agent,C115,NCT03761381,condition_mismatch,False,False,True
+NeuroNav-Agent,L115,NCT03761381,no_registered_local_site,False,False,True
+NeuroNav-Agent,A115,NCT03761381,age_below_minimum,False,False,True
+NeuroNav-Agent,P116,NCT03772977,none,True,True,True
+NeuroNav-Agent,C116,NCT03772977,condition_mismatch,False,False,True
+NeuroNav-Agent,L116,NCT03772977,no_registered_local_site,False,False,True
+NeuroNav-Agent,A116,NCT03772977,age_below_minimum,False,False,True
+NeuroNav-Agent,P117,NCT03799991,none,True,True,True
+NeuroNav-Agent,C117,NCT03799991,condition_mismatch,False,False,True
+NeuroNav-Agent,L117,NCT03799991,no_registered_local_site,False,False,True
+NeuroNav-Agent,A117,NCT03799991,age_below_minimum,False,False,True
+NeuroNav-Agent,P118,NCT03804229,none,True,True,True
+NeuroNav-Agent,C118,NCT03804229,condition_mismatch,False,False,True
+NeuroNav-Agent,L118,NCT03804229,no_registered_local_site,False,False,True
+NeuroNav-Agent,A118,NCT03804229,age_below_minimum,False,False,True
+NeuroNav-Agent,P119,NCT03809351,none,True,True,True
+NeuroNav-Agent,C119,NCT03809351,condition_mismatch,False,False,True
+NeuroNav-Agent,L119,NCT03809351,no_registered_local_site,False,False,True
+NeuroNav-Agent,A119,NCT03809351,age_below_minimum,False,False,True

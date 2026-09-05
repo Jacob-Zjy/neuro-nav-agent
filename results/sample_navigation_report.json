@@ -1,0 +1,993 @@
+{
+  "profile": {
+    "condition": "Mild Cognitive Impairment",
+    "age": 65,
+    "sex": "female",
+    "country": "Brazil",
+    "preferences": []
+  },
+  "ranked_trials": [
+    {
+      "trial": {
+        "nct_id": "NCT03263247",
+        "title": "Cognitive Training in Patients With MCI Using fMRI",
+        "overall_status": "ACTIVE_NOT_RECRUITING",
+        "conditions": [
+          "Mild Cognitive Impairment"
+        ],
+        "sex": "ALL",
+        "minimum_age_years": 60.0,
+        "maximum_age_years": 90.0,
+        "countries": [
+          "Brazil"
+        ],
+        "phases": [
+          "NA"
+        ],
+        "interventions": [
+          "Alphabet search",
+          "Visual Memory Training"
+        ],
+        "eligibility_text": "Inclusion Criteria:\n\n* Portuguese as native and preferred language; A minimum of 4 years of education; MRI-compatible; Right-handed individuals; Normal corrected vision and hearing; Estimated intelligence average or above (≥ 80 IQ);\n\nExclusion Criteria:\n\n* History of neurological disorder, severe mental illness; Current untreated alcohol or substance abuse; Medical conditions that compromise in any way the central nervous system; Presence of visual impairment and / or hearing to preclude cognitive testing; Presence of contraindications to MRI exam; Findings in structural MRI that can interfere with the results of the study",
+        "brief_summary": "The current project aims to investigate the trajectories of the visual imaging cognitive training (CT) and alphabet search training using fMRI in patients with amnestic mild cognitive impairment (MCI) and healthy elderly controls (HE). MCI patients will be grouped according to biomarkers (PET PIB).",
+        "last_update": "2026-08-24",
+        "source_url": "https://clinicaltrials.gov/study/NCT03263247"
+      },
+      "decision": {
+        "nct_id": "NCT03263247",
+        "status": "potential_match",
+        "base_score": 1.0,
+        "components": {
+          "condition": 1.0,
+          "status": 1.0,
+          "age": 1.0,
+          "sex": 1.0,
+          "location": 1.0,
+          "completeness": 1.0
+        },
+        "evidence": [
+          {
+            "check": "recruitment_status",
+            "outcome": "pass",
+            "explanation": "ACTIVE_NOT_RECRUITING",
+            "source_fields": [
+              "overall_status"
+            ]
+          },
+          {
+            "check": "condition",
+            "outcome": "pass",
+            "explanation": "Condition overlap=1.00.",
+            "source_fields": [
+              "conditions"
+            ]
+          },
+          {
+            "check": "age",
+            "outcome": "pass",
+            "explanation": "Profile age=65.",
+            "source_fields": [
+              "minimum_age_years",
+              "maximum_age_years"
+            ]
+          },
+          {
+            "check": "sex",
+            "outcome": "pass",
+            "explanation": "Trial criterion=ALL.",
+            "source_fields": [
+              "sex"
+            ]
+          },
+          {
+            "check": "location",
+            "outcome": "pass",
+            "explanation": "A registered site is available in the requested country.",
+            "source_fields": [
+              "countries"
+            ]
+          }
+        ],
+        "unresolved": [
+          "Free-text inclusion and exclusion criteria require coordinator review."
+        ],
+        "clinical_review_required": true
+      },
+      "rank": 1,
+      "top_k_probability": 1.0
+    },
+    {
+      "trial": {
+        "nct_id": "NCT06733714",
+        "title": "Association of Transcranial Alternating Current Stimulation with Digital Cognitive Training for Cognitive Remediation in Older Adults",
+        "overall_status": "RECRUITING",
+        "conditions": [
+          "Cognitive Dysfunction",
+          "Alzheimer Disease",
+          "Mild Cognitive Impairment",
+          "Cognitive Decline",
+          "Frontotemporal Degeneration",
+          "Dementia",
+          "Dementia, Vascular",
+          "Lewy Body Disease",
+          "Beta-Amyloid",
+          "GFAP",
+          "Tau Protein"
+        ],
+        "sex": "ALL",
+        "minimum_age_years": 50.0,
+        "maximum_age_years": null,
+        "countries": [
+          "Brazil"
+        ],
+        "phases": [
+          "NA"
+        ],
+        "interventions": [
+          "Digital Cognitive Training",
+          "Transcranial Alternating Current Stimulation"
+        ],
+        "eligibility_text": "Inclusion Criteria:\n\n* Healthy subjects over 50 years old, with cognitive complaints\n\nExclusion Criteria:\n\n* Estimated Intelligence Quotient \\<80\n* Dependence on psychoactive substances (DSM-V)\n* Severe psychiatric or neurological disorders\n* Uncorrected visual/hearing problems\n* History of syncope for an unexplained reason or seizure less than a year ago\n* Previous stroke\n* Use of anticoagulants\n* Intracranial metallic prosthesis or cardiac pacemaker\n* Any contraindication to performing tACS",
+        "brief_summary": "BACKGROUND Cognitive decline in older adults, especially those who develop Mild Cognitive Impairment and Alzheimer's Disease, currently has limited options of pharmacological treatments, with modest efficacy.\n\nDigital Cognitive Training (DCT) and Transcranial Alternating Current Stimulation (tACS) are two promising tools for cognitive remediation in this population. In this exploratory study, we investigate feasibility, tolerability and preliminary effects of the association of both interventions in older adults with cognitive complaints.\n\nMETHODS Older adults with cognitive complaints are being enrolled for this study, which comprises 5 daily sessions of 30 minutes of DCT using the BrainHQ platform while simultaneously receiving theta tACS (6Hz, 1.6mA) targeting the Left Dorsolateral Prefrontal Cortex.",
+        "last_update": "2024-12-13",
+        "source_url": "https://clinicaltrials.gov/study/NCT06733714"
+      },
+      "decision": {
+        "nct_id": "NCT06733714",
+        "status": "potential_match",
+        "base_score": 0.9875,
+        "components": {
+          "condition": 1.0,
+          "status": 1.0,
+          "age": 1.0,
+          "sex": 1.0,
+          "location": 1.0,
+          "completeness": 0.875
+        },
+        "evidence": [
+          {
+            "check": "recruitment_status",
+            "outcome": "pass",
+            "explanation": "RECRUITING",
+            "source_fields": [
+              "overall_status"
+            ]
+          },
+          {
+            "check": "condition",
+            "outcome": "pass",
+            "explanation": "Condition overlap=1.00.",
+            "source_fields": [
+              "conditions"
+            ]
+          },
+          {
+            "check": "age",
+            "outcome": "pass",
+            "explanation": "Profile age=65.",
+            "source_fields": [
+              "minimum_age_years",
+              "maximum_age_years"
+            ]
+          },
+          {
+            "check": "sex",
+            "outcome": "pass",
+            "explanation": "Trial criterion=ALL.",
+            "source_fields": [
+              "sex"
+            ]
+          },
+          {
+            "check": "location",
+            "outcome": "pass",
+            "explanation": "A registered site is available in the requested country.",
+            "source_fields": [
+              "countries"
+            ]
+          }
+        ],
+        "unresolved": [
+          "Free-text inclusion and exclusion criteria require coordinator review."
+        ],
+        "clinical_review_required": true
+      },
+      "rank": 2,
+      "top_k_probability": 1.0
+    },
+    {
+      "trial": {
+        "nct_id": "NCT07213700",
+        "title": "InRAD Observational Study",
+        "overall_status": "RECRUITING",
+        "conditions": [
+          "Alzheimer's Disease(AD)",
+          "Mild Cognitive Impairment (MCI)",
+          "Subjective Cognitive Decline (SCD)",
+          "Non-Alzheimer Degenerative Dementia"
+        ],
+        "sex": "ALL",
+        "minimum_age_years": null,
+        "maximum_age_years": null,
+        "countries": [
+          "Austria",
+          "Belgium",
+          "Brazil",
+          "Czechia",
+          "Greece",
+          "Italy",
+          "Romania",
+          "Saudi Arabia",
+          "Spain",
+          "Turkey (Türkiye)"
+        ],
+        "phases": [],
+        "interventions": [
+          "None, this is a non-interventional observational study"
+        ],
+        "eligibility_text": "Inclusion Criteria:\n\n* Be undergoing diagnostic work-up for Alzheimer's disease (AD), OR\n* Have a confirmed diagnosis of AD (whether currently treated with an AD-specific treatment, or untreated),\n* Be attending an InRAD Center,\n* Have provided informed consent for long-term follow-up\n\nExclusion Criteria:\n\n-Any patient or legal representative who is unable or unwilling to provide a signed informed consent form",
+        "brief_summary": "The goal of this international observational study is to evaluate long-term disease outcomes and treatment safety in people with Alzheimer's disease (PwAD), by collecting real-world data from routine clinical practice across global clinical centers.\n\nThe InRAD Registry Observational Study has several aims:\n\n* To collect medical information for many years from a large group of people with Alzheimer's disease. This will be used for research, which will support improved understanding about the disease.\n* To enable researchers to look at the effectiveness, usefulness and safety of treatments for Alzheimer's disease.\n* To enable researchers to answer similar research questions and compare results in many different areas of the world.\n\nPeople with Alzheimer's disease who meet the eligibility criteria and agree to participate in the Study will be asked to visit their doctor (e.g. psychiatrist, geriatrician, or neurologist) at least once a year, or as frequently as is needed for their care. During or after their appointments they may be offered assessments, tests, medications, and treatments as determined by their doctor and their team. This is an observational data collection.",
+        "last_update": "2026-08-27",
+        "source_url": "https://clinicaltrials.gov/study/NCT07213700"
+      },
+      "decision": {
+        "nct_id": "NCT07213700",
+        "status": "potential_match",
+        "base_score": 0.9625,
+        "components": {
+          "condition": 1.0,
+          "status": 1.0,
+          "age": 1.0,
+          "sex": 1.0,
+          "location": 1.0,
+          "completeness": 0.625
+        },
+        "evidence": [
+          {
+            "check": "recruitment_status",
+            "outcome": "pass",
+            "explanation": "RECRUITING",
+            "source_fields": [
+              "overall_status"
+            ]
+          },
+          {
+            "check": "condition",
+            "outcome": "pass",
+            "explanation": "Condition overlap=1.00.",
+            "source_fields": [
+              "conditions"
+            ]
+          },
+          {
+            "check": "age",
+            "outcome": "pass",
+            "explanation": "Profile age=65.",
+            "source_fields": [
+              "minimum_age_years",
+              "maximum_age_years"
+            ]
+          },
+          {
+            "check": "sex",
+            "outcome": "pass",
+            "explanation": "Trial criterion=ALL.",
+            "source_fields": [
+              "sex"
+            ]
+          },
+          {
+            "check": "location",
+            "outcome": "pass",
+            "explanation": "A registered site is available in the requested country.",
+            "source_fields": [
+              "countries"
+            ]
+          }
+        ],
+        "unresolved": [
+          "Free-text inclusion and exclusion criteria require coordinator review."
+        ],
+        "clinical_review_required": true
+      },
+      "rank": 3,
+      "top_k_probability": 0.915
+    },
+    {
+      "trial": {
+        "nct_id": "NCT07391436",
+        "title": "Use of Wearables for Identifying Factors Associated With Mild Cognitive Impairment and Early-Stage Alzheimer's Disease",
+        "overall_status": "NOT_YET_RECRUITING",
+        "conditions": [
+          "Mild Cognitive Impairment",
+          "Alzheimer's Disease",
+          "Alzheimer's Disease Dementia"
+        ],
+        "sex": "ALL",
+        "minimum_age_years": 65.0,
+        "maximum_age_years": null,
+        "countries": [
+          "Brazil"
+        ],
+        "phases": [],
+        "interventions": [],
+        "eligibility_text": "Inclusion criteria Age 65 years or older; Clinical suspicion of MCI, early AD Patients who are conscious, oriented, and able to respond to questionnaires; Ability and willingness to use wearable devices for 30 days; Signature of the Informed Consent Form (ICF)\n\nNon-inclusion criteria Advanced dementia Severe uncontrolled psychiatric disorder Severe visual or hearing impairment that prevents communication Severe physical or cognitive inability to use wearables Pacemaker incompatible with the devices\n\nExclusion criteria Unconfirmed diagnosis of MCI or early AD; Voluntary withdrawal at any stage of the study; Death during the research period; Inappropriate use or non-adherence to the use of wearable devices Refusal or inability to fully perform the requested tests and exams.",
+        "brief_summary": "Cognitive decline affects millions of older adults worldwide and has a profound impact on individuals, families, and healthcare systems. Mild Cognitive Impairment (MCI) is often an early stage of Alzheimer's disease (AD), a condition for which there is currently no cure. Identifying individuals at risk at the earliest possible stage remains a major challenge. Traditional diagnostic approaches, such as laboratory biomarkers, neuroimaging, and neuropsychological testing, are usually performed at a single point in time and may fail to detect subtle or early changes in brain function and daily behavior.\n\nRecent advances in wearable technology, such as smartwatches and smart rings, allow continuous and noninvasive monitoring of physiological and behavioral patterns in daily life. These devices can capture data related to physical activity, sleep, heart rate, and other parameters that may change before clear cognitive symptoms become evident. When combined with clinical, laboratory, neuropsychological, neuroimaging, and electroencephalographic (EEG) information, these data may help identify early signs of cognitive decline.\n\nThe objective of this study is to develop and validate models capable of detecting early indicators of MCI and early-stage Alzheimer's disease by integrating multiple sources of data, including clinical assessments, blood tests, neuropsychological evaluations, brain imaging, EEG recordings, and continuous data obtained from wearable devices.\n\nThis is an observational, analytical, single-center, prospective cohort study that will include 150 participants of both sexes, aged 65 years or older. Participants will be recruited from the Dementia Outpatient Clinic of Getúlio Vargas University Hospital (HUGV), through referrals from external neurologists, or via study dissemination on social media. To achieve the target sample size, up to 250 individuals may be approached using a non-probabilistic, convenience-based recruitment strategy. After providing informed consent, participants will undergo a comprehensive medical evaluation, standardized and validated neuropsychological testing, laboratory and imaging examinations, and EEG recording. Participants will also receive training to use wearable devices for continuous monitoring in their daily routines. A control group of older adults without cognitive impairment will be included for comparison.\n\nAll collected data will be securely stored in a centralized database and used to develop and validate analytical models aimed at identifying patterns associated with cognitive decline. The results of this study may support earlier identification of individuals at risk for MCI and Alzheimer's disease, help guide timely interventions, and potentially delay disease progression and early institutionalization, contributing to improved quality of life for older adults and their families.",
+        "last_update": "2026-02-05",
+        "source_url": "https://clinicaltrials.gov/study/NCT07391436"
+      },
+      "decision": {
+        "nct_id": "NCT07391436",
+        "status": "potential_match",
+        "base_score": 0.9625,
+        "components": {
+          "condition": 1.0,
+          "status": 1.0,
+          "age": 1.0,
+          "sex": 1.0,
+          "location": 1.0,
+          "completeness": 0.625
+        },
+        "evidence": [
+          {
+            "check": "recruitment_status",
+            "outcome": "pass",
+            "explanation": "NOT_YET_RECRUITING",
+            "source_fields": [
+              "overall_status"
+            ]
+          },
+          {
+            "check": "condition",
+            "outcome": "pass",
+            "explanation": "Condition overlap=1.00.",
+            "source_fields": [
+              "conditions"
+            ]
+          },
+          {
+            "check": "age",
+            "outcome": "pass",
+            "explanation": "Profile age=65.",
+            "source_fields": [
+              "minimum_age_years",
+              "maximum_age_years"
+            ]
+          },
+          {
+            "check": "sex",
+            "outcome": "pass",
+            "explanation": "Trial criterion=ALL.",
+            "source_fields": [
+              "sex"
+            ]
+          },
+          {
+            "check": "location",
+            "outcome": "pass",
+            "explanation": "A registered site is available in the requested country.",
+            "source_fields": [
+              "countries"
+            ]
+          }
+        ],
+        "unresolved": [
+          "Free-text inclusion and exclusion criteria require coordinator review."
+        ],
+        "clinical_review_required": true
+      },
+      "rank": 4,
+      "top_k_probability": 0.915
+    },
+    {
+      "trial": {
+        "nct_id": "NCT05310890",
+        "title": "Long Term Prospective Study of Tai Chi Intervention to Prevent MCI From Conversion to Dementia",
+        "overall_status": "NOT_YET_RECRUITING",
+        "conditions": [
+          "Mild Cognitive Impairment"
+        ],
+        "sex": "ALL",
+        "minimum_age_years": 55.0,
+        "maximum_age_years": 75.0,
+        "countries": [],
+        "phases": [
+          "NA"
+        ],
+        "interventions": [
+          "Group activity",
+          "Tai chi training"
+        ],
+        "eligibility_text": "Inclusion Criteria\n\n1. Male and female participants aged 55 to 85 years (inclusive) at the time of screening\n2. Willing and able to give informed consent by GCP and local guidance.\n3. Meets the National Institute on Aging of the National Institutes of Health and Alzheimer's Association (NIA-AA) diagnostic criteria for \"Mild Cognitive Impairment Due to Alzheimer's Disease\" (2011); does not meet the American Psychiatric Association's diagnostic criteria Diagnostic and Statistical Manual of Mental Disorders, Revised IV (DSM-IV-R) diagnostic criteria for dementia;\n4. Main complaint of memory loss, 24≤MMSE and/or 17≤MOCA\\<26 points, with one or more cognitive domains impairments;\n5. CDR global score of 0.5, with memory box score ≥0.5\n6. Functional activities questionnaire (FAQ) \\<5\n7. Hachinski ischemia score ≤4;\n8. Have the physical, cognitive, listening, speech, literacy and language skills necessary to participate in all tests;\n9. Capable of performing MR\n10. Allowed and Prohibited concomitant and treatments.\n\nDuring the clinical study, the following drugs are prohibited:\n\nAcetylcholinesterase inhibitors, N-methyl-D-aspartate (NMDA) antagonists (eg, memantine, amantadine, ketamine, and dextromethorphan), adrenal corticosteroids, central nervous system stimulants, traditional Chinese medicine and various medicines that can improve memory or cognition;\n\nDuring the clinical study, the following drugs cannot be added:\n\nAntipsychotics, antidepressants, sedative-hypnotics for sleep (zopiclone, alprazolam, estazolam can be used temporarily if necessary) For long-term use of the above drugs, the dose should be kept as stable as possible during the study.\n\nExclusion Criteria\n\n1. Cognitive impairment caused by other reasons (for example) cerebrovascular disease, central nervous system infection, Creutzfeldt-Jakob disease, Huntington's disease, Parkinson's disease, dementia with Lewy bodies, trauma, other physical and chemical factors (drugs, alcohol, CO, etc.), important physical diseases (hepatic encephalopathy, pulmonary encephalopathy, etc.), brain tumor, endocrine diseases (thyroid disease, parathyroid disease), and vitamin deficiency or any other cause of dementia;\n2. Abnormal folate, thyroid, and/or vitamin B12 values that cannot be corrected before baseline visit.\n3. Major structural brain disease as judged by central MRI Diagnostic Imaging Review Team (eg, ischemic infarcts, subdural hematoma, hemorrhage, hydrocephalus, brain tumors, multiple subcortical ischemic lesions. or a single lesion in a critical region \\[eg, thalamus\\]). Mild white matter changes without clinical significance and no more than 2 lacunar infarcts are permitted.\n4. Mental illness determined by Diagnostic and Statistical Manual of Mental Disorders (DSM) V criteria, that is unstable within 12 months, or would interfere with study assessments, including schizophrenia or other psychotic disorders, bipolar disorder, severe depression, or delirium.\n5. DSM V diagnosis of alcohol or other substance abuse dependence within the last 12 months.\n6. History or current diagnosis of significant cardiac arrhythmias, myocardial infarction, transient ischemic attack, or cerebrovascular accident, uncompensated congestive heart failure New York Heart Association class III and IV.\n7. Major medical illness or unstable medical condition within 6 months of screening that in the opinion of the investigator may interfere with the participant's ability to comply with study procedures and abide by study restrictions, or with the ability to interpret safety data, including any physical disability (eg. blindness. deafness, non-cognitive related speech impairment, sensory or motor dysfunction) that would prevent completion of study procedures or assessments.\n8. Cancer except:\n\n   1. History of any cancer that has been in remission (no evidence of recurrence) for \\> 3 years from the screening\n   2. Participants with basal cell or stage I squamous cell carcinoma of the skin, stable untreated cancer as prostate or meningioma.\n9. Exercise regularly within 6 months prior to screening.\n10. Participants are excluded if they\n\n    1. have participated in any other clinical study within 4 weeks prior to screening visit\n    2. have participated in another Tai chi clinical study at any time\n    3. plan to take part in another clinical study during this study.\n11. Geriatric Depression Scale-15(GDS-15) total score \\> 7 at screening\n12. The researcher estimates that the subject's compliance is poor, and it is believed that the subject is unlikely to complete the study.",
+        "brief_summary": "This study evaluates the effects of 3 years-Tai Chi exercise intervention on cognitive function in MCI patients and to clarify whether the intervention can prevent MCI from conversion to dementia. Patients will be randomized into the Tai chi training group and the control group.",
+        "last_update": "2022-08-01",
+        "source_url": "https://clinicaltrials.gov/study/NCT05310890"
+      },
+      "decision": {
+        "nct_id": "NCT05310890",
+        "status": "potential_match",
+        "base_score": 0.9375,
+        "components": {
+          "condition": 1.0,
+          "status": 1.0,
+          "age": 1.0,
+          "sex": 1.0,
+          "location": 0.5,
+          "completeness": 0.875
+        },
+        "evidence": [
+          {
+            "check": "recruitment_status",
+            "outcome": "pass",
+            "explanation": "NOT_YET_RECRUITING",
+            "source_fields": [
+              "overall_status"
+            ]
+          },
+          {
+            "check": "condition",
+            "outcome": "pass",
+            "explanation": "Condition overlap=1.00.",
+            "source_fields": [
+              "conditions"
+            ]
+          },
+          {
+            "check": "age",
+            "outcome": "pass",
+            "explanation": "Profile age=65.",
+            "source_fields": [
+              "minimum_age_years",
+              "maximum_age_years"
+            ]
+          },
+          {
+            "check": "sex",
+            "outcome": "pass",
+            "explanation": "Trial criterion=ALL.",
+            "source_fields": [
+              "sex"
+            ]
+          },
+          {
+            "check": "location",
+            "outcome": "pass",
+            "explanation": "A registered site is available in the requested country.",
+            "source_fields": [
+              "countries"
+            ]
+          }
+        ],
+        "unresolved": [
+          "Free-text inclusion and exclusion criteria require coordinator review."
+        ],
+        "clinical_review_required": true
+      },
+      "rank": 5,
+      "top_k_probability": 0.0
+    },
+    {
+      "trial": {
+        "nct_id": "NCT05864313",
+        "title": "Gaze and Gait Training With rTMS",
+        "overall_status": "NOT_YET_RECRUITING",
+        "conditions": [
+          "Mild Cognitive Impairment"
+        ],
+        "sex": "ALL",
+        "minimum_age_years": 18.0,
+        "maximum_age_years": 80.0,
+        "countries": [],
+        "phases": [
+          "NA"
+        ],
+        "interventions": [
+          "Gait training",
+          "Gaze training",
+          "Repetitive Transcranial Magnetic Stimulation (rTMS)",
+          "Sham rTMS"
+        ],
+        "eligibility_text": "Inclusion Criteria:\n\n* Age 18 - 80 years\n* Capable of providing informed consent and complying to the experimental procedures\n\nExclusion Criteria:\n\n* Significant gait difficulty requiring ambulatory aids\n* Presence of implanted device such as a neurostimulator, cochlear implant or pacemaker\n* History of epilepsy\n* History of hearing issues",
+        "brief_summary": "The purpose of this study is to evaluate the feasibility of combining repetitive transcranial magnetic stimulation (rTMS), gaze and gait training to improve walking and balance in people with or without mild cognitive impairment.",
+        "last_update": "2026-05-06",
+        "source_url": "https://clinicaltrials.gov/study/NCT05864313"
+      },
+      "decision": {
+        "nct_id": "NCT05864313",
+        "status": "potential_match",
+        "base_score": 0.9375,
+        "components": {
+          "condition": 1.0,
+          "status": 1.0,
+          "age": 1.0,
+          "sex": 1.0,
+          "location": 0.5,
+          "completeness": 0.875
+        },
+        "evidence": [
+          {
+            "check": "recruitment_status",
+            "outcome": "pass",
+            "explanation": "NOT_YET_RECRUITING",
+            "source_fields": [
+              "overall_status"
+            ]
+          },
+          {
+            "check": "condition",
+            "outcome": "pass",
+            "explanation": "Condition overlap=1.00.",
+            "source_fields": [
+              "conditions"
+            ]
+          },
+          {
+            "check": "age",
+            "outcome": "pass",
+            "explanation": "Profile age=65.",
+            "source_fields": [
+              "minimum_age_years",
+              "maximum_age_years"
+            ]
+          },
+          {
+            "check": "sex",
+            "outcome": "pass",
+            "explanation": "Trial criterion=ALL.",
+            "source_fields": [
+              "sex"
+            ]
+          },
+          {
+            "check": "location",
+            "outcome": "pass",
+            "explanation": "A registered site is available in the requested country.",
+            "source_fields": [
+              "countries"
+            ]
+          }
+        ],
+        "unresolved": [
+          "Free-text inclusion and exclusion criteria require coordinator review."
+        ],
+        "clinical_review_required": true
+      },
+      "rank": 6,
+      "top_k_probability": 0.0
+    },
+    {
+      "trial": {
+        "nct_id": "NCT06177028",
+        "title": "MCLENA-2: A Phase II Clinical Trial for the Assessment of Lenalidomide in Patients With Mild Cognitive Impairment",
+        "overall_status": "NOT_YET_RECRUITING",
+        "conditions": [
+          "Cognitive Impairment, Mild",
+          "Cognitive Dysfunction",
+          "Amyloid Plaque",
+          "Neurodegenerative Disease, Hereditary",
+          "Inflammation, Brain"
+        ],
+        "sex": "ALL",
+        "minimum_age_years": 50.0,
+        "maximum_age_years": 90.0,
+        "countries": [],
+        "phases": [
+          "PHASE2"
+        ],
+        "interventions": [
+          "Lenalidomide 10 mg"
+        ],
+        "eligibility_text": "In order to be eligible for this study, subjects must meet the following inclusion criteria:\n\nInclusion Criteria:\n\n1. Male or female outpatients.\n2. At least 50 years of age, but less than 90 (89 at time of screening)\n3. Females must be surgically sterile (bilateral tubal ligation, oophorectomy, or hysterectomy) or postmenopausal for 2 years (no women at risk of pregnancy will be accepted in this study).\n4. Must have been diagnosed with amnestic MCI based on the most recent NIA-AA criteria (Albert et al., 2011), i.e. at both the screening and baseline visits (visits 1 and 2) have a documented Mini Mental State Exam (MMSE) score between 22-28.\n5. CT or MRI scan of the brain obtained during the course of the dementia must be consistent with the diagnosis and show no evidence of significant focal lesions or of pathology which could contribute to dementia. If neither a CT nor an MRI scan is available from the past 12 months, a CT scan fulfilling the requirements must be obtained before randomization.\n6. Vision and hearing must be sufficient to comply with study procedures.\n7. Be able to take oral medications.\n8. Hachinski ischemic score must be ≤ 4.\n9. Geriatric depression scale must be ≤ 10.\n10. Can be on stable doses of a cholinesterase inhibitor and/or memantine as long as it is stable for at least 90 days before screening and is expected to remain on a stable dose for the remainder of the study period; or have demonstrated intolerance to or lack of efficacy from these medications.\n11. Must have a collateral informant/study partner who has significant direct contact with the patient at least 10 hours per week and who is willing to accompany the patient to specified clinic visits, supervise administration of all study medication, and be available for telephone visits/interviews.\n12. If the patient has a legally authorized representative (LAR), the LAR must review and sign the informed consent form. If the patient does not have an LAR, the patient must appear able to provide informed consent and must review and sign the informed consent form. In addition, the patient's informant/study partner (as defined above) must sign an informed consent form. If the LAR and the patient's informant /study partner is the same individual, he/she should sign under both designations.\n13. Must reside in the community.\n14. Patients with stable prostate cancer may be included at the discretion of the Medical Monitor.\n15. Positivity for amyloid brain scan: Amyloid PET positive at SUVr of 1.05\n\nExclusion Criteria:\n\nSubjects will be excluded if they have any of the condition listed below:\n\n1. Current evidence or history within the last 3 years of a neurological or psychiatric illness that could contribute to dementia, including (but not limited to) epilepsy, focal brain lesion, Parkinson's disease, seizure disorder, head injury with loss of consciousness\n2. DSM IV criteria for any major psychiatric disorder including psychosis, major depression and bipolar disorder.\n3. Unwilling or unable to undergo a Lumbar Puncture.\n4. Known history or self-reported alcohol or substance abuse.\n5. Living alone.\n6. Poorly controlled hypertension. 7 .History of myocardial infarction or signs or symptoms of unstable coronary artery disease within the last year (including revascularization procedure/angioplasty).\n\n8\\. Severe pulmonary disease (including chronic obstructive pulmonary disease) requiring more than 2 hospitalizations within the past year.\n\n9\\. Untreated sleep apnea. 10. Any thyroid disease (unless euthyroid on treatment for at least 6 months prior to screening).\n\n11\\. Active neoplastic disease (except for skin tumors other than melanoma) within five years.\n\n12\\. History of multiple myeloma. 13. Absolute neutropenia of \\<750/mm3, or a history of neutropenia. 14. History of or current thromboembolism (including deep venous thrombosis). 15. Any clinically significant hepatic or renal disease (including presence of Hepatitis B or C antigen/antibody or an elevated transaminase levels of greater than two times the upper limit of normal (ULN) or creatinine greater than 1.5 x ULN).\n\n16\\. Clinically significant hematologic or coagulation disorder including any unexplained anemia or a platelet count less than 100,000/μL at screening.\n\n17\\. Use of any investigational drug within 30 days or within five half-lives of the investigational agent, whichever is longer.\n\n18\\. Use any investigational medical device within two weeks before screening or after end of the present study.\n\n19\\. Females who are at risk of pregnancy or are of child bearing age. 20. Unwilling or unable to undergo MRI and PET imaging. 21. Cardiac pacemaker or defibrillator or other implanted device. 22. In the opinion of the investigator, participation would not be in the best interest of the subject",
+        "brief_summary": "This is a randomized, double-blind, placebo-controlled, parallel group study. The use of placebo is appropriate to minimize bias related to treatment expectations of the subject, study partner, and site investigator, as well as to changes in the relationship between the subject and study partner that might occur with the initiation of treatment and expectation of improvement in motor symptoms or cognition. Changes in subject/study partner interactions can impact subject mood and might introduce biases that cannot be quantified. The double-blind use of placebo will also prevent bias in the clinical and scientific assessments.",
+        "last_update": "2025-05-18",
+        "source_url": "https://clinicaltrials.gov/study/NCT06177028"
+      },
+      "decision": {
+        "nct_id": "NCT06177028",
+        "status": "potential_match",
+        "base_score": 0.9375,
+        "components": {
+          "condition": 1.0,
+          "status": 1.0,
+          "age": 1.0,
+          "sex": 1.0,
+          "location": 0.5,
+          "completeness": 0.875
+        },
+        "evidence": [
+          {
+            "check": "recruitment_status",
+            "outcome": "pass",
+            "explanation": "NOT_YET_RECRUITING",
+            "source_fields": [
+              "overall_status"
+            ]
+          },
+          {
+            "check": "condition",
+            "outcome": "pass",
+            "explanation": "Condition overlap=1.00.",
+            "source_fields": [
+              "conditions"
+            ]
+          },
+          {
+            "check": "age",
+            "outcome": "pass",
+            "explanation": "Profile age=65.",
+            "source_fields": [
+              "minimum_age_years",
+              "maximum_age_years"
+            ]
+          },
+          {
+            "check": "sex",
+            "outcome": "pass",
+            "explanation": "Trial criterion=ALL.",
+            "source_fields": [
+              "sex"
+            ]
+          },
+          {
+            "check": "location",
+            "outcome": "pass",
+            "explanation": "A registered site is available in the requested country.",
+            "source_fields": [
+              "countries"
+            ]
+          }
+        ],
+        "unresolved": [
+          "Free-text inclusion and exclusion criteria require coordinator review."
+        ],
+        "clinical_review_required": true
+      },
+      "rank": 7,
+      "top_k_probability": 0.0
+    },
+    {
+      "trial": {
+        "nct_id": "NCT06392412",
+        "title": "Virtual Reality Cognitive Training for Older Adults With Mild Cognitive Impairment",
+        "overall_status": "NOT_YET_RECRUITING",
+        "conditions": [
+          "Mild Cognitive Impairment",
+          "Older Adults"
+        ],
+        "sex": "ALL",
+        "minimum_age_years": 65.0,
+        "maximum_age_years": 90.0,
+        "countries": [],
+        "phases": [
+          "NA"
+        ],
+        "interventions": [
+          "Traditional Cognitive Training",
+          "fi-VR Cognitive Training"
+        ],
+        "eligibility_text": "Inclusion Criteria:\n\n1. Aged 65 or above.\n2. MoCA score between 18 and 25.\n3. Capability to follow directions and do tasks.\n\nExclusion Criteria:\n\n1. History of dementia.\n2. Previous neurodegenerative illness diagnosis.\n3. Severe medical or surgical problems.\n4. Major psychological disorders.\n5. Inability to use VR system",
+        "brief_summary": "This study aims to (1) develop and assess the feasibility of a fi-VRCT program based on IADL for older adults with MCI, (2) implement and evaluate the effectiveness of the fi-VRCT program based on IADL in older adults with MCI, and (3) investigate the potential mechanism of the fi-VRCT program based on IADL for older adults with MCI and refine this intervention accordingly.",
+        "last_update": "2024-07-03",
+        "source_url": "https://clinicaltrials.gov/study/NCT06392412"
+      },
+      "decision": {
+        "nct_id": "NCT06392412",
+        "status": "potential_match",
+        "base_score": 0.9375,
+        "components": {
+          "condition": 1.0,
+          "status": 1.0,
+          "age": 1.0,
+          "sex": 1.0,
+          "location": 0.5,
+          "completeness": 0.875
+        },
+        "evidence": [
+          {
+            "check": "recruitment_status",
+            "outcome": "pass",
+            "explanation": "NOT_YET_RECRUITING",
+            "source_fields": [
+              "overall_status"
+            ]
+          },
+          {
+            "check": "condition",
+            "outcome": "pass",
+            "explanation": "Condition overlap=1.00.",
+            "source_fields": [
+              "conditions"
+            ]
+          },
+          {
+            "check": "age",
+            "outcome": "pass",
+            "explanation": "Profile age=65.",
+            "source_fields": [
+              "minimum_age_years",
+              "maximum_age_years"
+            ]
+          },
+          {
+            "check": "sex",
+            "outcome": "pass",
+            "explanation": "Trial criterion=ALL.",
+            "source_fields": [
+              "sex"
+            ]
+          },
+          {
+            "check": "location",
+            "outcome": "pass",
+            "explanation": "A registered site is available in the requested country.",
+            "source_fields": [
+              "countries"
+            ]
+          }
+        ],
+        "unresolved": [
+          "Free-text inclusion and exclusion criteria require coordinator review."
+        ],
+        "clinical_review_required": true
+      },
+      "rank": 8,
+      "top_k_probability": 0.0
+    },
+    {
+      "trial": {
+        "nct_id": "NCT06825663",
+        "title": "Marker of Brain Insulin Resistance in AD Prognosis",
+        "overall_status": "NOT_YET_RECRUITING",
+        "conditions": [
+          "Prognosis Biomarker of AD",
+          "Mild Cognitive Impairment",
+          "Brain Insuline Resistance"
+        ],
+        "sex": "ALL",
+        "minimum_age_years": 18.0,
+        "maximum_age_years": 75.0,
+        "countries": [],
+        "phases": [
+          "NA"
+        ],
+        "interventions": [
+          "Blood punction"
+        ],
+        "eligibility_text": "Inclusion Criteria:\n\n* Men or women aged 18 to 75\n* Have been treated for mild cognitive impairment at the Nancy CHRU CMRR for 1 to 2 years\n* Person affiliated to a social security scheme or beneficiary of such a scheme\n* Person who has received full information on the organisation of the research and has signed an informed consent form\n\nExclusion Criteria:\n\n* Adult subject to a legal protection measure (guardianship, curatorship, safeguard of justice)\n* A person who has converted to clinically proven AD. The fact that an LP to measure AD markers has been performed is not a criterion for inclusion.\n* An adult unable to give consent\n* Person deprived of liberty by a judicial or administrative decision\n* Persons under psychiatric care by virtue of articles L. 3212-1 and L. 3213-1.\n* Pregnant women, women in labour or breastfeeding mothers\n* Persons staying in a health or social establishment for purposes other than research.",
+        "brief_summary": "Basic research data from the literature on the links between cerebral insulin resistance and Alzheimer's disease (AD) suggest that this pathophysiological mechanism is involved at a very early stage in the development of the disease.\n\nThe insulin receptor (IR) is a tyrosine kinase receptor whose activation by insulin binding leads to autophosphorylation of its IRβ subunits and then of the insulin receptor substrate proteins (IRS-1). The ratio of IRS residues phosphorylated on serine 312 (P(Ser312)-IRS-1) to total phosphorylated IRS or IRS phosphorylated on its tyrosines has been proposed by some authors as an index of insulin resistance in the brain. IRS-1 proteins can be measured in exosomes, and in particular in neuronal exosomes isolated from plasma. It is therefore conceivable to measure this index in these biological samples specifically derived from neurons and available from a simple blood test, in order to determine whether it could be of prognostic interest in patients with mild cognitive impairment (MCI), in particular by making it possible to identify at an early stage patients who are going to convert to AD.",
+        "last_update": "2025-02-13",
+        "source_url": "https://clinicaltrials.gov/study/NCT06825663"
+      },
+      "decision": {
+        "nct_id": "NCT06825663",
+        "status": "potential_match",
+        "base_score": 0.9375,
+        "components": {
+          "condition": 1.0,
+          "status": 1.0,
+          "age": 1.0,
+          "sex": 1.0,
+          "location": 0.5,
+          "completeness": 0.875
+        },
+        "evidence": [
+          {
+            "check": "recruitment_status",
+            "outcome": "pass",
+            "explanation": "NOT_YET_RECRUITING",
+            "source_fields": [
+              "overall_status"
+            ]
+          },
+          {
+            "check": "condition",
+            "outcome": "pass",
+            "explanation": "Condition overlap=1.00.",
+            "source_fields": [
+              "conditions"
+            ]
+          },
+          {
+            "check": "age",
+            "outcome": "pass",
+            "explanation": "Profile age=65.",
+            "source_fields": [
+              "minimum_age_years",
+              "maximum_age_years"
+            ]
+          },
+          {
+            "check": "sex",
+            "outcome": "pass",
+            "explanation": "Trial criterion=ALL.",
+            "source_fields": [
+              "sex"
+            ]
+          },
+          {
+            "check": "location",
+            "outcome": "pass",
+            "explanation": "A registered site is available in the requested country.",
+            "source_fields": [
+              "countries"
+            ]
+          }
+        ],
+        "unresolved": [
+          "Free-text inclusion and exclusion criteria require coordinator review."
+        ],
+        "clinical_review_required": true
+      },
+      "rank": 9,
+      "top_k_probability": 0.0
+    },
+    {
+      "trial": {
+        "nct_id": "NCT06934720",
+        "title": "VR-based Physical Activity and Reminiscence Therapy",
+        "overall_status": "NOT_YET_RECRUITING",
+        "conditions": [
+          "Dementia",
+          "Neurodegenerative Disease",
+          "Mild Cognitive Impairment (MCI)",
+          "Virtual Reality",
+          "Physical Activity",
+          "Alzheimer&#39;s Disease (AD)",
+          "Cognitive Therapy"
+        ],
+        "sex": "ALL",
+        "minimum_age_years": 60.0,
+        "maximum_age_years": 100.0,
+        "countries": [],
+        "phases": [
+          "PHASE1",
+          "PHASE2"
+        ],
+        "interventions": [
+          "aPAVRCT"
+        ],
+        "eligibility_text": "Inclusion Criteria:\n\n* older adults in the setting who have the ability to pedal the rehabilitation bike\n\nExclusion Criteria:\n\n* Individuals self-reporting or identified by stakeholders as unwilling or unsuitable to participate.",
+        "brief_summary": "The goal of this clinical trial is to learn if active Physical activity + virtual reality cognitive therapy (aPAVRCT) works to slow the progression of AD cognitive decline in older adults. It will also learn about the physical effects and mental effects of the aPAVRCT. The main questions it aims to answer are:\n\nDoes aPAVRCT slow the progression of AD cognitive decline? (e.g., HK-MoCA, ADAS-Cog) Does aPAVRCT improve physical function? (e.g., ADL) Does aPAVRCT improve mental health? (e.g., GDS-15, PANAS) Does aPAVRCT improve life satisfaction? Does aPAVRCT improve other cognitive or physical capacities? What issues and benefits do participants and stakeholders (e.g., families, caregivers, managers) have when taking aPAVRCT? (e.g., NPI-Q) Researchers will compare the intervention group (aPAVRCT) to a control group (rehabilitation bike) to see if aPAVRCT works to slow the progression of AD in cognitive decline.\n\nParticipants will:\n\nTake aPAVRCT (interventional group) or usual physical acitvity (control group) at least twice a week, 15 minutes for each session, for 12-16 weeks Physiotherapies (assistants) and care professionals will do the intervention, research group will operate, observe, and assist the experiment.\n\nAll the experiment processes will be recorded. Visit the sites everyday for checkups and tests Keep a diary of their symptoms, the number of times, and any essential information\n\nSites: around 3-5 nursing homes, under one institution. Inclusion criteria: older adults in the setting who have the ability to pedal a rehabilitation bike.",
+        "last_update": "2025-05-22",
+        "source_url": "https://clinicaltrials.gov/study/NCT06934720"
+      },
+      "decision": {
+        "nct_id": "NCT06934720",
+        "status": "potential_match",
+        "base_score": 0.9375,
+        "components": {
+          "condition": 1.0,
+          "status": 1.0,
+          "age": 1.0,
+          "sex": 1.0,
+          "location": 0.5,
+          "completeness": 0.875
+        },
+        "evidence": [
+          {
+            "check": "recruitment_status",
+            "outcome": "pass",
+            "explanation": "NOT_YET_RECRUITING",
+            "source_fields": [
+              "overall_status"
+            ]
+          },
+          {
+            "check": "condition",
+            "outcome": "pass",
+            "explanation": "Condition overlap=1.00.",
+            "source_fields": [
+              "conditions"
+            ]
+          },
+          {
+            "check": "age",
+            "outcome": "pass",
+            "explanation": "Profile age=65.",
+            "source_fields": [
+              "minimum_age_years",
+              "maximum_age_years"
+            ]
+          },
+          {
+            "check": "sex",
+            "outcome": "pass",
+            "explanation": "Trial criterion=ALL.",
+            "source_fields": [
+              "sex"
+            ]
+          },
+          {
+            "check": "location",
+            "outcome": "pass",
+            "explanation": "A registered site is available in the requested country.",
+            "source_fields": [
+              "countries"
+            ]
+          }
+        ],
+        "unresolved": [
+          "Free-text inclusion and exclusion criteria require coordinator review."
+        ],
+        "clinical_review_required": true
+      },
+      "rank": 10,
+      "top_k_probability": 0.0
+    }
+  ],
+  "audits": {
+    "NCT03263247": {
+      "passed": true,
+      "issues": []
+    },
+    "NCT06733714": {
+      "passed": true,
+      "issues": []
+    },
+    "NCT07213700": {
+      "passed": true,
+      "issues": []
+    },
+    "NCT07391436": {
+      "passed": true,
+      "issues": []
+    },
+    "NCT05310890": {
+      "passed": true,
+      "issues": []
+    },
+    "NCT05864313": {
+      "passed": true,
+      "issues": []
+    },
+    "NCT06177028": {
+      "passed": true,
+      "issues": []
+    },
+    "NCT06392412": {
+      "passed": true,
+      "issues": []
+    },
+    "NCT06825663": {
+      "passed": true,
+      "issues": []
+    },
+    "NCT06934720": {
+      "passed": true,
+      "issues": []
+    }
+  },
+  "trace": [
+    {
+      "name": "profile_intake",
+      "status": "completed",
+      "detail": "Accepted a minimal non-identifying profile."
+    },
+    {
+      "name": "structured_screen",
+      "status": "completed",
+      "detail": "Evaluated 1968 registry records; 1560 had no hard structured exclusion."
+    },
+    {
+      "name": "sensitivity_analysis",
+      "status": "completed",
+      "detail": "Sampled 2000 weight sets with seed 42."
+    },
+    {
+      "name": "evidence_audit",
+      "status": "completed",
+      "detail": "Audited 10 displayed candidates against registered source fields."
+    },
+    {
+      "name": "report",
+      "status": "completed",
+      "detail": "Returned navigation candidates with explicit unresolved criteria and human-review safeguards."
+    }
+  ],
+  "limitations": [
+    "The system checks only registered structured fields automatically.",
+    "Free-text eligibility criteria require review by a trial coordinator.",
+    "Rankings indicate navigation relevance, not medical benefit or eligibility.",
+    "Only non-identifying research profiles should be entered."
+  ]
+}

@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NeuroNav-Agent：面向认知健康临床试验的循证、可解释、不确定性感知患者导航智能体。">
+  <title>NeuroNav-Agent · 一页看懂项目</title>
+  <style>
+    :root {
+      --ink: #17202b;
+      --muted: #5b6572;
+      --paper: #f7f5ef;
+      --surface: #fffefb;
+      --line: #d9d7cf;
+      --blue: #0f4d92;
+      --blue-soft: #dbe7f4;
+      --teal: #327f88;
+      --red: #a6403f;
+      --gold: #c68d2d;
+      --max: 1160px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    .shell { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(247, 245, 239, 0.94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+    nav { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { font-weight: 800; letter-spacing: -0.03em; text-decoration: none; }
+    .nav-links { display: flex; gap: 20px; font-size: 14px; color: var(--muted); }
+    .nav-links a { text-decoration: none; }
+    .nav-links a:hover, .nav-links a:focus { color: var(--blue); }
+
+    main { overflow: hidden; }
+    .hero {
+      padding: 92px 0 58px;
+      border-bottom: 1px solid var(--line);
+    }
+    .eyebrow {
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 14px 0 18px;
+      max-width: 920px;
+      font-family: Georgia, "Noto Serif SC", serif;
+      font-size: clamp(42px, 6vw, 78px);
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+    }
+    .lead { max-width: 760px; margin: 0; font-size: clamp(18px, 2vw, 23px); color: var(--muted); }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border: 1px solid var(--ink);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .button.primary { color: white; background: var(--ink); }
+    .button:hover, .button:focus { transform: translateY(-1px); box-shadow: 0 5px 0 var(--blue-soft); }
+    .warning {
+      margin-top: 36px;
+      max-width: 880px;
+      padding: 15px 18px;
+      border-left: 4px solid var(--gold);
+      background: #fff9e9;
+      font-size: 14px;
+    }
+
+    section { padding: 72px 0; border-bottom: 1px solid var(--line); }
+    .section-head { display: grid; grid-template-columns: 0.36fr 1fr; gap: 36px; margin-bottom: 38px; }
+    .section-no { color: var(--blue); font-weight: 800; }
+    h2 { margin: 0; font-family: Georgia, "Noto Serif SC", serif; font-size: clamp(29px, 4vw, 46px); line-height: 1.15; }
+    h3 { margin: 0 0 8px; font-size: 18px; }
+    .section-copy { max-width: 720px; color: var(--muted); }
+
+    .metrics { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); background: var(--surface); }
+    .metric { min-height: 155px; padding: 24px; border-right: 1px solid var(--line); }
+    .metric:last-child { border-right: 0; }
+    .metric strong { display: block; font-family: Georgia, serif; font-size: 42px; line-height: 1; color: var(--blue); }
+    .metric span { display: block; margin-top: 12px; color: var(--muted); font-size: 14px; }
+
+    .flow { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+    .flow article { position: relative; min-height: 170px; padding: 22px 18px; background: var(--surface); }
+    .flow b { display: block; margin-bottom: 12px; color: var(--blue); font-size: 12px; letter-spacing: 0.08em; }
+    .flow p { margin: 0; font-size: 14px; color: var(--muted); }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+    .panel { padding: 28px; background: var(--surface); border: 1px solid var(--line); }
+    .panel ul { margin: 14px 0 0; padding-left: 20px; }
+    .panel li + li { margin-top: 9px; }
+    .panel.safe { border-top: 5px solid var(--teal); }
+    .panel.limit { border-top: 5px solid var(--red); }
+
+    figure { margin: 32px 0 0; background: white; border: 1px solid var(--line); }
+    figure img { display: block; width: 100%; height: auto; }
+    figcaption { padding: 15px 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+
+    .method-table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--line); }
+    .method-table th, .method-table td { padding: 15px 16px; text-align: left; border-bottom: 1px solid var(--line); }
+    .method-table th { color: var(--muted); font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; }
+    .method-table td:nth-child(n+2) { font-variant-numeric: tabular-nums; }
+    .method-table tr:last-child td { border-bottom: 0; }
+    .best { color: var(--blue); font-weight: 800; }
+
+    .code {
+      margin-top: 26px;
+      padding: 22px;
+      overflow-x: auto;
+      color: #e7edf5;
+      background: #17202b;
+      border-left: 5px solid var(--teal);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Consolas, monospace;
+      white-space: pre;
+    }
+    .takeaway { padding: 28px 0; color: var(--muted); font-size: 14px; }
+    footer { padding: 34px 0 60px; color: var(--muted); font-size: 13px; }
+
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .section-head, .two-col { grid-template-columns: 1fr; }
+      .metrics { grid-template-columns: 1fr 1fr; }
+      .metric:nth-child(2) { border-right: 0; }
+      .metric:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+      .flow { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 560px) {
+      .shell { width: min(100% - 24px, var(--max)); }
+      .hero { padding-top: 62px; }
+      .metrics, .flow { grid-template-columns: 1fr; }
+      .metric { border-right: 0; border-bottom: 1px solid var(--line); }
+      .metric:last-child { border-bottom: 0; }
+      .method-table { font-size: 12px; }
+      .method-table th, .method-table td { padding: 10px 8px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="shell" aria-label="页面导航">
+      <a class="brand" href="#top">NeuroNav-Agent</a>
+      <div class="nav-links">
+        <a href="#problem">问题</a><a href="#workflow">流程</a><a href="#results">结果</a>
+        <a href="#safety">安全</a><a href="#reproduce">复现</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div class="shell">
+        <div class="eyebrow">Evidence-grounded healthcare agent</div>
+        <h1>让每一次试验推荐都有证据，也允许系统说“不知道”</h1>
+        <p class="lead">面向认知健康临床试验的患者导航智能体：检索真实登记数据，执行可解释预筛，量化排序不确定性，并把无法自动判断的条件交还给人。</p>
+        <div class="actions">
+          <a class="button primary" href="#results">查看真实结果</a>
+          <a class="button" href="https://clinicaltrials.gov/data-api/about-api">查看数据源</a>
+        </div>
+        <div class="warning"><strong>用途边界：</strong>本项目是研究原型，不诊断疾病、不判定完整入组资格，也不替代医生或临床试验协调员。</div>
+      </div>
+    </div>
+
+    <section id="problem">
+      <div class="shell">
+        <div class="section-head">
+          <div class="section-no">01 / 问题</div>
+          <div><h2>临床试验信息很多，但“搜到”不等于“适合行动”</h2><p class="section-copy">关键词检索会返回疾病名称相似、年龄不符、停止招募或本地没有登记地点的研究。NeuroNav-Agent 把检索、有限预筛、排序、稳健性分析和证据审核组成一个可复现工作流。</p></div>
+        </div>
+        <div class="metrics" aria-label="项目规模">
+          <div class="metric"><strong>1,968</strong><span>当前开放的真实试验登记记录</span></div>
+          <div class="metric"><strong>477</strong><span>可审计合成测试病例</span></div>
+          <div class="metric"><strong>2,000</strong><span>蒙特卡洛权重抽样次数</span></div>
+          <div class="metric"><strong>0</strong><span>患者级隐私数据</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow">
+      <div class="shell">
+        <div class="section-head">
+          <div class="section-no">02 / 智能体流程</div>
+          <div><h2>关键判断由可测试工具完成，而不是让大模型自由发挥</h2><p class="section-copy">系统保留完整执行轨迹。自然语言模型可以作为可选交互层，但不能覆盖年龄、性别、状态、地点或证据审核结果。</p></div>
+        </div>
+        <div class="flow">
+          <article><b>STEP 01</b><h3>最小画像</h3><p>仅使用疾病、年龄、登记性别类别和国家。</p></article>
+          <article><b>STEP 02</b><h3>真实检索</h3><p>调用 ClinicalTrials.gov API 并保存时间戳快照。</p></article>
+          <article><b>STEP 03</b><h3>结构化预筛</h3><p>逐项记录 pass、fail、caution 或 unknown。</p></article>
+          <article><b>STEP 04</b><h3>透明排序</h3><p>分解疾病、状态、年龄、性别、地点和完整度得分。</p></article>
+          <article><b>STEP 05</b><h3>稳健性</h3><p>改变权重 2,000 次，观察候选能否稳定进入前十。</p></article>
+          <article><b>STEP 06</b><h3>独立审核</h3><p>检查分数范围、来源字段、人工复核和安全边界。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="results">
+      <div class="shell">
+        <div class="section-head">
+          <div class="section-no">03 / 真实结果</div>
+          <div><h2>加入可行动条件后，受控误报被逐层消除</h2><p class="section-copy">基准病例来自真实登记字段，并通过改变疾病、年龄、性别或本地登记地点构造反例。置信区间来自 2,000 次 bootstrap 重采样。</p></div>
+        </div>
+        <table class="method-table">
+          <thead><tr><th>方法</th><th>平衡准确率</th><th>95% CI</th><th>误报率</th></tr></thead>
+          <tbody>
+            <tr><td>关键词检索</td><td>0.665</td><td>0.642–0.690</td><td>0.669</td></tr>
+            <tr><td>部分结构化筛选</td><td>0.826</td><td>0.802–0.849</td><td>0.347</td></tr>
+            <tr><td class="best">NeuroNav-Agent</td><td class="best">0.997</td><td>0.993–1.000</td><td class="best">0.006</td></tr>
+          </tbody>
+        </table>
+        <figure>
+          <img src="assets/figure1_navigation_performance.svg" alt="三种导航方法的平衡准确率和误报率比较">
+          <figcaption>图 1｜受控本地可行动匹配基准。0.997 主要表示程序正确处理预先定义的结构化反例，不是临床或诊断准确率。</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/figure2_trial_landscape.svg" alt="认知健康试验的国家覆盖、状态和排名稳健性">
+          <figcaption>图 2｜1,968 条当前开放登记记录的地理覆盖与示例排序稳健性。国家计数代表试验是否在该国登记地点，不代表受试者数量、疾病负担或疗效。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="safety">
+      <div class="shell">
+        <div class="section-head">
+          <div class="section-no">04 / 安全与可信</div>
+          <div><h2>项目最重要的功能之一，是拒绝做证据不足的结论</h2></div>
+        </div>
+        <div class="two-col">
+          <div class="panel safe"><h3>系统会做</h3><ul><li>引用原始 NCT 登记页面和字段。</li><li>把不确定或缺失信息明确暴露出来。</li><li>区分医学条件与地理可行动性。</li><li>保留完整逐病例预测，支持复核。</li><li>使用非识别性合成画像完成测试。</li></ul></div>
+          <div class="panel limit"><h3>系统不会做</h3><ul><li>诊断认知障碍或预测治疗效果。</li><li>宣称自动完成所有自由文本入排标准。</li><li>将“没有当地地点”解释成医学不合格。</li><li>接收姓名、联系方式或病历标识符。</li><li>用漂亮文字掩盖无来源的判断。</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reproduce">
+      <div class="shell">
+        <div class="section-head">
+          <div class="section-no">05 / 完整复现</div>
+          <div><h2>从 API 到图表，五条命令重新生成全部公开结果</h2><p class="section-copy">重新下载会得到新的动态快照，因此数值可能随注册信息更新而变化。元数据文件会记录检索时间、关键词和样本数。</p></div>
+        </div>
+        <div class="code">pip install -e ".[analysis,demo,dev]"
+pytest
+python -m scripts.download_trials
+python -m scripts.build_benchmark
+python -m scripts.run_evaluation
+python -m scripts.run_analysis
+python -m scripts.make_figures
+streamlit run app.py</div>
+        <p class="takeaway"><strong>一句话总结：</strong>NeuroNav-Agent 的贡献不是声称“AI 能替医生做决定”，而是展示如何把患者导航拆成可追踪、可拒答、可统计验证的智能体工作流。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="shell">NeuroNav-Agent · Public research prototype · Snapshot retrieved 2026-09-05 (Asia/Shanghai) · MIT-licensed code</div></footer>
+</body>
+</html>
