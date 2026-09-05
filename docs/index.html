@@ -3,274 +3,161 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="NeuroNav-Agent：面向认知健康临床试验的循证、可解释、不确定性感知患者导航智能体。">
-  <title>NeuroNav-Agent · 一页看懂项目</title>
-  <style>
-    :root {
-      --ink: #17202b;
-      --muted: #5b6572;
-      --paper: #f7f5ef;
-      --surface: #fffefb;
-      --line: #d9d7cf;
-      --blue: #0f4d92;
-      --blue-soft: #dbe7f4;
-      --teal: #327f88;
-      --red: #a6403f;
-      --gold: #c68d2d;
-      --max: 1160px;
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      color: var(--ink);
-      background: var(--paper);
-      font-family: Inter, "Noto Sans SC", "Microsoft YaHei", system-ui, sans-serif;
-      line-height: 1.65;
-    }
-    a { color: inherit; }
-    .shell { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(247, 245, 239, 0.94);
-      border-bottom: 1px solid var(--line);
-      backdrop-filter: blur(12px);
-    }
-    nav { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-    .brand { font-weight: 800; letter-spacing: -0.03em; text-decoration: none; }
-    .nav-links { display: flex; gap: 20px; font-size: 14px; color: var(--muted); }
-    .nav-links a { text-decoration: none; }
-    .nav-links a:hover, .nav-links a:focus { color: var(--blue); }
-
-    main { overflow: hidden; }
-    .hero {
-      padding: 92px 0 58px;
-      border-bottom: 1px solid var(--line);
-    }
-    .eyebrow {
-      color: var(--blue);
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-    h1 {
-      margin: 14px 0 18px;
-      max-width: 920px;
-      font-family: Georgia, "Noto Serif SC", serif;
-      font-size: clamp(42px, 6vw, 78px);
-      line-height: 1.05;
-      letter-spacing: -0.045em;
-    }
-    .lead { max-width: 760px; margin: 0; font-size: clamp(18px, 2vw, 23px); color: var(--muted); }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
-    .button {
-      display: inline-flex;
-      align-items: center;
-      min-height: 44px;
-      padding: 0 18px;
-      border: 1px solid var(--ink);
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 14px;
-    }
-    .button.primary { color: white; background: var(--ink); }
-    .button:hover, .button:focus { transform: translateY(-1px); box-shadow: 0 5px 0 var(--blue-soft); }
-    .warning {
-      margin-top: 36px;
-      max-width: 880px;
-      padding: 15px 18px;
-      border-left: 4px solid var(--gold);
-      background: #fff9e9;
-      font-size: 14px;
-    }
-
-    section { padding: 72px 0; border-bottom: 1px solid var(--line); }
-    .section-head { display: grid; grid-template-columns: 0.36fr 1fr; gap: 36px; margin-bottom: 38px; }
-    .section-no { color: var(--blue); font-weight: 800; }
-    h2 { margin: 0; font-family: Georgia, "Noto Serif SC", serif; font-size: clamp(29px, 4vw, 46px); line-height: 1.15; }
-    h3 { margin: 0 0 8px; font-size: 18px; }
-    .section-copy { max-width: 720px; color: var(--muted); }
-
-    .metrics { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line); background: var(--surface); }
-    .metric { min-height: 155px; padding: 24px; border-right: 1px solid var(--line); }
-    .metric:last-child { border-right: 0; }
-    .metric strong { display: block; font-family: Georgia, serif; font-size: 42px; line-height: 1; color: var(--blue); }
-    .metric span { display: block; margin-top: 12px; color: var(--muted); font-size: 14px; }
-
-    .flow { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
-    .flow article { position: relative; min-height: 170px; padding: 22px 18px; background: var(--surface); }
-    .flow b { display: block; margin-bottom: 12px; color: var(--blue); font-size: 12px; letter-spacing: 0.08em; }
-    .flow p { margin: 0; font-size: 14px; color: var(--muted); }
-
-    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
-    .panel { padding: 28px; background: var(--surface); border: 1px solid var(--line); }
-    .panel ul { margin: 14px 0 0; padding-left: 20px; }
-    .panel li + li { margin-top: 9px; }
-    .panel.safe { border-top: 5px solid var(--teal); }
-    .panel.limit { border-top: 5px solid var(--red); }
-
-    figure { margin: 32px 0 0; background: white; border: 1px solid var(--line); }
-    figure img { display: block; width: 100%; height: auto; }
-    figcaption { padding: 15px 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
-
-    .method-table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--line); }
-    .method-table th, .method-table td { padding: 15px 16px; text-align: left; border-bottom: 1px solid var(--line); }
-    .method-table th { color: var(--muted); font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; }
-    .method-table td:nth-child(n+2) { font-variant-numeric: tabular-nums; }
-    .method-table tr:last-child td { border-bottom: 0; }
-    .best { color: var(--blue); font-weight: 800; }
-
-    .code {
-      margin-top: 26px;
-      padding: 22px;
-      overflow-x: auto;
-      color: #e7edf5;
-      background: #17202b;
-      border-left: 5px solid var(--teal);
-      font: 13px/1.75 ui-monospace, SFMono-Regular, Consolas, monospace;
-      white-space: pre;
-    }
-    .takeaway { padding: 28px 0; color: var(--muted); font-size: 14px; }
-    footer { padding: 34px 0 60px; color: var(--muted); font-size: 13px; }
-
-    @media (max-width: 900px) {
-      .nav-links { display: none; }
-      .section-head, .two-col { grid-template-columns: 1fr; }
-      .metrics { grid-template-columns: 1fr 1fr; }
-      .metric:nth-child(2) { border-right: 0; }
-      .metric:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
-      .flow { grid-template-columns: 1fr 1fr; }
-    }
-    @media (max-width: 560px) {
-      .shell { width: min(100% - 24px, var(--max)); }
-      .hero { padding-top: 62px; }
-      .metrics, .flow { grid-template-columns: 1fr; }
-      .metric { border-right: 0; border-bottom: 1px solid var(--line); }
-      .metric:last-child { border-bottom: 0; }
-      .method-table { font-size: 12px; }
-      .method-table th, .method-table td { padding: 10px 8px; }
-    }
-  </style>
+  <meta name="theme-color" content="#f7f9f6">
+  <meta name="description" content="NeuroNav-Agent：认知健康临床试验导航研究原型。探索公开登记、可解释预筛、排序稳健性与完整复现实验。">
+  <meta property="og:title" content="NeuroNav-Agent · 每一步，都有据可循">
+  <meta property="og:description" content="从公开试验登记到可追溯的导航报告。代码、数据、结果，完整开源。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://jacob-zjy.github.io/neuro-nav-agent/assets/readme-banner.svg">
+  <title>NeuroNav-Agent · 认知健康临床试验导航</title>
+  <link rel="icon" type="image/svg+xml" href="assets/mark.svg">
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/demo-data.js"></script>
+  <script defer src="assets/site.js"></script>
 </head>
 <body>
-  <header>
-    <nav class="shell" aria-label="页面导航">
-      <a class="brand" href="#top">NeuroNav-Agent</a>
-      <div class="nav-links">
-        <a href="#problem">问题</a><a href="#workflow">流程</a><a href="#results">结果</a>
-        <a href="#safety">安全</a><a href="#reproduce">复现</a>
-      </div>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="NeuroNav-Agent 首页"><span class="brand-mark" aria-hidden="true">n<span>·</span></span>NeuroNav<span class="brand-suffix">-Agent</span></a>
+      <div class="nav-links"><a href="#workflow">工作流程</a><a href="#results">实验结果</a><a href="#reproduce">快速开始</a></div>
+      <a class="nav-github" href="https://github.com/Jacob-Zjy/neuro-nav-agent"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-2.85 17.54c.45.08.62-.2.62-.44v-1.69c-2.51.55-3.04-1.06-3.04-1.06-.41-1.04-1-1.32-1-1.32-.82-.56.06-.55.06-.55.9.06 1.38.93 1.38.93.8 1.37 2.1.97 2.61.74.08-.58.31-.98.57-1.21-2-.23-4.1-1-4.1-4.46 0-.98.35-1.79.93-2.42-.09-.23-.4-1.14.09-2.39 0 0 .75-.24 2.47.93A8.6 8.6 0 0 1 12 7.3c.76 0 1.52.1 2.25.3 1.72-1.17 2.47-.93 2.47-.93.5 1.25.18 2.16.1 2.39.57.63.92 1.44.92 2.42 0 3.47-2.1 4.23-4.11 4.45.32.28.61.83.61 1.68v2.49c0 .24.16.52.62.43A9 9 0 0 0 12 3Z"/></svg><span>GitHub</span><span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
-  <main id="top">
-    <div class="hero">
-      <div class="shell">
-        <div class="eyebrow">Evidence-grounded healthcare agent</div>
-        <h1>让每一次试验推荐都有证据，也允许系统说“不知道”</h1>
-        <p class="lead">面向认知健康临床试验的患者导航智能体：检索真实登记数据，执行可解释预筛，量化排序不确定性，并把无法自动判断的条件交还给人。</p>
-        <div class="actions">
-          <a class="button primary" href="#results">查看真实结果</a>
-          <a class="button" href="https://clinicaltrials.gov/data-api/about-api">查看数据源</a>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container">
+        <a class="release-pill" href="https://github.com/Jacob-Zjy/neuro-nav-agent"><span class="status-dot"></span> 开源研究原型 <span class="pill-divider"></span> v0.1 <span aria-hidden="true">↗</span></a>
+        <h1>让临床试验导航，<br><span>每一步都有据可循。</span></h1>
+        <p class="hero-description">从公开登记到可追溯的候选报告。<br class="desktop-break">用结构化预筛、透明排序与不确定性分析，理解认知健康试验的导航过程。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#workspace">探索运行示例 <span aria-hidden="true">↓</span></a>
+          <a class="button button-white" href="https://github.com/Jacob-Zjy/neuro-nav-agent">查看源代码 <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="warning"><strong>用途边界：</strong>本项目是研究原型，不诊断疾病、不判定完整入组资格，也不替代医生或临床试验协调员。</div>
-      </div>
-    </div>
+        <div class="hero-meta"><span>Python</span><i></i><span>公开数据</span><i></i><span>无需 API 密钥</span><i></i><span>MIT 开源</span></div>
 
-    <section id="problem">
-      <div class="shell">
-        <div class="section-head">
-          <div class="section-no">01 / 问题</div>
-          <div><h2>临床试验信息很多，但“搜到”不等于“适合行动”</h2><p class="section-copy">关键词检索会返回疾病名称相似、年龄不符、停止招募或本地没有登记地点的研究。NeuroNav-Agent 把检索、有限预筛、排序、稳健性分析和证据审核组成一个可复现工作流。</p></div>
+        <div class="workspace" id="workspace">
+          <div class="workspace-toolbar">
+            <div class="window-controls" aria-hidden="true"><i></i><i></i><i></i></div>
+            <span class="workspace-title">NeuroNav / 研究工作台</span>
+            <span class="snapshot-label"><span class="status-dot"></span> 预计算示例</span>
+          </div>
+          <div class="workspace-body">
+            <aside class="workflow-sidebar" aria-label="示例执行步骤">
+              <p class="sidebar-caption">执行轨迹 <span>05 STEPS</span></p>
+              <div class="step-list">
+                <button class="step" type="button" data-step="0" aria-pressed="false"><span class="step-number">01</span><span>最小研究画像<small>Profile intake</small></span><span class="step-check">✓</span></button>
+                <button class="step" type="button" data-step="1" aria-pressed="false"><span class="step-number">02</span><span>结构化预筛<small>Structured screening</small></span><span class="step-check">✓</span></button>
+                <button class="step" type="button" data-step="2" aria-pressed="false"><span class="step-number">03</span><span>排序稳健性<small>Sensitivity analysis</small></span><span class="step-check">✓</span></button>
+                <button class="step" type="button" data-step="3" aria-pressed="false"><span class="step-number">04</span><span>来源与证据审核<small>Evidence audit</small></span><span class="step-check">✓</span></button>
+                <button class="step active" type="button" data-step="4" aria-pressed="true"><span class="step-number">05</span><span>生成导航报告<small>Navigation report</small></span><span class="step-check">✓</span></button>
+              </div>
+              <div class="sidebar-note"><span class="mini-label">DATA SOURCE</span><strong>ClinicalTrials.gov</strong><span>公开登记 · <time datetime="2026-09-05">2026.09.05</time></span></div>
+            </aside>
+            <div class="workspace-main">
+              <div class="profile-strip"><span class="profile-avatar" aria-hidden="true">N</span><span><strong>示例研究画像</strong><small>轻度认知障碍 · 65 岁 · 女性 · 巴西</small></span><span class="subtle-tag">合成画像</span></div>
+              <div class="report-heading"><div><span class="mini-label" id="step-eyebrow">NAVIGATION REPORT</span><h2 id="step-title">候选报告，一眼可追溯。</h2></div><a href="https://github.com/Jacob-Zjy/neuro-nav-agent/blob/main/results/sample_navigation_report.json" class="text-link">完整 JSON ↗</a></div>
+              <p id="step-description" class="report-description">以下为已保存报告的前三项。排序分数表示导航相关性，招募状态与入组条件仍需单独确认。</p>
+              <div id="stage-content" class="stage-content" aria-live="polite">
+                <p class="fallback-text">本示例来自已发布的运行报告。启用 JavaScript 后，可点选左侧流程查看候选与证据；也可直接阅读完整 JSON。</p>
+              </div>
+              <div class="workspace-footnote"><span aria-hidden="true">ⓘ</span><span>网页展示预计算结果；本地 Python 程序可运行完整流程。排名靠前不代表当前可报名。</span></div>
+            </div>
+          </div>
         </div>
-        <div class="metrics" aria-label="项目规模">
-          <div class="metric"><strong>1,968</strong><span>当前开放的真实试验登记记录</span></div>
-          <div class="metric"><strong>477</strong><span>可审计合成测试病例</span></div>
-          <div class="metric"><strong>2,000</strong><span>蒙特卡洛权重抽样次数</span></div>
-          <div class="metric"><strong>0</strong><span>患者级隐私数据</span></div>
+        <div class="stats-strip" aria-label="项目数据规模">
+          <div><strong>1,968<span>条</span></strong><p>公开试验登记</p></div>
+          <div><strong>477<span>个</span></strong><p>受控合成病例</p></div>
+          <div><strong>2,000<span>次</span></strong><p>蒙特卡洛抽样</p></div>
+          <div><strong>100<span>%</span></strong><p>代码与实验产物公开</p></div>
         </div>
       </div>
     </section>
 
-    <section id="workflow">
-      <div class="shell">
-        <div class="section-head">
-          <div class="section-no">02 / 智能体流程</div>
-          <div><h2>关键判断由可测试工具完成，而不是让大模型自由发挥</h2><p class="section-copy">系统保留完整执行轨迹。自然语言模型可以作为可选交互层，但不能覆盖年龄、性别、状态、地点或证据审核结果。</p></div>
-        </div>
-        <div class="flow">
-          <article><b>STEP 01</b><h3>最小画像</h3><p>仅使用疾病、年龄、登记性别类别和国家。</p></article>
-          <article><b>STEP 02</b><h3>真实检索</h3><p>调用 ClinicalTrials.gov API 并保存时间戳快照。</p></article>
-          <article><b>STEP 03</b><h3>结构化预筛</h3><p>逐项记录 pass、fail、caution 或 unknown。</p></article>
-          <article><b>STEP 04</b><h3>透明排序</h3><p>分解疾病、状态、年龄、性别、地点和完整度得分。</p></article>
-          <article><b>STEP 05</b><h3>稳健性</h3><p>改变权重 2,000 次，观察候选能否稳定进入前十。</p></article>
-          <article><b>STEP 06</b><h3>独立审核</h3><p>检查分数范围、来源字段、人工复核和安全边界。</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="results">
-      <div class="shell">
-        <div class="section-head">
-          <div class="section-no">03 / 真实结果</div>
-          <div><h2>加入可行动条件后，受控误报被逐层消除</h2><p class="section-copy">基准病例来自真实登记字段，并通过改变疾病、年龄、性别或本地登记地点构造反例。置信区间来自 2,000 次 bootstrap 重采样。</p></div>
-        </div>
-        <table class="method-table">
-          <thead><tr><th>方法</th><th>平衡准确率</th><th>95% CI</th><th>误报率</th></tr></thead>
-          <tbody>
-            <tr><td>关键词检索</td><td>0.665</td><td>0.642–0.690</td><td>0.669</td></tr>
-            <tr><td>部分结构化筛选</td><td>0.826</td><td>0.802–0.849</td><td>0.347</td></tr>
-            <tr><td class="best">NeuroNav-Agent</td><td class="best">0.997</td><td>0.993–1.000</td><td class="best">0.006</td></tr>
-          </tbody>
-        </table>
-        <figure>
-          <img src="assets/figure1_navigation_performance.svg" alt="三种导航方法的平衡准确率和误报率比较">
-          <figcaption>图 1｜受控本地可行动匹配基准。0.997 主要表示程序正确处理预先定义的结构化反例，不是临床或诊断准确率。</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/figure2_trial_landscape.svg" alt="认知健康试验的国家覆盖、状态和排名稳健性">
-          <figcaption>图 2｜1,968 条当前开放登记记录的地理覆盖与示例排序稳健性。国家计数代表试验是否在该国登记地点，不代表受试者数量、疾病负担或疗效。</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section id="safety">
-      <div class="shell">
-        <div class="section-head">
-          <div class="section-no">04 / 安全与可信</div>
-          <div><h2>项目最重要的功能之一，是拒绝做证据不足的结论</h2></div>
-        </div>
-        <div class="two-col">
-          <div class="panel safe"><h3>系统会做</h3><ul><li>引用原始 NCT 登记页面和字段。</li><li>把不确定或缺失信息明确暴露出来。</li><li>区分医学条件与地理可行动性。</li><li>保留完整逐病例预测，支持复核。</li><li>使用非识别性合成画像完成测试。</li></ul></div>
-          <div class="panel limit"><h3>系统不会做</h3><ul><li>诊断认知障碍或预测治疗效果。</li><li>宣称自动完成所有自由文本入排标准。</li><li>将“没有当地地点”解释成医学不合格。</li><li>接收姓名、联系方式或病历标识符。</li><li>用漂亮文字掩盖无来源的判断。</li></ul></div>
+    <section class="section" id="workflow">
+      <div class="container">
+        <div class="section-heading"><div><span class="eyebrow">BUILT FOR TRACEABILITY</span><h2>从“搜到了”，<br>到“为什么推荐它”。</h2></div><p>把复杂导航拆成可以检查的步骤。<br>每项判断都能回到字段，每次排序都能重新计算。</p></div>
+        <div class="feature-grid">
+          <article class="feature feature-wide">
+            <div class="feature-top"><span class="feature-icon" aria-hidden="true">⌘</span><span class="mini-label">TOOL ORCHESTRATION</span></div>
+            <h3>一条流程，完整留下依据。</h3><p>登记快照、条件检查、排序与审核由独立模块协作；执行过程保存在报告中，便于定位每一次判断。</p>
+            <div class="pipeline" aria-label="快照到报告的处理流程"><span>公开快照</span><b>→</b><span>条件检查</span><b>→</b><span>权重排序</span><b>→</b><span class="pipeline-last">证据报告</span></div>
+            <a class="text-link" href="https://github.com/Jacob-Zjy/neuro-nav-agent/blob/main/neuronav/agent.py">查看编排代码 ↗</a>
+          </article>
+          <article class="feature">
+            <div class="feature-top"><span class="feature-icon" aria-hidden="true">≋</span><span class="mini-label">ROBUSTNESS</span></div>
+            <h3>让排序的不确定性可见。</h3><p>对权重做 2,000 次抽样，观察候选进入前十的频率。高稳定性说明对权重变化不敏感，不能解读为疗效概率。</p>
+            <div class="code-fragment"><span>rank_robustness(</span><br>&nbsp; simulations=<b>2000</b>,<br>&nbsp; seed=<b>42</b><br><span>)</span></div>
+          </article>
+          <article class="feature">
+            <div class="feature-top"><span class="feature-icon" aria-hidden="true">↗</span><span class="mini-label">SOURCE EVIDENCE</span></div>
+            <h3>点击，回到原始登记。</h3><p>候选保留 NCT 编号、来源网址和证据字段。自由文本中的复杂入排条件始终保留人工复核入口。</p>
+            <div class="field-chip">source_fields <span>→</span> ["countries"]</div>
+          </article>
+          <article class="feature feature-wide feature-tint">
+            <div class="feature-top"><span class="feature-icon" aria-hidden="true">↻</span><span class="mini-label">REPRODUCIBLE BY DESIGN</span></div>
+            <h3>从数据到图表，都可以重跑。</h3><p>处理后的快照、合成病例、逐条预测与绘图脚本随仓库交付。当前实验使用确定性工具，不需要大模型接口或 API 密钥。</p>
+            <div class="file-pills"><a href="https://github.com/Jacob-Zjy/neuro-nav-agent/tree/main/data">data/ ↗</a><a href="https://github.com/Jacob-Zjy/neuro-nav-agent/tree/main/results">results/ ↗</a><a href="https://github.com/Jacob-Zjy/neuro-nav-agent/tree/main/figures">figures/ ↗</a></div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="reproduce">
-      <div class="shell">
-        <div class="section-head">
-          <div class="section-no">05 / 完整复现</div>
-          <div><h2>从 API 到图表，五条命令重新生成全部公开结果</h2><p class="section-copy">重新下载会得到新的动态快照，因此数值可能随注册信息更新而变化。元数据文件会记录检索时间、关键词和样本数。</p></div>
+    <section class="section results-section" id="results">
+      <div class="container">
+        <div class="section-heading"><div><span class="eyebrow">RESULTS, WITH CONTEXT</span><h2>每一个结果，<br>都有可核对的来源。</h2></div><p>在受控合成病例上比较三种方法，<br>再用真实登记快照观察地理分布与排序稳定性。</p></div>
+        <div class="result-controls" aria-label="选择结果视图">
+          <button type="button" class="result-tab active" data-result="benchmark" aria-pressed="true">01 <span>受控导航基准</span></button>
+          <button type="button" class="result-tab" data-result="landscape" aria-pressed="false">02 <span>登记分布与稳健性</span></button>
         </div>
-        <div class="code">pip install -e ".[analysis,demo,dev]"
-pytest
-python -m scripts.download_trials
-python -m scripts.build_benchmark
-python -m scripts.run_evaluation
-python -m scripts.run_analysis
-python -m scripts.make_figures
-streamlit run app.py</div>
-        <p class="takeaway"><strong>一句话总结：</strong>NeuroNav-Agent 的贡献不是声称“AI 能替医生做决定”，而是展示如何把患者导航拆成可追踪、可拒答、可统计验证的智能体工作流。</p>
+        <div class="result-view" id="benchmark-view">
+          <div class="result-summary"><div><span class="mini-label">BALANCED ACCURACY</span><strong>0.997</strong><p>NeuroNav-Agent · 95% CI 0.993–1.000</p></div><div class="result-explanation"><h3>衡量受控软件行为的基准。</h3><p>477 个合成画像由真实登记字段构造；置信区间来自 2,000 次 bootstrap。这个得分不代表临床或诊断准确率，也不验证所有自由文本条件。</p></div></div>
+          <div class="table-wrap"><table><caption class="sr-only">三种方法在477个受控合成病例上的结果</caption><thead><tr><th scope="col">方法</th><th scope="col">平衡准确率</th><th scope="col">95% 置信区间</th><th scope="col">误报率</th></tr></thead><tbody><tr><th scope="row">关键词检索</th><td>0.665</td><td>0.642–0.690</td><td>0.669</td></tr><tr><th scope="row">部分结构化筛选</th><td>0.826</td><td>0.802–0.849</td><td>0.347</td></tr><tr class="best-row"><th scope="row">NeuroNav-Agent <span>完整流程</span></th><td>0.997</td><td>0.993–1.000</td><td>0.006</td></tr></tbody></table></div>
+          <figure><a href="assets/figure1_navigation_performance.svg" target="_blank" rel="noopener" aria-label="在新标签页查看受控导航基准大图"><img src="assets/figure1_navigation_performance.svg" width="1440" height="697" loading="lazy" alt="受控导航基准：三种方法的平衡准确率及假阳性和假阴性率"></a><figcaption><span>图 01 / 受控导航基准</span><a href="https://github.com/Jacob-Zjy/neuro-nav-agent/blob/main/results/benchmark_metrics.csv">查看源数据 ↗</a></figcaption></figure>
+        </div>
+        <div class="result-view" id="landscape-view" hidden>
+          <div class="result-summary"><div><span class="mini-label">LOCATION COMPLETENESS</span><strong>91.9<span>%</span></strong><p>1,968 条登记中报告国家信息的比例</p></div><div class="result-explanation"><h3>描述登记覆盖，探索排序变化。</h3><p>7.0% 的试验涉及多个国家。这里的国家计数描述登记分布，不代表受试者数量、疾病负担或人群健康公平性。</p></div></div>
+          <figure><a href="assets/figure2_trial_landscape.svg" target="_blank" rel="noopener" aria-label="在新标签页查看登记分布与排序稳健性大图"><img src="assets/figure2_trial_landscape.svg" width="1440" height="995" loading="lazy" alt="公开试验登记的国家分布、研究状态、排序稳健性和覆盖指标"></a><figcaption><span>图 02 / 登记分布与排序稳健性</span><a href="https://github.com/Jacob-Zjy/neuro-nav-agent/tree/main/results">查看源数据 ↗</a></figcaption></figure>
+        </div>
+        <p class="figure-note">图表提供可编辑 SVG / PDF 与 600 dpi TIFF。<a href="https://github.com/Jacob-Zjy/neuro-nav-agent/tree/main/figures">浏览全部文件 ↗</a></p>
       </div>
+    </section>
+
+    <section class="section" id="reproduce">
+      <div class="container quickstart-grid">
+        <div><span class="eyebrow">START WITH THE SNAPSHOT</span><h2>把结果，<br>在你的电脑上重现。</h2><p class="section-description">建议使用 Python 3.11 和虚拟环境。<br>仓库已包含公开快照，安装后即可运行本地演示。</p><a class="text-link" href="https://github.com/Jacob-Zjy/neuro-nav-agent#快速开始">查看完整安装说明 ↗</a><div class="install-note"><span>01</span> 克隆项目 <span>02</span> 安装依赖 <span>03</span> 启动演示</div></div>
+        <div class="terminal"><div class="terminal-toolbar"><span><i></i> Terminal / 快速开始</span><button type="button" data-copy-target="quickstart-code">复制命令</button></div><pre><code id="quickstart-code">git clone https://github.com/Jacob-Zjy/neuro-nav-agent.git
+cd neuro-nav-agent
+
+python -m venv .venv
+# macOS / Linux:
+source .venv/bin/activate
+# Windows PowerShell:
+# .venv\Scripts\Activate.ps1
+
+pip install -e ".[analysis,demo,dev]"
+streamlit run app.py</code></pre><div class="terminal-footer"><span class="status-dot"></span> 包含快照 · 无需 API 密钥</div></div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="safety">
+      <div class="container faq-grid">
+        <div><span class="eyebrow">KNOW THE BOUNDARIES</span><h2>值得理解的，<br>还有这些边界。</h2><p class="section-description">清楚地说明已经实现什么，<br>也是可复现研究的一部分。</p></div>
+        <div class="faq-list">
+          <details open><summary>这个项目已经接入大语言模型了吗？<span aria-hidden="true">+</span></summary><p>当前 v0.1 使用确定性工具编排：条件检查、排序、权重抽样与证据审核均由 Python 模块完成。大语言模型交互和自由文本条件提取属于后续方向，尚未在本版本实现。</p></details>
+          <details><summary>排名第一，就可以报名参加吗？<span aria-hidden="true">+</span></summary><p>不能。当前候选范围包含 ACTIVE_NOT_RECRUITING（进行中但不再招募），示例第一项即为该状态。排名表示有限字段下的相关性，完整入排标准和实际招募情况必须回到登记页面，并由试验协调员确认。</p></details>
+          <details><summary>0.997 的分数能说明什么？<span aria-hidden="true">+</span></summary><p>它描述受控合成病例上的平衡准确率。病例与规则使用相同的结构化字段定义，结果用于检查软件行为，不能据此声称临床验证、诊断能力或真实患者效果。</p></details>
+          <details><summary>数据里有真实患者的信息吗？<span aria-hidden="true">+</span></summary><p>没有参与者级数据。项目使用公开试验登记元数据和明确标注的合成画像。研究画像仅包含疾病、年龄、登记性别类别和国家，不需要姓名、联系方式或病历标识。</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section">
+      <div class="container closing"><div><span class="eyebrow">OPEN DATA. OPEN METHODS.</span><h2>从一条证据开始，<br>探索更可信的健康导航。</h2></div><a class="button button-primary" href="https://github.com/Jacob-Zjy/neuro-nav-agent">在 GitHub 查看项目 <span aria-hidden="true">↗</span></a></div>
     </section>
   </main>
-
-  <footer><div class="shell">NeuroNav-Agent · Public research prototype · Snapshot retrieved 2026-09-05 (Asia/Shanghai) · MIT-licensed code</div></footer>
+  <footer class="container footer"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">n<span>·</span></span>NeuroNav-Agent</a><p>研究原型 · 不提供医学诊断或最终入组判断</p><div><a href="https://github.com/Jacob-Zjy/neuro-nav-agent/blob/main/LICENSE">MIT License</a><a href="https://clinicaltrials.gov/data-api/about-api">数据来源 ↗</a></div></footer>
+  <div id="copy-status" class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>

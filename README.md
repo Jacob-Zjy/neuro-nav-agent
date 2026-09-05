@@ -1,150 +1,169 @@
-# NeuroNav-Agent
+<div align="center">
+  <img src="docs/assets/readme-banner.svg" width="100%" alt="NeuroNav-Agent · 认知健康临床试验导航">
+  <br><br>
+  <strong>让临床试验导航，每一步都有据可循。</strong>
+  <br>
+  <p>公开数据 · 结构化预筛 · 可解释排序 · 不确定性分析</p>
+  <a href="https://github.com/Jacob-Zjy/neuro-nav-agent/actions/workflows/ci.yml"><img src="https://github.com/Jacob-Zjy/neuro-nav-agent/actions/workflows/ci.yml/badge.svg" alt="自动测试"></a>
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.10+"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-147D64?style=flat-square" alt="MIT License"></a>
+  <a href="https://jacob-zjy.github.io/neuro-nav-agent/"><img src="https://img.shields.io/badge/项目总览-在线阅读-147D64?style=flat-square" alt="在线项目总览"></a>
+  <br><br>
+  <a href="https://jacob-zjy.github.io/neuro-nav-agent/"><strong>在线体验项目总览 ↗</strong></a>
+  &nbsp; · &nbsp; <a href="#快速开始">快速开始</a>
+  &nbsp; · &nbsp; <a href="#实验结果">实验结果</a>
+  &nbsp; · &nbsp; <a href="data/README.md">数据说明</a>
+  &nbsp; · &nbsp; <a href="README_en.md">English</a>
+</div>
 
-**Evidence-grounded, uncertainty-aware navigation for cognitive-health clinical trials**
+<br>
 
-[中文说明](README_zh.md) · [Live project guide](https://jacob-zjy.github.io/neuro-nav-agent/) · [Offline HTML](docs/index.html) · [Data provenance](data/README.md)
+<a href="https://jacob-zjy.github.io/neuro-nav-agent/">
+  <img src="docs/assets/project-preview.png" width="100%" alt="NeuroNav-Agent 交互工作台：执行步骤、真实登记候选与来源">
+</a>
 
-NeuroNav-Agent is a reproducible research prototype that helps a user find and
-compare potentially relevant cognitive-health trials without pretending to
-make a diagnosis or a final eligibility decision. The system retrieves public
-registry records, applies traceable structured checks, ranks candidates,
-measures ranking sensitivity, and audits every recommendation against source
-fields.
+## 这个项目解决什么问题？
 
-> **Research use only.** A `potential_match` means that no exclusion was found
-> in the limited structured fields checked by this software. Free-text
-> inclusion/exclusion criteria, clinical suitability, travel feasibility, and
-> medical benefit require human review.
+找到疾病名称相似的临床试验后，仍需要核对年龄、登记性别类别、研究状态和地点。NeuroNav-Agent 将这些步骤组织成一个**可追溯、可复现的导航工作流**：读取公开登记信息，检查有限的结构化条件，解释候选排序，并展示排序对权重变化有多敏感。
 
-## Why this is an agent rather than a chatbot
+适合用来研究健康信息导航、工具编排和评估方法。当前版本的关键判断由规则与统计工具完成，**尚未接入大语言模型**；网页中的交互示例展示已保存的运行结果，完整计算可在本地运行。
 
-The orchestrator executes a bounded workflow with explicit tools and state:
+> 研究原型：候选排序不等于医学建议或最终入组资格。自由文本入排标准和实际招募情况，须由试验协调员确认。
+
+## 一眼看懂
+
+| 公开登记数据 | 受控测试病例 | 排序敏感性分析 | 数据范围 |
+|:---:|:---:|:---:|:---:|
+| **1,968 条** | **477 个** | **2,000 次** | **无参与者级记录** |
+| ClinicalTrials.gov 快照 | 明确标注的合成画像 | 蒙特卡洛权重抽样 | 公开研究元数据 |
+
+数据快照日期为 **2026-09-05（UTC）**，查询覆盖轻度认知障碍、阿尔茨海默病和痴呆。快照包含“进行中但不再招募”的登记记录，不能将全部记录理解为当前可报名的试验。
+
+## 核心能力
+
+| 能力 | 实际实现 |
+|---|---|
+| 公开数据检索 | 分页读取 ClinicalTrials.gov API v2，保存 NCT 编号、来源链接和快照元数据 |
+| 结构化预筛 | 检查疾病、年龄、登记性别类别、研究状态与国家信息，保留逐项判断 |
+| 透明排序 | 展示疾病、状态、年龄、性别、地点和信息完整度的得分分量 |
+| 稳健性分析 | 改变排序权重，估计候选进入前十的频率，帮助识别不稳定排序 |
+| 证据审核 | 检查来源字段、得分范围和人工复核标记 |
+| 完整复现 | 提供原始来源、处理后快照、逐病例预测、指标文件、图表和运行脚本 |
+
+## 工作流
 
 ```mermaid
 flowchart LR
-    A[Non-identifying profile] --> B[Registry retrieval]
-    B --> C[Structured eligibility tool]
-    C --> D[Transparent ranker]
-    D --> E[Monte Carlo sensitivity]
-    E --> F[Evidence audit]
-    F --> G[Navigation report + abstentions]
+    A["最小研究画像"] --> B["公开登记快照"]
+    B --> C["结构化条件检查"]
+    C --> D["可解释排序"]
+    D --> E["权重敏感性分析"]
+    E --> F["证据审核"]
+    F --> G["导航报告 / 待确认事项"]
 ```
 
-Safety-critical decisions are deterministic and testable. A natural-language
-presentation layer could be added later, but it is deliberately absent from
-the reported pipeline and must never override eligibility or audit results. In
-healthcare, fluent text is not evidence of correctness.
+输入只有疾病、年龄、登记性别类别和国家。系统输出候选列表、来源字段、排序稳定性和待人工确认事项。运行轨迹可在 [样例报告](results/sample_navigation_report.json) 中查看；[在线总览](https://jacob-zjy.github.io/neuro-nav-agent/) 提供可点选的流程与证据示例。
 
-## Reproducible snapshot and results
+## 快速开始
 
-The committed snapshot contains **1,968 unique, currently open public study registrations**
-retrieved from the ClinicalTrials.gov API for Mild Cognitive Impairment,
-Alzheimer Disease, and Dementia. It contains no participant-level records or
-personal health information.
-
-The controlled benchmark contains **477 explicitly synthetic profiles** created
-from registered condition, age, sex, status, and country fields. Controlled
-perturbations create auditable negative cases.
-
-| Method | Balanced accuracy | 95% bootstrap CI | False-positive rate |
-|---|---:|---:|---:|
-| Keyword retrieval | 0.665 | 0.642–0.690 | 0.669 |
-| Structured filters | 0.826 | 0.802–0.849 | 0.347 |
-| NeuroNav-Agent | 0.997 | 0.993–1.000 | 0.006 |
-
-**Interpretation boundary:** the near-perfect score demonstrates software
-correctness on controlled structured-field perturbations. It is **not**
-diagnostic accuracy, clinical validation, or evidence that the system can
-interpret all free-text eligibility criteria.
-
-![Controlled benchmark results](figures/figure1_navigation_performance.png)
-
-The snapshot also shows substantial geographic concentration: 91.9% of trials
-report a country, only 7.0% span multiple countries, and the most represented
-country accounts for 31.3% of trial-country mentions. These are registry
-coverage indicators, not participant-level equity measures.
-
-![Trial landscape and rank robustness](figures/figure2_trial_landscape.png)
-
-Editable SVG/PDF and 600 dpi TIFF versions are included in `figures/`.
-
-## Quick start
+建议使用 Python 3.11。复现已发布结果可直接使用仓库内快照，无需 API 密钥。
 
 ```bash
+git clone https://github.com/Jacob-Zjy/neuro-nav-agent.git
+cd neuro-nav-agent
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+```
+
+激活虚拟环境：
+
+```bash
+# macOS / Linux
+source .venv/bin/activate
+
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+```
+
+安装依赖并启动演示：
+
+```bash
 pip install -e ".[analysis,demo,dev]"
-python -m pytest
-python -m scripts.verify_release
-python -m neuronav.cli --condition "Mild Cognitive Impairment" --age 65 --sex female --country China
 streamlit run app.py
 ```
 
-## Reproduce data, benchmark, analysis, and figures
+也可以直接使用命令行：
 
 ```bash
-python -m scripts.download_trials
+python -m neuronav.cli --condition "Mild Cognitive Impairment" --age 65 --sex female --country China
+```
+
+## 实验结果
+
+比较关键词检索、部分结构化筛选和完整流程。测试集包含 **477 个合成画像**，由真实登记字段构造受控反例；95% 置信区间来自 2,000 次 bootstrap 重采样。
+
+| 方法 | 平衡准确率 | 95% 置信区间 | 误报率 |
+|---|---:|---:|---:|
+| 关键词检索 | 0.665 | 0.642–0.690 | 0.669 |
+| 部分结构化筛选 | 0.826 | 0.802–0.849 | 0.347 |
+| **NeuroNav-Agent** | **0.997** | **0.993–1.000** | **0.006** |
+
+**结果的适用范围：**这个分数反映程序对受控结构化反例的处理表现。测试集和筛选规则共享字段定义，不能据此推断临床准确率、完整入组判断能力或真实患者使用效果。
+
+![受控导航基准：三种方法的平衡准确率与错误率](figures/figure1_navigation_performance.png)
+
+### 试验分布与排序稳定性
+
+快照中，91.9% 的研究报告了国家信息，7.0% 跨多个国家，最常出现的国家占全部“试验—国家”提及数的 31.3%。这些指标描述登记数据的分布，不能直接解释为人群健康公平性。
+
+![试验地理分布、研究状态与排名稳健性](figures/figure2_trial_landscape.png)
+
+图表提供 **SVG / PDF / PNG / 600 dpi TIFF**，保留可编辑矢量版本。访问 [完整图表](figures)、[指标 CSV](results/benchmark_metrics.csv)、[逐病例预测](results/benchmark_predictions.csv) 和 [排序稳定性结果](results/rank_robustness.csv)。
+
+## 从快照复现全部结果
+
+```bash
 python -m scripts.build_benchmark
 python -m scripts.run_evaluation
 python -m scripts.run_analysis
 python -m scripts.make_figures
 python -m scripts.build_site
+
+# 检查核心行为与交付文件一致性
+python -m pytest
+python -m scripts.verify_release
 ```
 
-Re-running the download step creates a new live snapshot and may change results
-as trial registrations are updated. `data/metadata.json` records retrieval time,
-query terms, and record count.
+需要更新登记数据时，单独运行：
 
-## Repository map
+```bash
+python -m scripts.download_trials
+```
+
+重新下载会改变快照，随后需要重跑分析流程。抓取时间、查询词和记录数保存在 [data/metadata.json](data/metadata.json)。
+
+## 目录导航
 
 ```text
-neuronav/                 matching, ranking, audit, orchestration
-scripts/                  reproducible data and experiment pipelines
-data/processed/           public registry snapshot
-data/benchmark/           synthetic auditable test profiles
-results/                  metrics, predictions, coverage, sample report
-figures/                  publication-ready SVG/PDF/PNG/TIFF
-docs/index.html           visual project explainer
-tests/                    unit tests for core safety logic
-app.py                    Streamlit demonstration
+neuronav/       预筛、排序、审核和流程编排
+scripts/        数据获取、评估、分析、绘图与网页构建
+data/           公开登记快照、合成测试画像及来源说明
+results/        评估指标、逐病例预测和样例导航报告
+figures/        可编辑矢量图与高分辨率图片
+docs/           在线项目总览及静态资源
+tests/          核心逻辑测试
+app.py          Streamlit 本地演示
 ```
 
-## Design choices
+## 当前边界与下一步
 
-- **Minimal data:** only age, registry sex category, target condition, and
-  country are needed. Names, contact details, free-text medical histories, and
-  identifiers must not be entered.
-- **Evidence trace:** every pass, fail, caution, or unknown points to registered
-  source fields.
-- **Abstention:** unstructured criteria are always marked for coordinator
-  review.
-- **Access is not biology:** a country mismatch lowers local actionability but
-  is not presented as a medical exclusion.
-- **Uncertainty:** candidate ranking is repeated under 2,000 sampled weight sets
-  to expose unstable recommendations.
-- **No hidden model result:** reported metrics use the deterministic public
-  pipeline and require no paid API.
+- 当前流程基于确定性工具编排；大模型交互和自由文本条件提取尚未实现。
+- v0.1 将 `ACTIVE_NOT_RECRUITING` 状态纳入候选。它表示研究进行中但不再招募，因此候选排名不能作为可报名清单。
+- 国家的有无只能表示登记地点信息，不能衡量交通时间、中心容量、远程参与机会或治疗获益。
+- 合成测试用于验证受控软件行为；需要独立人工标注和真实场景评估，才能讨论进一步的应用效果。
+- 后续可研究：更严格的招募状态处理、自由文本条件提取、校准后的拒答与试验协调员参与的可用性评价。
 
-## Limitations and next research steps
+## 数据来源与开源协议
 
-1. Free-text eligibility criteria are not yet clinically parsed or validated.
-2. Country presence does not represent travel time, site capacity, remote
-   participation, participant diversity, or population need.
-3. Synthetic test profiles are suitable for software verification, not clinical
-   performance claims.
-4. A prospective evaluation would require trial coordinators, ethics review,
-   protocol-defined outcomes, and representative users.
-5. The next technical step is a human-annotated criterion-extraction benchmark
-   with calibrated abstention, followed by prospective usability testing.
+研究登记信息来自 [ClinicalTrials.gov API v2](https://clinicaltrials.gov/data-api/about-api)，每条记录保留来源链接；详见 [数据说明](data/README.md)。
 
-## Data and citation
-
-Trial metadata come from the
-[ClinicalTrials.gov API v2](https://clinicaltrials.gov/data-api/about-api). Each
-row includes its registry URL. See [data/README.md](data/README.md) for the exact
-construction and claim boundary.
-
-## License
-
-Code is released under the MIT License. Upstream registry data remain subject
-to their source terms and attribution requirements.
+代码采用 [MIT License](LICENSE)。登记数据遵循上游来源条款；引用项目可使用 [CITATION.cff](CITATION.cff)。
