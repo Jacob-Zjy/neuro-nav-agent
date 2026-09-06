@@ -120,14 +120,14 @@ with overview_tab:
     st.subheader("性能与置信度可靠性")
     figure = FIGURES / "figure1_performance_reliability.png"
     if figure.exists():
-        st.image(str(figure), use_container_width=True)
+        st.image(str(figure), width="stretch")
     display = summary[summary["strategy"].eq(strategy)].copy()
     display["accuracy_ci"] = display.apply(
         lambda row: f"{row.accuracy:.3f} [{row.accuracy_ci_low:.3f}, {row.accuracy_ci_high:.3f}]", axis=1
     )
     st.dataframe(
         display[["task", "n", "accuracy_ci", "macro_f1", "ece_10", "brier_multiclass"]],
-        use_container_width=True,
+        width="stretch",
         hide_index=True,
     )
     st.markdown(
@@ -139,14 +139,14 @@ with error_tab:
     st.subheader("规则增强提示下的混淆结构")
     figure = FIGURES / "figure2_confusion_structure.png"
     if figure.exists():
-        st.image(str(figure), use_container_width=True)
-    st.dataframe(comparison, use_container_width=True, hide_index=True)
+        st.image(str(figure), width="stretch")
+    st.dataframe(comparison, width="stretch", hide_index=True)
 
 with data_tab:
     st.subheader("从错误诊断到数据补齐")
     figure = FIGURES / "figure3_data_priority.png"
     if figure.exists():
-        st.image(str(figure), use_container_width=True)
+        st.image(str(figure), width="stretch")
     task_filter = st.multiselect(
         "任务", sorted(priority["task"].unique()), default=sorted(priority["task"].unique())
     )
@@ -165,7 +165,7 @@ with data_tab:
                 "recommended_action",
             ]
         ],
-        use_container_width=True,
+        width="stretch",
         hide_index=True,
     )
 
@@ -173,11 +173,10 @@ with method_tab:
     st.subheader("评测运行信息")
     st.json(metadata)
     st.subheader("数据质量")
-    st.dataframe(quality, use_container_width=True, hide_index=True)
+    st.dataframe(quality, width="stretch", hide_index=True)
     st.markdown(
         """
         **边界：**三项任务评估医疗搜索意图与相关性，不评估长文本医疗咨询质量，也不代表临床能力。
         同一批公开 benchmark 可能进入后续模型训练语料，因此绝对分数存在数据污染风险。
         """
     )
-
