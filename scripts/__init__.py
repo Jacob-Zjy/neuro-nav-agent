@@ -1,2 +1,2 @@
-"""Reproducible project pipelines."""
+"""Executable project scripts."""
 

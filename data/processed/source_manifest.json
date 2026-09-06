@@ -1,0 +1,15 @@
+{
+  "source_url": "https://huggingface.co/datasets/tchenglv/PromptCBLUE/resolve/refs%2Fconvert%2Fparquet/default/validation/0000.parquet",
+  "source_filename": "promptcblue_validation.parquet",
+  "source_sha256": "62746b21d7a50924c312e6d8233d06d955ec0b7ad15790a49ef0ef3c405e6616",
+  "selected_rows": 1240,
+  "raw_text_committed": false,
+  "transformations": {
+    "KUAKE-QIC": [
+      "Canonicalize 疾病表述 to the PromptCBLUE evaluator label 疾病描述",
+      "Append the documented implicit 非上述类型 reject option"
+    ]
+  },
+  "private_items_path": "data\\processed\\eval_items.jsonl",
+  "public_index_path": "data\\processed\\public_item_index.csv"
+}

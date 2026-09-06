@@ -1,11 +1,12 @@
 cff-version: 1.2.0
-message: "If you use this research prototype, please cite the repository."
-title: "NeuroNav-Agent"
+title: "MedEval-DataOps: Chinese Medical LLM Evaluation and Data Strategy"
+message: "If you use this software, please cite this repository and the upstream PromptCBLUE/CBLUE datasets."
 type: software
 authors:
   - family-names: Zhao
     given-names: Jianya
 version: 0.1.0
-date-released: 2026-09-05
+date-released: 2026-09-06
 license: MIT
+repository-code: "https://github.com/Jacob-Zjy/medeval-dataops"
 

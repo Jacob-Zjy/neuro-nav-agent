@@ -1,5 +1,13 @@
-* text=auto eol=lf
-
+*.csv text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.py text eol=lf whitespace=-blank-at-eof
+*.md text eol=lf
+*.html text eol=lf
+*.toml text eol=lf whitespace=-blank-at-eof
+*.txt text eol=lf whitespace=-blank-at-eof
+*.css text eol=lf whitespace=-blank-at-eof
+*.svg text eol=lf whitespace=-trailing-space,-blank-at-eof
 *.png binary
 *.pdf binary
 *.tiff binary

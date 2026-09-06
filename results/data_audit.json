@@ -1,0 +1,20 @@
+{
+  "source_url": "https://huggingface.co/datasets/tchenglv/PromptCBLUE/resolve/refs%2Fconvert%2Fparquet/default/validation/0000.parquet",
+  "source_sha256": "62746b21d7a50924c312e6d8233d06d955ec0b7ad15790a49ef0ef3c405e6616",
+  "selected_tasks": [
+    "KUAKE-QIC",
+    "KUAKE-QQR",
+    "KUAKE-QTR"
+  ],
+  "selected_rows": 1240,
+  "unique_item_ids": 1240,
+  "cross_task_normalized_duplicate_groups": 0,
+  "pii_screen": {
+    "scope": "Regex screen for email, mainland China mobile number, and PRC ID patterns only",
+    "limitation": "A zero count does not prove that the text is de-identified.",
+    "email_pattern_hits": 0,
+    "phone_pattern_hits": 0,
+    "cn_id_pattern_hits": 0
+  },
+  "publication_policy": "Raw prompt text stays outside git. Public artifacts contain hashes, labels, predictions, aggregate metrics, and a reproducible download script."
+}

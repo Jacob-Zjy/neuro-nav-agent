@@ -1,169 +1,139 @@
 <div align="center">
-  <img src="docs/assets/readme-banner.svg" width="100%" alt="NeuroNav-Agent · 认知健康临床试验导航">
+  <h1>MedEval-DataOps</h1>
+  <p><strong>中文医疗大模型评测与数据策略闭环</strong></p>
+  <p>真实公开数据 · 本地开源模型 · 配对统计检验 · 可执行数据策略</p>
+  <a href="https://github.com/Jacob-Zjy/medeval-dataops/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/Jacob-Zjy/medeval-dataops/ci.yml?branch=main&style=flat-square&label=tests" alt="tests"></a>
+  <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.10+">
+  <img src="https://img.shields.io/badge/model-Qwen3--0.6B-6F42C1?style=flat-square" alt="Qwen3-0.6B">
+  <img src="https://img.shields.io/badge/license-MIT-13795B?style=flat-square" alt="MIT">
   <br><br>
-  <strong>让临床试验导航，每一步都有据可循。</strong>
-  <br>
-  <p>公开数据 · 结构化预筛 · 可解释排序 · 不确定性分析</p>
-  <a href="https://github.com/Jacob-Zjy/neuro-nav-agent/actions/workflows/ci.yml"><img src="https://github.com/Jacob-Zjy/neuro-nav-agent/actions/workflows/ci.yml/badge.svg" alt="自动测试"></a>
-  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.10+"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-147D64?style=flat-square" alt="MIT License"></a>
-  <a href="https://jacob-zjy.github.io/neuro-nav-agent/"><img src="https://img.shields.io/badge/项目总览-在线阅读-147D64?style=flat-square" alt="在线项目总览"></a>
-  <br><br>
-  <a href="https://jacob-zjy.github.io/neuro-nav-agent/"><strong>在线体验项目总览 ↗</strong></a>
-  &nbsp; · &nbsp; <a href="#快速开始">快速开始</a>
-  &nbsp; · &nbsp; <a href="#实验结果">实验结果</a>
-  &nbsp; · &nbsp; <a href="data/README.md">数据说明</a>
-  &nbsp; · &nbsp; <a href="README_en.md">English</a>
+  <a href="https://jacob-zjy.github.io/medeval-dataops/"><strong>在线评测报告</strong></a>
+  &nbsp;·&nbsp; <a href="RESULTS.md">实验结果</a>
+  &nbsp;·&nbsp; <a href="data/README.md">数据说明</a>
+  &nbsp;·&nbsp; <a href="EVALUATION_CARD.md">评测卡</a>
 </div>
 
-<br>
+---
 
-<a href="https://jacob-zjy.github.io/neuro-nav-agent/">
-  <img src="docs/assets/project-preview.png" width="100%" alt="NeuroNav-Agent 交互工作台：执行步骤、真实登记候选与来源">
-</a>
+## 为什么做这个项目？
 
-## 这个项目解决什么问题？
+医疗大模型岗位不只需要“调用一个模型”，更需要把业务问题转成可执行的能力标准，建立稳定的 benchmark，发现模型薄弱环节，并据此决定下一批数据应收集、标注或复核什么。
 
-找到疾病名称相似的临床试验后，仍需要核对年龄、登记性别类别、研究状态和地点。NeuroNav-Agent 将这些步骤组织成一个**可追溯、可复现的导航工作流**：读取公开登记信息，检查有限的结构化条件，解释候选排序，并展示排序对权重变化有多敏感。
-
-适合用来研究健康信息导航、工具编排和评估方法。当前版本的关键判断由规则与统计工具完成，**尚未接入大语言模型**；网页中的交互示例展示已保存的运行结果，完整计算可在本地运行。
-
-> 研究原型：候选排序不等于医学建议或最终入组资格。自由文本入排标准和实际招募情况，须由试验协调员确认。
-
-## 一眼看懂
-
-| 公开登记数据 | 受控测试病例 | 排序敏感性分析 | 数据范围 |
-|:---:|:---:|:---:|:---:|
-| **1,968 条** | **477 个** | **2,000 次** | **无参与者级记录** |
-| ClinicalTrials.gov 快照 | 明确标注的合成画像 | 蒙特卡洛权重抽样 | 公开研究元数据 |
-
-数据快照日期为 **2026-09-05（UTC）**，查询覆盖轻度认知障碍、阿尔茨海默病和痴呆。快照包含“进行中但不再招募”的登记记录，不能将全部记录理解为当前可报名的试验。
-
-## 核心能力
-
-| 能力 | 实际实现 |
-|---|---|
-| 公开数据检索 | 分页读取 ClinicalTrials.gov API v2，保存 NCT 编号、来源链接和快照元数据 |
-| 结构化预筛 | 检查疾病、年龄、登记性别类别、研究状态与国家信息，保留逐项判断 |
-| 透明排序 | 展示疾病、状态、年龄、性别、地点和信息完整度的得分分量 |
-| 稳健性分析 | 改变排序权重，估计候选进入前十的频率，帮助识别不稳定排序 |
-| 证据审核 | 检查来源字段、得分范围和人工复核标记 |
-| 完整复现 | 提供原始来源、处理后快照、逐病例预测、指标文件、图表和运行脚本 |
-
-## 工作流
+MedEval-DataOps 用一个可复现的最小闭环展示这套工作：
 
 ```mermaid
 flowchart LR
-    A["最小研究画像"] --> B["公开登记快照"]
-    B --> C["结构化条件检查"]
-    C --> D["可解释排序"]
-    D --> E["权重敏感性分析"]
-    E --> F["证据审核"]
-    F --> G["导航报告 / 待确认事项"]
+    A[公开医疗搜索数据] --> B[数据质量审计]
+    B --> C[双提示策略评测]
+    C --> D[准确性与校准分析]
+    D --> E[配对统计检验]
+    E --> F[错误类型与高置信错误]
+    F --> G[数据补齐优先级]
 ```
 
-输入只有疾病、年龄、登记性别类别和国家。系统输出候选列表、来源字段、排序稳定性和待人工确认事项。运行轨迹可在 [样例报告](results/sample_navigation_report.json) 中查看；[在线总览](https://jacob-zjy.github.io/neuro-nav-agent/) 提供可点选的流程与证据示例。
+这不是诊断系统，也不评估模型能否独立行医。它评测的是医疗搜索产品中的三项可明确判分的语言理解能力。
 
-## 快速开始
+## 评测范围
 
-建议使用 Python 3.11。复现已发布结果可直接使用仓库内快照，无需 API 密钥。
+| 任务 | 产品问题 | 样本数 | 主要指标 |
+|---|---|---:|---|
+| KUAKE-QIC | 用户在问诊断、病因、治疗、费用还是注意事项？ | 440 | Macro-F1、Accuracy |
+| KUAKE-QQR | 两个医疗搜索词是等价、包含还是无关？ | 400 | Macro-F1、Accuracy |
+| KUAKE-QTR | 搜索词与页面标题的匹配程度如何？ | 400 | Macro-F1、Accuracy |
+
+三项任务来自 PromptCBLUE 验证集，共 **1,240 个独立评测条目**。同一条目分别使用直接提示和规则增强提示，构成配对比较。
+
+## 项目亮点
+
+- **真实模型运行**：使用 Qwen3-0.6B，不用伪造模型输出。
+- **受约束判分**：对题目允许的每个标签计算条件似然，避免自由生成造成格式噪声。
+- **不仅看准确率**：同时报告 Macro-F1、平衡准确率、ECE、Brier 分数和提示不一致率。
+- **统计边界清楚**：2,000 次 item-level bootstrap 给出 95% CI；同一条目使用 McNemar 精确检验，三项任务使用 Benjamini-Hochberg 校正。
+- **评测连接数据运营**：将错误率、类别支持度、模型不确定性和提示敏感性组合成透明的数据优先级。
+- **防止公开泄漏**：原始医疗文本不提交到 Git；公开索引只保留任务、标签、长度和不可逆哈希。
+
+## 核心发现
+
+| 发现 | 直接提示 | 规则增强提示 | 解释 |
+|---|---:|---:|---|
+| 总体 Accuracy | 29.6% | 21.8% | 详细 rubric 并未稳定改善小模型 |
+| KUAKE-QIC Accuracy | 45.0% | 23.6% | 下降 21.4 个百分点，BH 校正后 `p = 2.72e-12` |
+| KUAKE-QTR Accuracy | 23.3% | 26.5% | 上升 3.25 个百分点，但 95% CI 跨 0 |
+| 总体 ECE（越低越好） | 0.305 | 0.448 | 规则提示让模型更自信，却更不准确 |
+
+结论不是“prompt 越长越好”，而是：**任何提示策略都要在同一批样本上做配对验证，并同时检查准确性与置信度。** QIC 的结果提示优先回退规则提示，进一步复核长指令造成的注意力稀释和 `非上述类型` 偏置；QTR 的小幅改善需要更多证据，不能直接宣称有效。
+
+<p align="center">
+  <img src="docs/assets/figure1_performance_reliability.png" width="900" alt="双提示策略的性能、配对变化与置信度可靠性">
+</p>
+
+数据处理阶段还识别并修复了 PromptCBLUE QIC 中 `疾病表述` / `疾病描述` 的系统性标签别名，并显式补入上游任务定义允许的 `非上述类型` 拒绝项。映射规则、来源哈希和不重新分发原文的策略均有审计记录。
+
+## 快速复现
+
+建议使用带 NVIDIA GPU 的 Python 3.11/3.12 环境。CPU 可以运行，但完整评测会更慢。
 
 ```bash
-git clone https://github.com/Jacob-Zjy/neuro-nav-agent.git
-cd neuro-nav-agent
+git clone https://github.com/Jacob-Zjy/medeval-dataops.git
+cd medeval-dataops
 python -m venv .venv
 ```
 
-激活虚拟环境：
-
-```bash
-# macOS / Linux
-source .venv/bin/activate
-
+```powershell
 # Windows PowerShell
 .venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install torch --index-url https://download.pytorch.org/whl/cu128
+pip install -e ".[model,analysis,demo,dev]"
 ```
 
-安装依赖并启动演示：
+运行完整流程：
 
 ```bash
-pip install -e ".[analysis,demo,dev]"
-streamlit run app.py
-```
-
-也可以直接使用命令行：
-
-```bash
-python -m neuronav.cli --condition "Mild Cognitive Impairment" --age 65 --sex female --country China
-```
-
-## 实验结果
-
-比较关键词检索、部分结构化筛选和完整流程。测试集包含 **477 个合成画像**，由真实登记字段构造受控反例；95% 置信区间来自 2,000 次 bootstrap 重采样。
-
-| 方法 | 平衡准确率 | 95% 置信区间 | 误报率 |
-|---|---:|---:|---:|
-| 关键词检索 | 0.665 | 0.642–0.690 | 0.669 |
-| 部分结构化筛选 | 0.826 | 0.802–0.849 | 0.347 |
-| **NeuroNav-Agent** | **0.997** | **0.993–1.000** | **0.006** |
-
-**结果的适用范围：**这个分数反映程序对受控结构化反例的处理表现。测试集和筛选规则共享字段定义，不能据此推断临床准确率、完整入组判断能力或真实患者使用效果。
-
-![受控导航基准：三种方法的平衡准确率与错误率](figures/figure1_navigation_performance.png)
-
-### 试验分布与排序稳定性
-
-快照中，91.9% 的研究报告了国家信息，7.0% 跨多个国家，最常出现的国家占全部“试验—国家”提及数的 31.3%。这些指标描述登记数据的分布，不能直接解释为人群健康公平性。
-
-![试验地理分布、研究状态与排名稳健性](figures/figure2_trial_landscape.png)
-
-图表提供 **SVG / PDF / PNG / 600 dpi TIFF**，保留可编辑矢量版本。访问 [完整图表](figures)、[指标 CSV](results/benchmark_metrics.csv)、[逐病例预测](results/benchmark_predictions.csv) 和 [排序稳定性结果](results/rank_robustness.csv)。
-
-## 从快照复现全部结果
-
-```bash
-python -m scripts.build_benchmark
-python -m scripts.run_evaluation
-python -m scripts.run_analysis
+python -m scripts.download_data
+python -m scripts.run_inference --device auto --batch-size 32
+python -m scripts.run_evaluation --bootstrap-draws 2000
 python -m scripts.make_figures
 python -m scripts.build_site
-
-# 检查核心行为与交付文件一致性
-python -m pytest
 python -m scripts.verify_release
 ```
 
-需要更新登记数据时，单独运行：
+本地交互查看：
 
 ```bash
-python -m scripts.download_trials
+streamlit run app.py
 ```
 
-重新下载会改变快照，随后需要重跑分析流程。抓取时间、查询词和记录数保存在 [data/metadata.json](data/metadata.json)。
+## 结果如何解释？
 
-## 目录导航
+完整数字、置信区间和统计检验见 [RESULTS.md](RESULTS.md)，无文本的逐条预测见 [results/predictions.csv](results/predictions.csv)。
+
+这些结果只描述：指定模型版本在指定 PromptCBLUE 子集、指定提示和受约束标签评分协议下的表现。它们**不能**证明临床有效性、医疗安全性或真实用户体验。公开 benchmark 较早，模型训练语料可能包含相似内容，因此还存在污染风险。
+
+## 目录
 
 ```text
-neuronav/       预筛、排序、审核和流程编排
-scripts/        数据获取、评估、分析、绘图与网页构建
-data/           公开登记快照、合成测试画像及来源说明
-results/        评估指标、逐病例预测和样例导航报告
-figures/        可编辑矢量图与高分辨率图片
-docs/           在线项目总览及静态资源
-tests/          核心逻辑测试
-app.py          Streamlit 本地演示
+medevalops/                数据、提示、推理、指标、审计和数据策略核心代码
+scripts/                   下载、推理、评估、绘图、网页构建和发布核验
+data/processed/            可公开的无文本索引与来源清单
+results/                   逐条预测、统计结果、数据质量与优先级表
+figures/                   SVG / PDF / PNG / 600-dpi TIFF 科研图
+docs/                      GitHub Pages 在线报告
+tests/                     不依赖模型权重的核心逻辑测试
+app.py                     Streamlit 评测工作台
+EVALUATION_CARD.md         数据、模型、指标、统计与限制的统一说明
 ```
 
-## 当前边界与下一步
+## 数据与合规
 
-- 当前流程基于确定性工具编排；大模型交互和自由文本条件提取尚未实现。
-- v0.1 将 `ACTIVE_NOT_RECRUITING` 状态纳入候选。它表示研究进行中但不再招募，因此候选排名不能作为可报名清单。
-- 国家的有无只能表示登记地点信息，不能衡量交通时间、中心容量、远程参与机会或治疗获益。
-- 合成测试用于验证受控软件行为；需要独立人工标注和真实场景评估，才能讨论进一步的应用效果。
-- 后续可研究：更严格的招募状态处理、自由文本条件提取、校准后的拒答与试验协调员参与的可用性评价。
+PromptCBLUE 是在 CBLUE 基础上构建的中文医疗提示评测。项目提供确定的下载地址、SHA-256、上游引用和处理脚本，但不重新分发原始文本。请在使用数据前自行核对上游竞赛与数据条款。
 
-## 数据来源与开源协议
+项目代码采用 [MIT License](LICENSE)。Qwen3-0.6B 模型权重采用其上游 Apache-2.0 许可；本仓库不分发模型权重。
 
-研究登记信息来自 [ClinicalTrials.gov API v2](https://clinicaltrials.gov/data-api/about-api)，每条记录保留来源链接；详见 [数据说明](data/README.md)。
+## 引用与来源
 
-代码采用 [MIT License](LICENSE)。登记数据遵循上游来源条款；引用项目可使用 [CITATION.cff](CITATION.cff)。
+- [PromptCBLUE 官方仓库](https://github.com/michael-wzhu/PromptCBLUE)
+- [PromptCBLUE 论文](https://arxiv.org/abs/2310.14151)
+- [CBLUE 官方仓库](https://github.com/CBLUEbenchmark/CBLUE)
+- [CBLUE 论文](https://aclanthology.org/2022.acl-long.544/)
+- [Qwen3-0.6B 模型卡](https://huggingface.co/Qwen/Qwen3-0.6B)

@@ -1,0 +1,4 @@
+task,n,labels,unique_exact_rate,unique_normalized_rate,largest_class_share,label_entropy_normalized,mean_character_count,p95_character_count,invalid_target_count,email_pattern_hits,phone_pattern_hits,cn_id_pattern_hits
+KUAKE-QIC,440,11,1.0,1.0,0.09090909090909091,1.0,81.58181818181818,99.04999999999995,0,0,0,0
+KUAKE-QQR,400,4,1.0,1.0,0.485,0.9043997220736647,89.385,102.0,0,0,0,0
+KUAKE-QTR,400,4,1.0,1.0,0.37,0.9644864970327143,96.385,114.04999999999995,0,0,0,0

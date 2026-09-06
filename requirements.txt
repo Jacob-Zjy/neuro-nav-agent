@@ -1,2 +1,2 @@
-# Convenience installer for reproducing the complete public release.
--e .[analysis,demo,dev]
+-e .[model,analysis,demo,dev]
+
